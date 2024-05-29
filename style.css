@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+
+:root{
+    /* Fuentes */
+    --f_fontSize: 16px;
+    --f_fontWeight: 400;
+    --f_fontFamily: "Roboto", sans-serif;
+    --f_fontFamily--Secundary: "Montserrat", sans-serif;
+    --f_lineHeight: 1.5;
+
+    /* Colores */
+    --c_white: #fff;
+    --c_black: #000;
+
+    --c_grey900: #161815;
+    --c_grey400: #909090;
+
+    --c_green400: #6de754;
+}
+
+/* debugger */
+*{
+    margin: 0;
+    padding: 0;
+    border: 1px dotted blue;
+}
+
+html{
+    font-size: clamp(100%, .75rem + 1.5vw, 20px );
+    font-family: var(--f_fontFamily);
+}
+/* Comienzo header */
+nav{
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 10px 1rem #888888 ;
+    margin-bottom: 1rem;
+}
+/* Comienzo main */
+
+/* Comienzo aside */
+
+/* Comienzo Footer */
