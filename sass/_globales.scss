@@ -5,37 +5,24 @@
   -------globales--------  
 ================================
   */
-
 /* --debugger --*/
-
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 :root {
   /*-- Font --*/
-
   --f_fontSize: 16px;
   --f_fontWeight: 400;
   --f_fontFamily: "Roboto", sans-serif;
   --f_fontFamily--Secundary: "Montserrat", sans-serif;
   --f_lineHeight: 1.5;
-
   /*-- Colour --*/
-
   --c_white: #fff;
   --c_black: #000;
-
-  --c_grey900: #161815;
-  --c_grey400: #909090;
-
-  --c_green400: #6de754;
+  --c_purple900: #1E0342;
+  --c_purple400: #5B1DAE;
+  --c_yellow400: #E3B134; 
 }
 
-/* beginning header */
-nav {
-  background-color: rgb(243, 243, 243);
-  box-shadow: 0 10px 1rem #888888;
-  margin-bottom: 1rem;
-}
+
