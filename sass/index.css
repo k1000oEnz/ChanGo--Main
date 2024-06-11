@@ -1,0 +1,118 @@
+/*
+================================
+  -------globales--------  
+================================
+  */
+/* --debugger --*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /*-- Font --*/
+  --f_fontSize: 16px;
+  --f_fontWeight: 400;
+  --f_fontFamily: "Roboto", sans-serif;
+  --f_fontFamily--Secundary: "Montserrat", sans-serif;
+  --f_lineHeight: 1.5;
+  /*-- Colour --*/
+  --c_white: #fff;
+  --c_black: #000;
+  --c_purple900: #1E0342;
+  --c_purple400: #5B1DAE;
+  --c_yellow400: #E3B134;
+  /*-- Buttons Shadow --*/
+  --c_shadow: 2px 1px 5px rgb(0, 0, 0);
+}
+
+/*
+================================
+  -------globales--------  
+================================
+  */
+/* --debugger --*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /*-- Font --*/
+  --f_fontSize: 16px;
+  --f_fontWeight: 400;
+  --f_fontFamily: "Roboto", sans-serif;
+  --f_fontFamily--Secundary: "Montserrat", sans-serif;
+  --f_lineHeight: 1.5;
+  /*-- Colour --*/
+  --c_white: #fff;
+  --c_black: #000;
+  --c_purple900: #1E0342;
+  --c_purple400: #5B1DAE;
+  --c_yellow400: #E3B134;
+  /*-- Buttons Shadow --*/
+  --c_shadow: 2px 1px 5px rgb(0, 0, 0);
+}
+
+/* beginning header */
+/*
+================================
+  ------- Nav --------  
+================================
+  */
+/* beginning Nav */
+nav {
+  background-color: var(--c_purple900);
+  box-shadow: 0 10px 1rem #888888;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 0.5rem;
+}
+nav div {
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+nav ul li button {
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+nav ul li button img {
+  margin: 0 1rem 0 0;
+}
+
+.no__decoration {
+  text-decoration: none;
+  color: white;
+}
+
+.disabled {
+  display: none;
+}
+
+.button__styleP {
+  background-color: var(--c_purple400);
+  border: 0.1rem solid var(--c_yellow400);
+}
+
+.button__styleP:hover {
+  box-shadow: var(--c_shadow);
+}
+
+.button__styleY {
+  background-color: var(--c_yellow400);
+  border: 0.1rem solid var(--c_purple400);
+  padding: 0.5rem 2rem;
+}
+
+.button__styleY:hover {
+  box-shadow: var(--c_shadow);
+}
+
+/*# sourceMappingURL=index.css.map */

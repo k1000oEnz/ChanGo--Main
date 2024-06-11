@@ -6,7 +6,54 @@
 /* beginning Nav */
 
 nav {
-  background-color: #f3f3f3;
+  background-color: var(--c_purple900);
   box-shadow: 0 10px 1rem #888888;
-  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem .5rem;
+  
+  div{
+    display: flex;
+    align-items: center;
+  }
+
+  ul{
+      display: flex;
+      
+    li{
+        list-style-type: none;
+        margin: 0 1rem;
+      button{
+        padding: .5rem 1rem;
+        border-radius: 1.5rem;
+        img{
+          margin: 0 1rem 0 0;
+        }
+      }
+    }
+  }
+}
+.no__decoration{
+  text-decoration: none;
+  color: white;
+}
+.disabled{
+  display: none;
+}
+
+.button__styleP{
+  background-color: var(--c_purple400);
+  border: .1rem solid var(--c_yellow400);
+  
+}
+.button__styleP:hover{
+  box-shadow: var(--c_shadow);
+}
+.button__styleY{
+  background-color: var(--c_yellow400);
+  border: .1rem solid var(--c_purple400);
+  padding: .5rem 2rem;
+}
+.button__styleY:hover{
+  box-shadow: var(--c_shadow);
 }
