@@ -21,9 +21,11 @@
   --c_black: #000;
   --c_purple900: #1E0342;
   --c_purple400: #5B1DAE;
+  --c_purple200: #984bfd;
   --c_yellow400: #E3B134;
+  --c_yellow200: #fdd87b;
   /*-- Buttons Shadow --*/
-  --c_shadow: 2px 1px 5px rgb(0, 0, 0);
+  --c_shadow: 2px 1px 5px #3f3f3f;
 }
 
 /*
@@ -49,12 +51,22 @@
   --c_black: #000;
   --c_purple900: #1E0342;
   --c_purple400: #5B1DAE;
+  --c_purple200: #984bfd;
   --c_yellow400: #E3B134;
+  --c_yellow200: #fdd87b;
   /*-- Buttons Shadow --*/
-  --c_shadow: 2px 1px 5px rgb(0, 0, 0);
+  --c_shadow: 2px 1px 5px #3f3f3f;
 }
 
 /* beginning header */
+@keyframes expand {
+  from {
+    width: 30%;
+  }
+  to {
+    width: 70%;
+  }
+}
 /*
 ================================
   ------- Nav --------  
@@ -71,15 +83,28 @@ nav {
 nav div {
   display: flex;
   align-items: center;
+  width: 100%;
+  max-width: 720px;
+}
+nav div form {
+  width: 100%;
+}
+nav div input {
+  background-color: #fafafa;
+  border: none;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  padding: 0 1rem;
 }
 nav ul {
   display: flex;
 }
 nav ul li {
   list-style-type: none;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 nav ul li button {
+  color: var(--c_white);
   padding: 0.5rem 1rem;
   border-radius: 1.5rem;
 }
@@ -103,6 +128,7 @@ nav ul li button img {
 
 .button__styleP:hover {
   box-shadow: var(--c_shadow);
+  background-color: var(--c_purple200);
 }
 
 .button__styleY {
@@ -113,6 +139,13 @@ nav ul li button img {
 
 .button__styleY:hover {
   box-shadow: var(--c_shadow);
+  background-color: var(--c_yellow200);
+}
+
+input:focus {
+  animation-name: expand;
+  animation-duration: 0.8s;
+  width: 70%;
 }
 
 /*# sourceMappingURL=index.css.map */

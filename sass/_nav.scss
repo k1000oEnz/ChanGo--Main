@@ -1,3 +1,7 @@
+@keyframes expand {
+  from{width: 30%;}
+  to{width: 70%;}
+}
 /*
 ================================
   ------- Nav --------  
@@ -15,6 +19,19 @@ nav {
   div{
     display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 720px;
+
+    form{
+      width: 100%;
+    }
+    input{
+      background-color: #fafafa;
+      border: none;
+      margin-left: 1rem;
+      border-radius: 1rem;
+      padding: 0 1rem;
+    }
   }
 
   ul{
@@ -22,8 +39,9 @@ nav {
       
     li{
         list-style-type: none;
-        margin: 0 1rem;
+        margin: 0 .5rem;
       button{
+        color: var(--c_white);
         padding: .5rem 1rem;
         border-radius: 1.5rem;
         img{
@@ -44,10 +62,10 @@ nav {
 .button__styleP{
   background-color: var(--c_purple400);
   border: .1rem solid var(--c_yellow400);
-  
 }
 .button__styleP:hover{
   box-shadow: var(--c_shadow);
+  background-color: var(--c_purple200);
 }
 .button__styleY{
   background-color: var(--c_yellow400);
@@ -56,4 +74,10 @@ nav {
 }
 .button__styleY:hover{
   box-shadow: var(--c_shadow);
+  background-color: var(--c_yellow200);
+}
+input:focus{
+  animation-name: expand;
+  animation-duration: .8s;
+  width: 70%;
 }
