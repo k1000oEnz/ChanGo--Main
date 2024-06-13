@@ -30,6 +30,30 @@
 
 /*
 ================================
+------- Footer --------  
+================================
+  */
+/* beginning Footer */
+.footer {
+  background-color: var(--c_purple900);
+  grid-template-columns: 3;
+  grid-template-rows: 1;
+}
+.footer .footer__brand {
+  display: flex;
+}
+.footer .brand_color1 {
+  color: var(--c_purple400);
+}
+.footer .brand_color2 {
+  color: var(--c_yellow400);
+}
+.footer .foot_colorW {
+  color: var(--c_white);
+}
+
+/*
+================================
   -------globales--------  
 ================================
   */
