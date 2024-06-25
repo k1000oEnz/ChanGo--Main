@@ -33,6 +33,11 @@ nav {
       padding: 0 1rem;
       height: 2rem;
     }
+    input:focus{
+      animation-name: expand;
+      animation-duration: .65s;
+      width: 70%;
+    }
   }
 
   ul{
@@ -77,8 +82,4 @@ nav {
   box-shadow: var(--c_shadow);
   background-color: var(--c_yellow200);
 }
-input:focus{
-  animation-name: expand;
-  animation-duration: .65s;
-  width: 70%;
-}
+
