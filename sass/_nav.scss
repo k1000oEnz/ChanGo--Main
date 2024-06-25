@@ -65,12 +65,12 @@ nav {
 }
 .navButt{
   color: #6D8493;
-  border: none;
+  border: 3px solid transparent;
   border-radius: .5rem;
   background-color: transparent;
   margin: 0 1rem;
 }
 .navButt:hover{
-  border: 1px solid var(--c_purple400);
+  border: 3px solid var(--c_purple400);
   color: var(--c_purple400);
 }
