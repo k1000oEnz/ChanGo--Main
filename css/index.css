@@ -19,7 +19,7 @@
   /*-- Colour --*/
   --c_white: #fff;
   --c_black: #000;
-  --c_purple900: #6CB3DF;
+  --c_MainColor: #FBFBFB;
   --c_purple400: #5B1DAE;
   --c_purple200: #984bfd;
   --c_yellow400: #E3B134;
@@ -39,7 +39,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
-  background-color: var(--c_purple900);
+  background-color: var(--c_MainColor);
 }
 .footer .footer__logos {
   display: flex;
@@ -110,7 +110,7 @@
   /*-- Colour --*/
   --c_white: #fff;
   --c_black: #000;
-  --c_purple900: #6CB3DF;
+  --c_MainColor: #FBFBFB;
   --c_purple400: #5B1DAE;
   --c_purple200: #984bfd;
   --c_yellow400: #E3B134;
@@ -135,33 +135,9 @@
   */
 /* beginning Nav */
 nav {
-  background-color: var(--c_purple900);
-  box-shadow: 0 10px 1rem #888888;
-  display: flex;
-  justify-content: space-between;
+  background-color: var(--c_MainColor);
+  box-shadow: 0 2px 1rem #888888;
   padding: 1rem 2rem 0.5rem;
-}
-nav div {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 720px;
-}
-nav div form {
-  width: 100%;
-}
-nav div input {
-  background-color: #fafafa;
-  border: none;
-  margin-left: 1rem;
-  border-radius: 1rem;
-  padding: 0 1rem;
-  height: 2rem;
-}
-nav div input:focus {
-  animation-name: expand;
-  animation-duration: 0.65s;
-  width: 70%;
 }
 nav ul {
   display: flex;
@@ -207,6 +183,27 @@ nav ul li button img {
 .button__styleY:hover {
   box-shadow: var(--c_shadow);
   background-color: var(--c_yellow200);
+}
+
+.brand__color1 {
+  color: var(--c_purple400);
+}
+
+.brand_color2 {
+  color: var(--c_yellow400);
+}
+
+.navButt {
+  color: #6D8493;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  margin: 0 1rem;
+}
+
+.navButt:hover {
+  border: 1px solid var(--c_purple400);
+  color: var(--c_purple400);
 }
 
 /*# sourceMappingURL=index.css.map */
