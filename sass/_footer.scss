@@ -6,58 +6,59 @@
 /* beginning Footer */
 
 .footer{
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+    background-color: var(--c_MainColor);
+    z-index: 0;
+    p{
+        font-weight: 500;
+        color: #040505;
+    }
+    .footer__main-content{
+        padding: 3rem;
+        border-top: 2px solid rgb(180, 180, 180);
+        border-bottom: 2px solid rgb(180, 180, 180);
+        
+    }
+    .diagonal_bar{
+        position:absolute ; 
+        bottom: -65%;
+        left: 20%;
+        width: 150%;
+        height: 70%;
+        background-color: #4584FF;
+        transform: rotate(-25deg);
+        transform-origin: bottom left;
+        z-index: -1;
+        mix-blend-mode: color-burn;
+    }
+    .grid__content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 20px;
-    background-color: var(--c_MainColor);
 
-    .footer__logos{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        div{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        input{
-            background-color: #fafafa;
-            border: none;
-            margin-left: 1rem;
-            border-radius: 1rem;
-            padding: 0 1rem;
-            height: 2rem;
-        }
-        button{
-            color: var(--c_white);
-            padding: .5rem 1rem;
-            border-radius: 1.5rem;
-        }
-    }
-    .footer__data{
+    .redes{
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
+        img{
+            padding: 0 .5rem;
+        }
+        a:hover{
+            box-shadow: 1px 1px .5rem black;
+        }
     }
-    .footer__brand{
-        display: flex;
     }
-    .brand_color1{
-        color: var(--c_purple400);
+    .footer__legales{
+        height: 5rem;
+        
+        p{
+            padding: 0 2rem;
+        }
     }
-    .brand_color2{
-        color: var(--c_yellow400)
-    }
-    .foot_colorW{
-        color: var(--c_white);
-    }
-    .logo__redes{
-        display: block;
-        padding: 1rem;
-    }
-    .logo__redes:hover{
-        box-shadow: 1px 1px 2rem black ;
+    .redes_img:hover{
+        text-shadow: 2px 2px 2px black;
     }
 }
