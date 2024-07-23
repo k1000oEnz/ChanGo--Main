@@ -44,6 +44,7 @@ main {
 /* beginning Footer */
 .footer {
   overflow: hidden;
+  position: relative;
   bottom: 0;
   padding: 2rem 2rem 0 2rem;
   background-color: var(--c_MainColor);
