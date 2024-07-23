@@ -13,6 +13,10 @@ body {
   background-color: #EDF2F6;
 }
 
+main {
+  height: 60vh;
+}
+
 :root {
   /*-- Font --*/
   --f_fontSize: 16px;
@@ -40,10 +44,11 @@ body {
 /* beginning Footer */
 .footer {
   overflow: hidden;
-  position: relative;
-  padding: 2rem;
+  bottom: 0;
+  padding: 2rem 2rem 0 2rem;
   background-color: var(--c_MainColor);
   z-index: 0;
+  width: 100%;
 }
 .footer p {
   font-weight: 500;
@@ -106,6 +111,10 @@ body {
 
 body {
   background-color: #EDF2F6;
+}
+
+main {
+  height: 60vh;
 }
 
 :root {
