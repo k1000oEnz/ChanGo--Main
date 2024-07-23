@@ -13,10 +13,6 @@ body {
   background-color: #EDF2F6;
 }
 
-main {
-  height: 60vh;
-}
-
 :root {
   /*-- Font --*/
   --f_fontSize: 16px;
@@ -112,10 +108,6 @@ main {
 
 body {
   background-color: #EDF2F6;
-}
-
-main {
-  height: 60vh;
 }
 
 :root {
@@ -227,6 +219,17 @@ nav ul li button img {
 .inicio {
   padding-top: 0.3rem;
   margin-left: 0.5rem;
+}
+
+main {
+  height: 60vh;
+}
+
+.diagonalBar {
+  position: absolute;
+  color: rgb(253, 0, 0);
+  height: 2rem;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=index.css.map */
