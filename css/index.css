@@ -176,7 +176,7 @@ nav ul li button img {
 
 .button__styleP {
   background-color: var(--c_purple400);
-  border: 0.1rem solid var(--c_yellow400);
+  border: none;
 }
 
 .button__styleP:hover {
@@ -186,7 +186,7 @@ nav ul li button img {
 
 .button__styleY {
   background-color: var(--c_yellow400);
-  border: 0.1rem solid var(--c_purple400);
+  border: none;
   padding: 0.5rem 2rem;
 }
 
@@ -222,14 +222,53 @@ nav ul li button img {
 }
 
 main {
-  height: 60vh;
+  overflow: hidden;
+  position: relative;
+  height: 300vh;
+}
+
+.Hero {
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Hero ul {
+  display: flex;
+  list-style-type: none;
+}
+.Hero ul .ButtonHero {
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  color: var(--c_white);
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+.Hero ul .ButtonHero2 {
+  font-size: 1.5rem;
+  color: var(--c_white);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+.Hero .HeroTitle {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #1E255E;
+}
+.Hero .HeroSubText {
+  color: rgba(30, 37, 94, 0.7);
 }
 
 .diagonalBar {
   position: absolute;
-  color: rgb(253, 0, 0);
-  height: 2rem;
+  background-color: #4584FF;
+  transform-origin: bottom left;
+  height: 10%;
+  width: 300%;
   z-index: 1;
+  transform: rotate(-46deg);
+  mix-blend-mode: color-burn;
+  bottom: -5%;
 }
 
 /*# sourceMappingURL=index.css.map */

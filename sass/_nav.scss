@@ -42,7 +42,7 @@ nav {
 
 .button__styleP{
   background-color: var(--c_purple400);
-  border: .1rem solid var(--c_yellow400);
+  border: none
 }
 .button__styleP:hover{
   box-shadow: var(--c_shadow);
@@ -50,7 +50,7 @@ nav {
 }
 .button__styleY{
   background-color: var(--c_yellow400);
-  border: .1rem solid var(--c_purple400);
+  border: none;
   padding: .5rem 2rem;
 }
 .button__styleY:hover{
