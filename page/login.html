@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ChanGo!</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="raya"></div>
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Chan<span class="yellow">Go!</span></h1>
+            <h2>Iniciar Sesión</h2>
+            <p>Hola, Bienvenido 👋</p>
+            <button class="google-login">
+                <img src="../components/img/Login/icons_google.svg" alt="Google Logo">
+                Ingresa con Google
+            </button>
+            <div class="separator">Ingresar con tu email</div>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Ingresa tu mail">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="Ingresa tu contraseña">
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox" id="remember"> Recordarme
+                    </label>
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+                <button type="submit">Ingresar</button>
+            </form>
+            <button class="register">Regístrate</button>
+        </div>
+        <div class="login-image">
+            <img src="../components/img/Login/imagenlogin.svg" alt="Login Image">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

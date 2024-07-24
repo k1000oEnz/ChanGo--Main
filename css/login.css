@@ -1,0 +1,158 @@
+body {
+    position: relative;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #E0E4EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.raya{
+    position: absolute;
+    transform-origin: center;
+    transform: rotate(154.72deg);    
+    width: 180%;
+    height: 50%;
+    background-color: rgba(45, 84, 255, 0.15);
+    z-index: -1;
+}
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #c0c0c0;
+    margin: 20px 0;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .25em;
+}
+
+.login-container {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+
+.login-form {
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-form h1 {
+    font-size: 36px;
+    color: #6b2ae5;
+}
+.yellow {
+    color: #E3B134;
+}
+
+.login-form h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.google-login {
+    background-color: #E3B134;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.google-login img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    color: #555;
+    
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+#email, #password {
+    background-color: rgba(127, 87, 241, 0.25);
+}
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+
+form button {
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.register {
+    background-color: #6b2ae5;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.login-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #6C70F8;}
