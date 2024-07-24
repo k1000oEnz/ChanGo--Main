@@ -8,7 +8,11 @@
 /* --debugger --*/
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
+body{
+  background-color: #EDF2F6;
+}
 
 :root {
   /*-- Font --*/
@@ -20,7 +24,7 @@
   /*-- Colour --*/
   --c_white: #fff;
   --c_black: #000;
-  --c_purple900: #1E0342;
+  --c_MainColor: #FBFBFB;
   --c_purple400: #5B1DAE;
   --c_purple200: #984bfd;
   --c_yellow400: #E3B134;
