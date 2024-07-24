@@ -10,31 +10,11 @@
 /* beginning Nav */
 
 nav {
-  background-color: var(--c_purple900);
-  box-shadow: 0 10px 1rem #888888;
-  display: flex;
-  justify-content: space-between;
+  background-color: var(--c_MainColor);
+  box-shadow: 0 2px 1rem #888888;
   padding: 1rem 2rem .5rem;
   
-  div{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 720px;
-
-    form{
-      width: 100%;
-    }
-    input{
-      background-color: #fafafa;
-      border: none;
-      margin-left: 1rem;
-      border-radius: 1rem;
-      padding: 0 1rem;
-      height: 2rem;
-    }
-  }
-
+  
   ul{
       display: flex;
       
@@ -62,7 +42,7 @@ nav {
 
 .button__styleP{
   background-color: var(--c_purple400);
-  border: .1rem solid var(--c_yellow400);
+  border: none
 }
 .button__styleP:hover{
   box-shadow: var(--c_shadow);
@@ -70,15 +50,31 @@ nav {
 }
 .button__styleY{
   background-color: var(--c_yellow400);
-  border: .1rem solid var(--c_purple400);
+  border: none;
   padding: .5rem 2rem;
 }
 .button__styleY:hover{
   box-shadow: var(--c_shadow);
   background-color: var(--c_yellow200);
 }
-input:focus{
-  animation-name: expand;
-  animation-duration: .65s;
-  width: 70%;
+.brand__color1{
+  color: var(--c_purple400);
+}
+.brand_color2{
+  color: var(--c_yellow400);
+}
+.navButt{
+  color: #6D8493;
+  border: 3px solid transparent;
+  border-radius: .5rem;
+  background-color: transparent;
+  margin: 0 1rem;
+}
+.navButt:hover{
+  border: 3px solid var(--c_purple400);
+  color: var(--c_purple400);
+}
+.inicio{
+  padding-top: .3rem;
+  margin-left: .5rem;
 }
