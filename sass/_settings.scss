@@ -142,6 +142,7 @@
     width: 8.5rem;
     height: 8.5rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-style: dashed;
@@ -152,6 +153,11 @@
     p {
       text-align: center;
       color: #a9a9a9;
+    }
+    img {
+      max-width: 30%;
+      max-height: 30%;
+      height: auto; /* Mantiene la proporción de la imagen */
     }
   }
 }

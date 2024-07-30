@@ -1,9 +1,11 @@
+@charset "UTF-8";
 /*
 ================================
   -------globales--------  
 ================================
   */
 /* --debugger --*/
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 * {
   margin: 0;
@@ -148,6 +150,7 @@ body {
     width: 8.5rem;
     height: 8.5rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-style: dashed;
@@ -158,6 +161,11 @@ body {
     .card-body .addImage p {
       text-align: center;
       color: #a9a9a9; }
+    .card-body .addImage img {
+      max-width: 30%;
+      max-height: 30%;
+      height: auto;
+      /* Mantiene la proporción de la imagen */ }
 
 /*
 ================================
