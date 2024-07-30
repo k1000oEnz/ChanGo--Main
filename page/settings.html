@@ -31,9 +31,14 @@
         <div>
           <ul>
             <li>
-              <button class="d-flex navButt">
-                <img src="../components/img/NavBar/Group 1.svg" alt="" />Inicio
-              </button>
+              <a href="../index.html">
+                <button class="d-flex navButt">
+                  <img
+                    src="../components/img/NavBar/Group 1.svg"
+                    alt=""
+                  />Inicio
+                </button>
+              </a>
             </li>
             <li>
               <button class="d-flex navButt">
@@ -80,40 +85,75 @@
     <main class="setting">
       <section class="main-setting">
         <div class="card text-center setting-card">
-          <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs">
+          <div class="card-header" id="card-header">
+            <ul class="nav nav-tabs card-header-tabs" id="loginReact">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="true" href="#"
+                <a
+                  class="nav-link"
+                  aria-current="true"
+                  href="/page/settings.html"
                   >Configuracion de la cuenta</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Login y seguridad</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="true" href="#"
-                  >notificacion</a
+                <a class="nav-link" href="#" id="initSesion"
+                  >Login y seguridad</a
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="true" href="#">interfas</a>
               </li>
             </ul>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <li class="nav__li">
-              <button class="button__styleP">Iniciar Sesion</button>
-            </li>
+          <div class="card-body" id="cardBody">
+            <p class="card-title">Agrega tu foto de perfil</p>
+            <div class="addImage">
+              <p>Arrastra para <br />Subir</p>
+            </div>
           </div>
+          <section class="mainInputs">
+            <div class="containerInputs">
+              <div class="firstInputs">
+                <p>Nombre Completo</p>
+                <input
+                  type="text"
+                  class="inputName"
+                  placeholder="ingrese su nombre Completo"
+                />
+                <p>Usuario</p>
+                <input
+                  type="text"
+                  class="inputUSer"
+                  placeholder="ingrese su nombre de usuario Completo"
+                />
+              </div>
+              <div class="secondInputs">
+                <p>Email</p>
+                <input
+                  type="email"
+                  class="inputEmail"
+                  placeholder="Ingrese su Email"
+                />
+                <p>Celular</p>
+                <input
+                  type="phone"
+                  class="Phone"
+                  placeholder="ingrese su numero de telefono"
+                />
+              </div>
+            </div>
+            <div class="description">
+              <p>Descripcion</p>
+              <textarea
+                class="inputDescription"
+                placeholder="Ingrese una descripción"
+              ></textarea>
+            </div>
+            <div class="btn-container">
+              <button class="button__styleP">actualizar perfil</button>
+              <button class="button__styleY">Ignorar Cambios</button>
+            </div>
+          </section>
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="footer__main-content d-flex justify-content-between">
         <div class="logo d-flex align-items-center">
@@ -136,7 +176,7 @@
             <p class="contact_style">Av. Siempreviva 742</p>
           </div>
           <div class="aboutus">
-            <p class="aboutus_style">Acerca de nosotros</p>
+            <a class="aboutus_style">Preguntas Frecuentes</a>
             <p class="aboutus_style">Nuestro Equipo</p>
             <p class="aboutus_style">Nuestra Mision</p>
           </div>
@@ -170,6 +210,9 @@
           <p>Cookies</p>
         </div>
       </div>
+      <script src="https://unpkg.com/react/umd/react.development.js"></script>
+      <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+      <script src="../js/settings.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="../components/js/script.js"></script>
       <div class="diagonal_bar"></div>

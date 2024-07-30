@@ -4,6 +4,7 @@
 ================================
   */
 /* --debugger --*/
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 * {
   margin: 0;
   padding: 0; }
@@ -34,14 +35,129 @@ body {
 .setting {
   height: auto; }
 
+.nav-link {
+  transition: transform 0.6s ease; }
+
 .main-setting {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem 0 2rem 0; }
+  .main-setting .setting-card {
+    padding: 1rem; }
+  .main-setting p {
+    color: #4c535f; }
+  .main-setting .mainInputs {
+    border-top: solid 3px #edf2f6; }
+    .main-setting .mainInputs .description {
+      display: flex;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem; }
+      .main-setting .mainInputs .description p {
+        display: flex; }
+      .main-setting .mainInputs .description .inputDescription {
+        width: 100%;
+        height: 9.85rem;
+        padding: 10px;
+        background-color: #edf2f6;
+        border: solid 1px #edf2f6;
+        border-radius: 8px;
+        box-sizing: border-box;
+        text-align: left;
+        resize: none; }
+    .main-setting .mainInputs .containerInputs {
+      display: flex; }
+      .main-setting .mainInputs .containerInputs p {
+        font-size: 16px;
+        display: flex;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        text-transform: inherit; }
+      .main-setting .mainInputs .containerInputs .firstInputs {
+        width: 50%;
+        padding: 1rem; }
+        .main-setting .mainInputs .containerInputs .firstInputs .inputName {
+          width: 100%;
+          padding: 10px;
+          background-color: #edf2f6;
+          border: solid 1px #edf2f6;
+          border-radius: 8px; }
+        .main-setting .mainInputs .containerInputs .firstInputs .inputUSer {
+          width: 100%;
+          padding: 10px;
+          background-color: #edf2f6;
+          border: solid 1px #edf2f6;
+          border-radius: 8px; }
+      .main-setting .mainInputs .containerInputs .secondInputs {
+        width: 50%;
+        padding: 1rem; }
+        .main-setting .mainInputs .containerInputs .secondInputs .inputEmail {
+          width: 100%;
+          padding: 10px;
+          background-color: #edf2f6;
+          border: solid 1px #edf2f6;
+          border-radius: 8px; }
+        .main-setting .mainInputs .containerInputs .secondInputs .Phone {
+          width: 100%;
+          padding: 10px;
+          background-color: #edf2f6;
+          border: solid 1px #edf2f6;
+          border-radius: 8px; }
+    .main-setting .mainInputs .btn-container {
+      display: flex;
+      align-items: center;
+      padding: 8px; }
+      .main-setting .mainInputs .btn-container button {
+        border-radius: 1.5rem;
+        color: var(--c_white);
+        padding: 0.5rem 1.2rem;
+        margin-right: 5px;
+        transition: all 0.3s ease; }
 
 .setting-card {
   width: 80%; }
+  .setting-card li {
+    border-bottom: solid 2px #edf2f6;
+    box-sizing: border-box;
+    transition: border 0.3s ease; }
+    .setting-card li a {
+      font-size: 18px;
+      color: #4c535f;
+      border: none; }
+    .setting-card li a:hover {
+      border: none;
+      color: #5b1dae; }
+  .setting-card li:hover {
+    border-style: none;
+    border-bottom: solid 3px #5b1dae; }
+  .setting-card .card-header {
+    background-color: white;
+    border: none; }
+
+.card-body {
+  display: flex;
+  flex-direction: column; }
+  .card-body .card-title {
+    display: flex; }
+  .card-body .addImage {
+    width: 8.5rem;
+    height: 8.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: dashed;
+    border-radius: 12px;
+    border-color: #c4c8cb;
+    background-color: #edf2f6;
+    margin-top: 1rem; }
+    .card-body .addImage p {
+      text-align: center;
+      color: #a9a9a9; }
 
 /*
 ================================
@@ -70,7 +186,7 @@ body {
     left: 20%;
     width: 150%;
     height: 70%;
-    background-color: #4584FF;
+    background-color: #4584ff;
     transform: rotate(-25deg);
     transform-origin: bottom left;
     z-index: -1;
@@ -85,15 +201,26 @@ body {
       align-items: center;
       justify-content: center; }
       .footer .grid__content .redes img {
-        padding: 0 .5rem; }
+        padding: 0 0.5rem; }
       .footer .grid__content .redes a:hover {
-        box-shadow: 1px 1px .5rem black; }
+        box-shadow: 1px 1px 0.5rem black; }
   .footer .footer__legales {
     height: 5rem; }
     .footer .footer__legales p {
       padding: 0 2rem; }
   .footer .redes_img:hover {
     text-shadow: 2px 2px 2px black; }
+
+a {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+  color: #040505; }
+
+a:hover {
+  transform: scale(1.1);
+  color: #5b1dae; }
 
 /*
 ================================
