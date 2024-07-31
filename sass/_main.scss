@@ -39,12 +39,25 @@ main{
 }
 .diagonalBar{
     position:absolute;
-    background-color: #4584FF;
+    background-color: rgba(45, 84, 255, 0.15);;
     transform-origin: bottom left;
     height: 10%;
     width: 300%;
-    z-index: 1;
-    transform: rotate(-46deg);
-    mix-blend-mode: color-burn;
+    z-index: -1;
+    transform: rotate(-55deg);
     bottom: -5%;
+}
+.Banner{
+    background-color:var(--c_purple400);
+    color: #FBFBFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    
+    .BannerText{
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 0;
+    }
 }

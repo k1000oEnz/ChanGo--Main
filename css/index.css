@@ -5,6 +5,7 @@
   */
 /* --debugger --*/
 * {
+  font-family: "DM Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -17,7 +18,7 @@ body {
   /*-- Font --*/
   --f_fontSize: 16px;
   --f_fontWeight: 400;
-  --f_fontFamily: "Roboto", sans-serif;
+  --f_fontFamily: "DM Sans", sans-serif;
   --f_fontFamily--Secundary: "Montserrat", sans-serif;
   --f_lineHeight: 1.5;
   /*-- Colour --*/
@@ -102,6 +103,7 @@ body {
   */
 /* --debugger --*/
 * {
+  font-family: "DM Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -114,7 +116,7 @@ body {
   /*-- Font --*/
   --f_fontSize: 16px;
   --f_fontWeight: 400;
-  --f_fontFamily: "Roboto", sans-serif;
+  --f_fontFamily: "DM Sans", sans-serif;
   --f_fontFamily--Secundary: "Montserrat", sans-serif;
   --f_lineHeight: 1.5;
   /*-- Colour --*/
@@ -261,14 +263,27 @@ main {
 
 .diagonalBar {
   position: absolute;
-  background-color: #4584FF;
+  background-color: rgba(45, 84, 255, 0.15);
   transform-origin: bottom left;
   height: 10%;
   width: 300%;
-  z-index: 1;
-  transform: rotate(-46deg);
-  mix-blend-mode: color-burn;
+  z-index: -1;
+  transform: rotate(-55deg);
   bottom: -5%;
+}
+
+.Banner {
+  background-color: var(--c_purple400);
+  color: #FBFBFB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.Banner .BannerText {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
 }
 
 /*# sourceMappingURL=index.css.map */
