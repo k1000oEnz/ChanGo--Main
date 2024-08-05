@@ -1,7 +1,7 @@
 body {
     position: relative;
     overflow: hidden;
-    font-family: Arial, sans-serif;
+    font-family: 'DM-Sans','roboto', Arial;
     background-color: #E0E4EC;
     display: flex;
     justify-content: center;
@@ -122,7 +122,7 @@ form input[type="checkbox"] {
 }
 
 form button {
-    background-color: #f0a500;
+    background-color: #E3B134;
     color: white;
     border: none;
     padding: 10px;
@@ -149,6 +149,7 @@ form button {
 }
 
 .login-image img {
+    background-size: cover;
     max-width: 100%;
     height: auto;
 }
