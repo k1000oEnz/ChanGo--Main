@@ -303,14 +303,14 @@ main .Ofertas .LongCard {
 }
 
 .cardContainer {
-  background-color: #fff;
+  background-color: #fbfbfb;
   border-radius: 15px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   width: 65%;
   overflow: hidden;
   display: flex;
   align-items: stretch;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--c_purple200);
 }
 
 .profileSection {
@@ -318,7 +318,6 @@ main .Ofertas .LongCard {
   align-items: center;
   justify-content: center;
   width: 30%;
-  background-color: #1a1a1a;
   padding: 20px;
 }
 
