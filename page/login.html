@@ -21,25 +21,28 @@
                 Ingresa con Google
             </button>
             <div class="separator">Ingresar con tu email</div>
-            <form>
-                <label for="email">Email</label>
+            <form method="POST">
+                <label for="email" class="email">Email</label>
                 <input type="email" id="email" placeholder="Ingresa tu mail">
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" placeholder="Ingresa tu contraseña">
+                <label for="password" class="password">Contraseña</label>
+                <div class="password-container">
+                    <input type="password"  class="c-password" id="password" placeholder="Ingresa tu contraseña" required>
+                    <img src="../components/img/Login/login_eye_closed.svg" alt="icon" class="icon" id="Eye_closed">
+                    </div>
                 <div class="remember-forgot">
-                    <label>
+                    <label class="remember">
                         <input type="checkbox" id="remember"> Recordarme
                     </label>
                     <a href="#">¿Olvidaste tu contraseña?</a>
                 </div>
-                <button type="submit">Ingresar</button>
+                <button class="button-ingresar" type="submit">Ingresar</button>
             </form>
-            <button class="register">Regístrate</button>
+            <button class="button-register">Regístrate</button>
         </div>
         <div class="login-image">
             <img src="../components/img/Login/imagenlogin.svg" alt="Login Image">
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="../js/login_script.js"></script>
 </body>
 </html>
