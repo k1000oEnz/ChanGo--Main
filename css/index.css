@@ -311,6 +311,7 @@ main .Ofertas .LongCard {
   display: flex;
   align-items: stretch;
   border: 1px solid var(--c_purple200);
+  margin-bottom: 2rem;
 }
 
 .profileSection {
@@ -337,9 +338,13 @@ main .Ofertas .LongCard {
 
 .headerSection {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: 1rem;
 }
 
 .headerText {
@@ -378,6 +383,7 @@ main .Ofertas .LongCard {
 .detailsSection {
   display: flex;
   margin-bottom: 20px;
+  justify-content: space-between;
 }
 .detailsSection .detailsSection2 {
   margin-left: 5rem;
@@ -403,10 +409,24 @@ main .Ofertas .LongCard {
   margin-right: 8px;
 }
 
+.infoList .i1 {
+  margin-right: 10px;
+}
+
+.infoList .i3 {
+  margin-right: 5px;
+}
+
+.infoList .i2 {
+  margin-right: 15px;
+}
+
 .footerSection {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  align-content: center;
 }
 
 .priceInfo {
@@ -455,6 +475,11 @@ main .Ofertas .LongCard {
 
 .hireButton:hover {
   background-color: #5a54e6;
+}
+
+.cardContainer:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 
 /*# sourceMappingURL=index.css.map */
