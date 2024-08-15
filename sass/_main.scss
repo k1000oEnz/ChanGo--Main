@@ -5,10 +5,30 @@ main{
         overflow: hidden;
         position: relative;
         height: 300vh;
+
+        .Ofertas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            .LongCard{
+                display: flex;
+                border: 1px solid var(--c_purple200);
+                width: 70%;
+                border-radius: 1rem;
+                padding: 1rem;
+                background-color: #FBFBFB;
+            }
+        }
 }
+
+
 .Hero{
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 1rem;
+
     ul{
         display: flex;
         list-style-type: none;
@@ -39,12 +59,200 @@ main{
 }
 .diagonalBar{
     position:absolute;
-    background-color: #4584FF;
+    background-color: rgba(45, 84, 255, 0.15);;
     transform-origin: bottom left;
     height: 10%;
     width: 300%;
-    z-index: 1;
-    transform: rotate(-46deg);
-    mix-blend-mode: color-burn;
+    z-index: -1;
+    transform: rotate(-55deg);
     bottom: -5%;
+}
+.Banner{
+    background-color:var(--c_purple400);
+    color: #FBFBFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    
+    .BannerText{
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 0;
+    }
+}
+
+.cardContainer {
+    background-color: #fbfbfb;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    width: 65%;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    border: 1px solid var(--c_purple200);
+    margin-bottom: 2rem;
+}
+
+.profileSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 20px;
+}
+
+.profileImg {
+    border-radius: 10px;
+    height: auto;
+    object-fit: cover;
+}
+
+.contentSection {
+    padding: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headerSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.description{
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+.headerText {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerSection h2 {
+    color: #333;
+}
+
+.profileLink {
+    color: #6c63ff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.bookmarkIcon {
+    font-size: 2rem;
+    color: #6c63ff;
+}
+
+.ratingSection {
+    font-size: 20px;
+    color: #FFD700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.ratingSection .fa-star {
+    margin-right: 5px;
+}
+
+.detailsSection {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+    .detailsSection2{
+        margin-left: 5rem;
+    }
+}
+
+.infoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.infoList li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.infoList i {
+    color: #6c63ff;
+    margin-right: 8px;
+}
+.infoList .i1 {
+    margin-right: 10px;
+}
+.infoList .i3{
+    margin-right: 5px;
+}
+.infoList .i2{
+    margin-right: 15px;
+}
+.footerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.priceInfo {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.priceInfo span {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.offerButton, .hireButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+}
+
+.offerButton {
+    background-color: #f0ad4e;
+    color: #fff;
+}
+
+.offerButton:hover {
+    background-color: #ec971f;
+}
+
+.hireButton {
+    background-color: #6c63ff;
+    color: #fff;
+}
+
+.hireButton:hover {
+    background-color: #5a54e6;
+}
+
+.cardContainer:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
 }
