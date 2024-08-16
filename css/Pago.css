@@ -5,18 +5,20 @@ body {
     display: flex;
     justify-content: center;
     }
+
 .container {
     width: 80%;
     margin: 0 auto;
     display: flex;
+
 }
 
-form.columna-izquierda {
+form.left-column {
     width: 60%;
     padding-right: 20px;
 }
 
-.columna-derecha {
+.right-column {
     width: 40%;
     padding: 20px;
 }
@@ -27,12 +29,12 @@ form.columna-izquierda {
     margin-bottom: 15px;
 }
 
-.grupo-formulario {
+.form-group {
     width: 48%;
     margin-bottom: 15px;
 }
 
-.grupo-formulario label {
+.form-group label {
     display: block;
     margin-bottom: 5px;
 }
@@ -61,14 +63,14 @@ button[type="submit"] {
     margin-bottom: 20px;
 }
 
-.metodos-pago {
+.payment-methods {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.pago-logo {
+.payment-logo {
     max-width: 50px;
     margin-right: 10px;
 }
@@ -79,42 +81,39 @@ button[type="submit"] {
     height: auto;
 }
 
-.resumen-pedido {
+.order-summary {
     margin-bottom: 20px;
 }
 
-.servicio-item {
+.service-item {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.servicio-imagen {
+.service-image {
     width: 50px;
     height: 50px;
     object-fit: cover;
     margin-right: 10px;
 }
 
-.servicio-info {
+.service-info {
     flex-grow: 1;
 }
 
-.servicio-nombre, .servicio-prestador {
+.service-name, .service-provider {
     margin: 0;
 }
 
-.servicio-precio {
-    font-weight: bold;
-}
 
-.resumen-totales hr {
+.total-summary hr {
     border: none;
     border-top: 1px solid #ccc;
     margin: 10px 0;
 }
 
-.impuestos-info {
+.taxes-info {
     font-size: 0.9em;
     color: #667;
 }

@@ -8,55 +8,56 @@
 </head>
 <body>
     <div class="container">
-        <form class="columna-izquierda" id="formularioPago" action="/procesar-pago" method="POST">
+        <!-- Columna izquierda-->
+        <form class="left-column" id="paymentForm" action="/procesar-pago" method="POST">
             <h1>Información de Pago</h1>
             
             <h2>Detalles personales</h2>
             <div class="fila">
-                <div class="grupo-formulario">
+                <div class="form-group">
                     <label for="calle">Calle:</label>
                     <input type="text" id="calle" name="calle" placeholder="Ingrese su calle" required>
                 </div>
-                <div class="grupo-formulario">
+                <div class="form-group">
                     <label for="ciudad">Ciudad:</label>
                     <input type="text" id="ciudad" name="ciudad" placeholder="Ingrese su ciudad" required>
                 </div>
             </div>
             <div class="fila">
-                <div class="grupo-formulario">
+                <div class="form-group">
                     <label for="provincia">Provincia:</label>
                     <input type="text" id="provincia" name="provincia" placeholder="Ingrese su provincia" required>
                 </div>
-                <div class="grupo-formulario">
+                <div class="form-group">
                     <label for="codigoPostal">Código Postal:</label>
                     <input type="text" id="codigoPostal" name="codigoPostal" placeholder="Ingrese su código postal" required>
                 </div>
             </div>
             
             <h2>Métodos de Pago</h2>
-            <div class="metodos-pago">
-                <img src="" alt="Visa" class="pago-logo">
-                <img src="" alt="MasterCard" class="pago-logo">
-                <img src="" alt="MercadoPago" class="pago-logo">
+            <div class="payment-methods">
+                <img src="../components\img/Pago/Logo Visa.png" alt="Visa" class="payment-logo">
+                <img src="../components\img/Pago/Logo MasterCard.png" alt="MasterCard" class="payment-logo">
+                <img src="../components\img/Pago/Logo MP.png" alt="MercadoPago" class="payment-logo">
             </div>
             
             <h2>Card details</h2>
             <div class="fila">
-                <div class="grupo-formulario">
+                <div class="form-group">
                     <label for="titular">Nombre del Titular:</label>
                     <input type="text" id="titular" name="titular" placeholder="Nombre del titular" required>
                 </div>
-                <div class="grupo-formulario">
+                <div class="form-group">
                     <label for="tarjeta">Número de Tarjeta:</label>
                     <input type="text" id="tarjeta" name="tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required>
                 </div>
             </div>
             <div class="fila">
-                <div class="grupo-formulario">
+                <div class="form-group">
                     <label for="vencimiento">Vencimiento:</label>
                     <input type="text" id="vencimiento" name="vencimiento" placeholder="MM/AA" required>
                 </div>
-                <div class="grupo-formulario">
+                <div class="form-group">
                     <label for="cvv">CVV:</label>
                     <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
                 </div>
@@ -64,28 +65,29 @@
             
             <button type="submit" id="confirmarPago">Confirmar Pago</button>
         </form>
-        
-        <div class="columna-derecha">
-            <img src="../components/img/Logo.svg" alt="Logo-ChanGo" class="Logo-ChanGo">
+        <!-- Columna derecha -->
+
+        <div class="right-column">
+            <img src="../components/img/Pago/Logo ChanGo.png" alt="Logo-ChanGo" class="Logo-ChanGo">
             <h2>Resumen de Pedido</h2>
-            <div id="resumenPedido" class="resumen-pedido">
-                <div class="servicio-item">
-                    <img src="" alt="Servicio" class="servicio-imagen">
-                    <div class="servicio-info">
-                        <p class="servicio-nombre">Servicio de XXXXX</p>
-                        <p class="servicio-prestador">Nombre del Prestador</p>
+            <div id="resumenPedido" class="order-summary">
+                <div class="service-item">
+                    <img src="../components\img/Pago/las-paredes-sin-pintar 1.png" alt="Servicio" class="service-image">
+                    <div class="service-info">
+                        <p class="service-name">Servicio de XXXXX</p>
+                        <p class="service-provider">Nombre del Prestador</p>
                     </div>
                 </div>
             </div>
             <hr>
-            <div class="resumen-totales">
+            <div class="total-summary">
                 <p>Subtotal: <span id="subtotal"></span></p>
                 <hr>
                 <p><strong>Total: <span id="total"></span></strong></p>
-                <p class="impuestos-info">Incluye Impuestos</p>
+                <p class="taxes-info">Incluye Impuestos</p>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

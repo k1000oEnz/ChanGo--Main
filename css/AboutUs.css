@@ -5,7 +5,8 @@ body {
     font-family: 'DM Sans', sans-serif;
     overflow: hidden;
 }
-.barra-diagonal {
+/* línea amarilla del fondo */
+.line {
     position: absolute;
     transform-origin: center;
     transform: rotate(-150deg); 
@@ -17,24 +18,24 @@ body {
     z-index: -1;
     clip-path: polygon(0 0, 100% 34%, 100% 69%, 0% 100%);
 }
-.SobreNosotros {
+.AboutUs {
     text-align: center;
     padding: 40px 20px;
 }
 
-.SobreNosotrosTitulo {
+.AboutUsTitle {
     font-size: 2rem;
     color: #1E0342;
     font-weight: 500px;
     margin-bottom: 40px;
 }
 
-.integrantes-section {
+.members-section {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.fila-superior {
+.top-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -46,7 +47,7 @@ body {
     box-sizing: border-box;
 }
 
-.fila-inferior {
+.bottom-row {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -59,7 +60,7 @@ body {
     box-sizing: border-box;
 }
 
-.integrante {
+.member {
     width: 100%;
     max-width: 180px;
 }
