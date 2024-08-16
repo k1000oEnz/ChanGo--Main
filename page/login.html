@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ChanGo!</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="raya"></div>
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Chan<span class="yellow">Go!</span></h1>
+            <h2>Iniciar Sesión</h2>
+            <p>Hola, Bienvenido 👋</p>
+            <button class="google-login">
+                <img src="../components/img/Login/icons_google.svg" alt="Google Logo">
+                Ingresa con Google
+            </button>
+            <div class="separator">Ingresar con tu email</div>
+            <form method="POST">
+                <label for="email" class="email">Email</label>
+                <input type="email" id="email" placeholder="Ingresa tu mail">
+                <label for="password" class="password">Contraseña</label>
+                <div class="password-container">
+                    <input type="password"  class="c-password" id="password" placeholder="Ingresa tu contraseña" required>
+                    <img src="../components/img/Login/login_eye_closed.svg" alt="icon" class="icon" id="Eye_closed">
+                    </div>
+                <div class="remember-forgot">
+                    <label class="remember">
+                        <input type="checkbox" id="remember"> Recordarme
+                    </label>
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+                <button class="button-ingresar" type="submit">Ingresar</button>
+            </form>
+            <button class="button-register">Regístrate</button>
+        </div>
+        <div class="login-image">
+            <img src="../components/img/Login/imagenlogin.svg" alt="Login Image">
+        </div>
+    </div>
+    <script src="../js/login_script.js"></script>
+</body>
+</html>
