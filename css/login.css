@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     position: relative;
     overflow: hidden;
@@ -62,6 +68,7 @@ body {
     font-weight: bolder;
     font-size: 3.5em;
     color: #6b2ae5;
+    margin-top: 12px;
 }
 .yellow {
     color: #E3B134;
@@ -156,8 +163,7 @@ form input[type="checkbox"] {
 .remember-forgot {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    
+    align-items: baseline;    
 }
 
 .remember, .password, .email {
@@ -170,22 +176,21 @@ a {
     font-weight: 400;
     color: #6C70F8;}
 
-/* boton de ingreso */
+/* Boton de ingreso */
 .button-ingresar {
     background-color: #E3B134;
     color: white;
     font-size: 1em;
     font-weight: 600;
     width: 100%;
-    margin-top: 20px;
     border-radius: 8px;
-    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
     padding: 10px;
     cursor: pointer;
+    box-shadow: #0000005c 0px 4px 8px;
 }
 /* Boton de registro */
 .button-register {
@@ -196,13 +201,13 @@ a {
     border: none;
     padding: 10px;
     width: 100%;
-    margin-top: 20px;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    box-shadow: #0000005c 0px 4px 8px;
 }
 
 .login-image {
