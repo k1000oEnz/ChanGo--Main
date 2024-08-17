@@ -9,28 +9,28 @@
 <body>
     <div class="container">
         <!-- Columna izquierda-->
-        <form class="left-column" id="paymentForm" action="/procesar-pago" method="POST">
+        <form class="left-column" id="paymentForm">
             <h1>Información de Pago</h1>
             
             <h2>Detalles personales</h2>
             <div class="fila">
                 <div class="form-group">
                     <label for="calle">Calle:</label>
-                    <input type="text" id="calle" name="calle" placeholder="Ingrese su calle" required>
+                    <input type="text" id="calle" name="calle" placeholder="Ingrese su calle">
                 </div>
                 <div class="form-group">
                     <label for="ciudad">Ciudad:</label>
-                    <input type="text" id="ciudad" name="ciudad" placeholder="Ingrese su ciudad" required>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="Ingrese su ciudad">
                 </div>
             </div>
             <div class="fila">
                 <div class="form-group">
                     <label for="provincia">Provincia:</label>
-                    <input type="text" id="provincia" name="provincia" placeholder="Ingrese su provincia" required>
+                    <input type="text" id="provincia" name="provincia" placeholder="Ingrese su provincia">
                 </div>
                 <div class="form-group">
                     <label for="codigoPostal">Código Postal:</label>
-                    <input type="text" id="codigoPostal" name="codigoPostal" placeholder="Ingrese su código postal" required>
+                    <input type="text" id="codigoPostal" name="codigoPostal" placeholder="Ingrese su código postal">
                 </div>
             </div>
             
@@ -45,21 +45,21 @@
             <div class="fila">
                 <div class="form-group">
                     <label for="titular">Nombre del Titular:</label>
-                    <input type="text" id="titular" name="titular" placeholder="Nombre del titular" required>
+                    <input type="text" id="titular" name="titular" placeholder="Nombre del titular">
                 </div>
                 <div class="form-group">
                     <label for="tarjeta">Número de Tarjeta:</label>
-                    <input type="text" id="tarjeta" name="tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                    <input type="text" id="tarjeta" name="tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX">
                 </div>
             </div>
             <div class="fila">
                 <div class="form-group">
                     <label for="vencimiento">Vencimiento:</label>
-                    <input type="text" id="vencimiento" name="vencimiento" placeholder="MM/AA" required>
+                    <input type="text" id="vencimiento" name="vencimiento" placeholder="MM/AA">
                 </div>
                 <div class="form-group">
                     <label for="cvv">CVV:</label>
-                    <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+                    <input type="text" id="cvv" name="cvv" placeholder="CVV">
                 </div>
             </div>
             
@@ -88,6 +88,6 @@
             </div>
         </div>
     </div>
-    <script src="../js/script.js"></script>
+    <script src="../js/Pago-script.js"></script>
 </body>
 </html>

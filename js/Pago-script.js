@@ -1,5 +1,4 @@
-
-// Validar y enviar el formulario
+// enviar el formulario
 var form = document.getElementById('paymentForm');
 form.addEventListener("submit", function(event){
     event.preventDefault();
@@ -11,7 +10,7 @@ form.addEventListener("submit", function(event){
     }
 });
 
-// Función para validar el formulario
+// validar el formulario
 function validarFormulario() {
     var campos = ['titular', 'tarjeta', 'vencimiento', 'cvv'];
     var esValido = true;
