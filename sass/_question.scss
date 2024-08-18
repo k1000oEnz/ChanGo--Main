@@ -26,10 +26,20 @@
     p {
       text-align: "left";
     }
-    .showP {
+    .showP1,
+    .showP2,
+    .showP3,
+    .showP4,
+    .showP5,
+    .showP6 {
       display: none;
     }
-    #componenteRenden {
+    #componenteRenden1,
+    #componenteRenden2,
+    #componenteRenden3,
+    #componenteRenden4,
+    #componenteRenden5,
+    #componenteRenden6 {
       display: flex;
       justify-content: space-between;
     }
@@ -39,5 +49,12 @@
       background-color: #fff;
       color: #5b1dae;
     }
+    .titleQuestions {
+      margin-bottom: 2rem;
+    }
   }
+}
+.renderRespuestas {
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #d7def0;
 }
