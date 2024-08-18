@@ -188,9 +188,19 @@ body {
       text-align: left; }
     .renderQuestions .questions p {
       text-align: "left"; }
-    .renderQuestions .questions .showP {
+    .renderQuestions .questions .showP1,
+    .renderQuestions .questions .showP2,
+    .renderQuestions .questions .showP3,
+    .renderQuestions .questions .showP4,
+    .renderQuestions .questions .showP5,
+    .renderQuestions .questions .showP6 {
       display: none; }
-    .renderQuestions .questions #componenteRenden {
+    .renderQuestions .questions #componenteRenden1,
+    .renderQuestions .questions #componenteRenden2,
+    .renderQuestions .questions #componenteRenden3,
+    .renderQuestions .questions #componenteRenden4,
+    .renderQuestions .questions #componenteRenden5,
+    .renderQuestions .questions #componenteRenden6 {
       display: flex;
       justify-content: space-between; }
     .renderQuestions .questions button {
@@ -198,6 +208,12 @@ body {
       border: none;
       background-color: #fff;
       color: #5b1dae; }
+    .renderQuestions .questions .titleQuestions {
+      margin-bottom: 2rem; }
+
+.renderRespuestas {
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #d7def0; }
 
 /*
 ================================
