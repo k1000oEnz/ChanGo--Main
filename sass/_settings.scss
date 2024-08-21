@@ -57,7 +57,7 @@
         padding: 1rem;
         .inputName {
           width: 100%;
-          padding: 10px;
+          padding: 15px;
           background-color: #edf2f6;
           border: solid 1px #edf2f6;
           border-radius: 8px;
@@ -65,7 +65,7 @@
 
         .inputUSer {
           width: 100%;
-          padding: 10px;
+          padding: 15px;
           background-color: #edf2f6;
           border: solid 1px #edf2f6;
           border-radius: 8px;
@@ -76,14 +76,14 @@
         padding: 1rem;
         .inputEmail {
           width: 100%;
-          padding: 10px;
+          padding: 15px;
           background-color: #edf2f6;
           border: solid 1px #edf2f6;
           border-radius: 8px;
         }
         .Phone {
           width: 100%;
-          padding: 10px;
+          padding: 15px;
           background-color: #edf2f6;
           border: solid 1px #edf2f6;
           border-radius: 8px;
@@ -93,14 +93,23 @@
     .btn-container {
       display: flex;
       align-items: center;
-      padding: 8px;
-
+      padding: 16px;
       button {
         border-radius: 1.5rem;
         color: var(--c_white);
         padding: 0.5rem 1.2rem;
         margin-right: 5px;
         transition: all 0.3s ease;
+      }
+      .button__styleY {
+        color: #32353c;
+        border: none;
+        background-color: #fff;
+      }
+      .button__styleY:hover {
+        color: #a54024;
+        background-color: #fff;
+        box-shadow: none;
       }
     }
   }
@@ -157,7 +166,96 @@
     img {
       max-width: 30%;
       max-height: 30%;
-      height: auto; /* Mantiene la proporción de la imagen */
+      height: auto;
     }
+  }
+}
+.inputEmail {
+  width: 100%;
+  padding: 15px;
+  background-color: #edf2f6;
+  border: solid 1px #edf2f6;
+  border-radius: 8px;
+}
+.subtitleContacts {
+  padding: 0rem 1rem;
+  margin: 0;
+  font-size: 16px;
+}
+.my-componentLogin {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .ContainerLogin {
+    margin-left: 1rem;
+  }
+  p {
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .titleLogin {
+    padding: 1rem;
+    font-size: 20px;
+  }
+  .divLogin {
+    display: flex;
+    width: 100%;
+    .divLogin2 {
+      width: 100%;
+      padding: 1rem;
+    }
+    .divLogin4 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1rem;
+    }
+  }
+  .inputEmail {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #edf2f6;
+    border: solid 1px #edf2f6;
+    border-radius: 8px;
+  }
+  .divLogin10 {
+    display: flex;
+  }
+}
+.divLogin5 {
+  display: flex;
+  width: 100%;
+  .divLogin6 {
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .divLogin8 {
+    width: 50%;
+    padding: 1rem;
+  }
+}
+.divLogin10 {
+  padding: 16px;
+  button {
+    color: var(--c_white);
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+  }
+  .button__styleY {
+    color: #32353c;
+    border: none;
+    background-color: #fff;
+  }
+  .button__styleY:hover {
+    color: #a54024;
+    background-color: #fff;
+    box-shadow: none;
   }
 }
