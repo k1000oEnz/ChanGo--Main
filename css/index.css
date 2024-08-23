@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 ================================
   -------globales--------  
@@ -86,13 +85,13 @@ body {
         padding: 1rem; }
         .main-setting .mainInputs .containerInputs .firstInputs .inputName {
           width: 100%;
-          padding: 10px;
+          padding: 15px;
           background-color: #edf2f6;
           border: solid 1px #edf2f6;
           border-radius: 8px; }
         .main-setting .mainInputs .containerInputs .firstInputs .inputUSer {
           width: 100%;
-          padding: 10px;
+          padding: 15px;
           background-color: #edf2f6;
           border: solid 1px #edf2f6;
           border-radius: 8px; }
@@ -101,26 +100,34 @@ body {
         padding: 1rem; }
         .main-setting .mainInputs .containerInputs .secondInputs .inputEmail {
           width: 100%;
-          padding: 10px;
+          padding: 15px;
           background-color: #edf2f6;
           border: solid 1px #edf2f6;
           border-radius: 8px; }
         .main-setting .mainInputs .containerInputs .secondInputs .Phone {
           width: 100%;
-          padding: 10px;
+          padding: 15px;
           background-color: #edf2f6;
           border: solid 1px #edf2f6;
           border-radius: 8px; }
     .main-setting .mainInputs .btn-container {
       display: flex;
       align-items: center;
-      padding: 8px; }
+      padding: 16px; }
       .main-setting .mainInputs .btn-container button {
         border-radius: 1.5rem;
         color: var(--c_white);
         padding: 0.5rem 1.2rem;
         margin-right: 5px;
         transition: all 0.3s ease; }
+      .main-setting .mainInputs .btn-container .button__styleY {
+        color: #32353c;
+        border: none;
+        background-color: #fff; }
+      .main-setting .mainInputs .btn-container .button__styleY:hover {
+        color: #a54024;
+        background-color: #fff;
+        box-shadow: none; }
 
 .setting-card {
   width: 80%; }
@@ -165,8 +172,82 @@ body {
     .card-body .addImage img {
       max-width: 30%;
       max-height: 30%;
-      height: auto;
-      /* Mantiene la proporción de la imagen */ }
+      height: auto; }
+
+.inputEmail {
+  width: 100%;
+  padding: 15px;
+  background-color: #edf2f6;
+  border: solid 1px #edf2f6;
+  border-radius: 8px; }
+
+.subtitleContacts {
+  padding: 0rem 1rem;
+  margin: 0;
+  font-size: 16px; }
+
+.my-componentLogin {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .my-componentLogin .ContainerLogin {
+    margin-left: 1rem; }
+  .my-componentLogin p {
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 18px; }
+  .my-componentLogin .titleLogin {
+    padding: 1rem;
+    font-size: 20px; }
+  .my-componentLogin .divLogin {
+    display: flex;
+    width: 100%; }
+    .my-componentLogin .divLogin .divLogin2 {
+      width: 100%;
+      padding: 1rem; }
+    .my-componentLogin .divLogin .divLogin4 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1rem; }
+  .my-componentLogin .inputEmail {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #edf2f6;
+    border: solid 1px #edf2f6;
+    border-radius: 8px; }
+  .my-componentLogin .divLogin10 {
+    display: flex; }
+
+.divLogin5 {
+  display: flex;
+  width: 100%; }
+  .divLogin5 .divLogin6 {
+    width: 50%;
+    padding: 1rem; }
+  .divLogin5 .divLogin8 {
+    width: 50%;
+    padding: 1rem; }
+
+.divLogin10 {
+  padding: 16px; }
+  .divLogin10 button {
+    color: var(--c_white);
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    margin-right: 8px;
+    transition: all 0.3s ease; }
+  .divLogin10 .button__styleY {
+    color: #32353c;
+    border: none;
+    background-color: #fff; }
+  .divLogin10 .button__styleY:hover {
+    color: #a54024;
+    background-color: #fff;
+    box-shadow: none; }
 
 .renderQuestions {
   display: flex;
