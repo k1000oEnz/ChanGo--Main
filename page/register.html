@@ -6,6 +6,8 @@
     <title>Registro - ChanGo!</title>
     <link rel="stylesheet" href="../css/register.css">
     <link rel="shortcut icon" href="../components/img/Logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="raya"></div>
@@ -19,10 +21,14 @@
             </button>
             <div class="separator">Registrate con tu email</div>
             <form method="POST">
-                <div>
-                    <label for="name" class="name">Nombre</label>
-                    <input type="text" id="name" placeholder="Ingresa tu nombre">
+                <div class="name-container">
+                    <div class="name">
+                        <label for="name" class="name">Nombre</label>
+                        <input type="text" id="name" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="name">
                     <label for="apellido" class="apellido">Apellido <input type="text" id="apellido" placeholder="Ingresa tu apellido"></label>
+                    </div>
                 </div>
                     <label for="user" class="user">Usuario</label>
                     <input type="text" id="user" placeholder="Ingresa tu usuario"></input>
@@ -30,12 +36,12 @@
                     <input type="email" id="email" placeholder="Ingresa tu mail">
                     <label for="password" class="password">Contraseña</label>
                     <div class="password-container">
-                    <input type="password"  class="c-password" id="password" placeholder="Ingresa tu contraseña" required>
+                    <input type="password"  class="c-password"  placeholder="Ingresa tu contraseña" required>
                     <img src="../components/img/Login/login_eye_closed.svg" alt="icon" class="icon" id="Eye_closed">
                 </div>
                 <label for="password" class="password">Confirmar Contraseña</label>
                 <div class="password-container">
-                    <input type="password"  class="c-password" id="password" placeholder="Ingresa tu contraseña" required>
+                    <input type="password"  class="c-password" placeholder="Ingresa tu contraseña" required>
                     <img src="../components/img/Login/login_eye_closed.svg" alt="icon" class="icon" id="Eye_closed">
                 </div>
             </form>
