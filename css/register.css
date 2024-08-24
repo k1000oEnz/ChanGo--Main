@@ -56,6 +56,11 @@ body {
   display: flex;
   gap: 0.8rem;
 }
+.register-form .name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 .register-form .yellow {
   color: #E3B134;
 }

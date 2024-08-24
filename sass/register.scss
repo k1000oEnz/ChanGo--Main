@@ -58,6 +58,12 @@ body {
     gap: 0.8rem;
     }
 
+    .name {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+
     .yellow {
     color: #E3B134;
     }
