@@ -73,6 +73,7 @@ body {
 .register-form .google-login {
   background-color: #E3B134;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.3607843137) 0px 2px 2px;
   font-size: 0.9rem;
   font-weight: 600;
   height: 3rem;
@@ -150,6 +151,7 @@ body {
 .register-form .button-register {
   background-color: #6b2ae5;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.3607843137) 0px 4px 8px;
   font-size: 0.9rem;
   font-weight: 600;
   border: none;
@@ -162,7 +164,6 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=register.css.map */
