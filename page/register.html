@@ -24,29 +24,32 @@
                 <div class="name-container">
                     <div class="name">
                         <label for="name" class="name">Nombre</label>
-                        <input type="text" id="name" placeholder="Ingresa tu nombre">
+                        <input type="text" id="name" name="name" minlength="3" placeholder="Ingresa tu nombre">
                     </div>
                     <div class="name">
-                    <label for="apellido" class="apellido">Apellido <input type="text" id="apellido" placeholder="Ingresa tu apellido"></label>
+                        <label for="apellido" class="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" minlength="3" placeholder="Ingresa tu apellido">
                     </div>
                 </div>
                     <label for="user" class="user">Usuario</label>
                     <input type="text" id="user" placeholder="Ingresa tu usuario"></input>
                     <label for="email" class="email">Email</label>
                     <input type="email" id="email" placeholder="Ingresa tu mail">
-                    <label for="password" class="password">Contraseña</label>
+                    <!-- Campos de contraseña -->
+                    <label for="password" class="p-password">Contraseña</label>
                     <div class="password-container">
-                    <input type="password"  class="c-password"  placeholder="Ingresa tu contraseña" required>
-                    <img src="../components/img/Login/login_eye_closed.svg" alt="icon" class="icon" id="Eye_closed">
+                        <input type="password"  class="c-password"  id="password" placeholder="Ingresa tu contraseña" required>
+                        <img src="../components/img/Login/login_eye_closed.svg" alt="icon" class="icon" id="Eye1">
                 </div>
-                <label for="password" class="password">Confirmar Contraseña</label>
+                <label for="password2" class="p-password">Confirmar Contraseña</label>
                 <div class="password-container">
-                    <input type="password"  class="c-password" placeholder="Ingresa tu contraseña" required>
-                    <img src="../components/img/Login/login_eye_closed.svg" alt="icon" class="icon" id="Eye_closed">
+                    <input type="password"  class="c-password" id="password2" placeholder="Ingresa tu contraseña" required>
+                    <img src="../components/img/Login/login_eye_closed.svg" alt="icon" class="icon" id="Eye2">
                 </div>
             </form>
-            <button class="button-register">Registrate</button>
+            <button class="button-register">Regístrate</button>
         </div>
     </div>
+    <script src="../js/registro_script.js"></script>
 </body>
 </html>
