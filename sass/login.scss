@@ -17,6 +17,10 @@ body {
   margin: 0;
 }
 
+.body-login {
+  background-color: #E0E4EC;
+}
+
 .raya {
   position: absolute;
   transform-origin: center;
@@ -27,12 +31,14 @@ body {
   z-index: -1;
 }
 
+#r-separator {
+  margin-bottom: 0.05rem;
+}
 .separator {
   display: flex;
   align-items: center;
   text-align: center;
   color: #c0c0c0;
-  margin: 20px 0;
 
   &::before,
   &::after {
@@ -71,11 +77,13 @@ body {
   width: 100%;
 
   h1 {
+    padding: 0;
     font-family: 'Roboto', 'DM-Sans', sans-serif;
-    font-weight: bolder;
-    font-size: 3.5em;
+    font-weight: 700;
+    font-size: 4rem;
     color: #6b2ae5;
-    margin-top: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .yellow {
@@ -83,20 +91,26 @@ body {
   }
 
   h2 {
-    font-size: 1.9em;
+    font-size: 2rem;
     margin-top: 0;
+    margin-bottom: 0.2rem;
   }
 
   p {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
   }
+}
+
+#b-google {
+margin-bottom: 0.1rem;
 }
 
 .google-login {
   background-color: #E3B134;
   color: white;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 600;
   border: none;
   border-radius: 8px;
@@ -119,7 +133,9 @@ form {
   flex-direction: column;
 
   label {
-    margin-bottom: 5px;
+    font-family: 'Roboto', 'DM-sans', sans-serif;
+    font-size: 0.9em;
+    margin-bottom: 0.3rem;
     color: #000;
   }
 
@@ -131,7 +147,8 @@ form {
 
     &#email,
     &#password {
-      background-color: rgba(127, 87, 241, 0.367);
+      background-color: rgba(128, 87, 241, 0.367);
+      margin-bottom: 0.5rem;
     }
   }
 
@@ -168,7 +185,9 @@ form {
     }
   }
 }
-
+#d-remember {
+  margin-top: 0.01rem;
+}
 .remember-forgot {
   display: flex;
   justify-content: space-between;
@@ -179,7 +198,7 @@ form {
 .password,
 .email {
   font-weight: 500;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 a {
@@ -204,6 +223,11 @@ a {
   box-shadow: #0000005c 0px 4px 8px;
 }
 
+#btn-registrar, #btn-ingresar {
+  padding:10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
 .button-register {
   background-color: #6b2ae5;
   color: white;
@@ -220,7 +244,48 @@ a {
   cursor: pointer;
   box-shadow: #0000005c 0px 4px 8px;
 }
+.b-register, .b-ingresar{
+  text-decoration: none;
+}
 
+#modal-pregunta{
+  color:#6C70F8;
+  padding: 0;
+  margin: 0;
+}
+.btn-close{
+  
+  position: absolute;
+  right: 0.2rem;
+  margin-top: 0.2rem;
+  width: 1rem;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.modal-dialog {
+  box-shadow: 0 0 40px rgba(21, 21, 21, 0.5);
+}
+
+#b-enviar{
+  background-color: #6b2ae5;
+  color: #ffffff;
+  .btn-enviar {
+  box-shadow: #0000005c 0px 4px 8px;
+  }
+}
+
+.email-modal {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: rgba(128, 87, 241, 0.367);
+  width: 100%;
+  margin-top: 0.5rem;
+}
 .login-image {
   display: flex;
   justify-content: center;
