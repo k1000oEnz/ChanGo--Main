@@ -1,0 +1,76 @@
+body {
+  background-color: #EDF2F6;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.mainProfile {
+  margin: 20px auto;
+  padding: 0 20px;
+}
+.mainProfile .containerProfile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.mainProfile .containerProfile .profileBanner {
+  align-self: center;
+  width: 110rem;
+  height: 12rem;
+  background-image: url("../components/img/Portada.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px 8px 0 0;
+}
+.mainProfile .containerProfile .profileBanner .profilePic {
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  /* Hace que la imagen corte el banner */
+  bottom: -6rem;
+}
+.mainProfile .containerProfile .profileBanner .userData {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 12rem;
+}
+.mainProfile .containerProfile .profileBanner .userData h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+.mainProfile .containerProfile .profileBanner .userData p {
+  font-size: 1rem;
+  margin-top: 0;
+}
+.mainProfile .containerProfile .btn-contratar {
+  width: 12rem;
+  height: 100%;
+}
+.mainProfile .containerProfile .button__styleY {
+  background-color: #E3B134;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 0.1rem solid #5B1DAE;
+  padding: 8px 48px;
+  border-radius: 16px;
+  margin: 0 0.5rem 0 0;
+}
+.mainProfile .containerProfile .button__styleY:hover {
+  box-shadow: 2px 1px 5px #3f3f3f;
+  background-color: #fdd87b;
+}
+.mainProfile .containerProfile .aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 40rem;
+  height: 100%;
+}
+
+/*# sourceMappingURL=profile.css.map */
