@@ -211,9 +211,13 @@ body {
   padding: 0;
 }
 
+.fondo {
+  background-color: #EDF2F6;
+}
+
 .mainProfile {
   margin: 20px auto;
-  max-width: 110rem;
+  max-width: 98rem;
   background-color: #ffffff;
   border-radius: 0.5rem;
 }
@@ -286,6 +290,9 @@ body {
   max-width: 40rem;
   height: 100%;
 }
+.mainProfile .containerProfile .profileBanner .aboutMe p {
+  margin: 20px;
+}
 .mainProfile .containerProfile .rightSection {
   grid-area: 2/2/4/3;
 }
@@ -302,6 +309,7 @@ body {
 }
 .mainProfile .resenas {
   grid-area: 4/1/6/2;
+  margin: 0 6rem;
 }
 .mainProfile .resenas .resena {
   margin: 20px auto;
@@ -338,6 +346,14 @@ body {
   margin: 20px;
   font-family: Arial, sans-serif;
 }
+.job-card .actionButtons {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+.job-card .actionButtons a {
+  margin-top: 0.3rem;
+}
 
 .job-image img {
   width: 60px;
@@ -354,6 +370,7 @@ body {
 .job-info h3 {
   margin: 0;
   font-size: 18px;
+  font-weight: bold;
   color: #333;
 }
 
@@ -460,8 +477,13 @@ body {
 
 .resena-header {
   display: flex;
+  flex-direction: row;
   align-items: center;
   margin-bottom: 10px;
+}
+.resena-header h4 {
+  margin: 0 0.5rem 0 0.5rem;
+  font-size: 1.2rem;
 }
 
 .resena-profile-image {
