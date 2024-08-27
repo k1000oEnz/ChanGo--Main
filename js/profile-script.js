@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Initialize job cards visibility
-    const jobCards = document.querySelectorAll('.job-card');
-    jobCards.forEach((card, index) => {
-        if (index >= jobsVisible) {
-            card.style.display = 'none';
-        }
-    });
+    // const jobCards = document.querySelectorAll('.job-card');
+    // jobCards.forEach((card, index) => {
+    //     if (index >= jobsVisible) {
+    //         card.style.display = 'none';
+    //     }
+    // });
 });
