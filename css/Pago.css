@@ -1,27 +1,52 @@
 body {
     font-family: 'DM Sans', sans-serif;
-    position: relative;
-    overflow: hidden;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-size: 0.9rem;
     }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
 
+.container {
+    display: flex;
+    margin: 10px 80px;
+    justify-content: space-between;
+    flex-grow: 1;
+    box-sizing: border-box;
+    align-items: center;
 }
 
+
 form.left-column {
-    width: 60%;
-    padding-right: 20px;
+    width: 55%;
+    padding-right: 15px;
 }
 
 .right-column {
-    width: 40%;
-    padding: 20px;
+    width: 35%;
+    padding: 15px;
 }
+.filaV {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-groupV {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-groupV label {
+    display: block;
+    margin-bottom: 4px;
+}
+
 
 .fila {
     display: flex;
@@ -31,71 +56,67 @@ form.left-column {
 
 .form-group {
     width: 48%;
-    margin-bottom: 15px;
+
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 input[type="text"] {
     width: 100%;
-    padding: 8px;
+    padding: 6px;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 8px;
     box-sizing: border-box;
 }
 
 button[type="submit"] {
     background-color: #5B1DAE;
     color: white;
-    padding: 10px;
+    padding: 8px;
     border: none;
     width: 100%;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 8px;
     font-family: 'DM Sans', sans-serif;
-}
-
-.logo {
-    max-width: 200px;
-    margin-bottom: 20px;
+    font-size: 0.9rem;
 }
 
 .payment-methods {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .payment-logo {
-    max-width: 50px;
-    margin-right: 10px;
+    max-width: 40px;
+    margin-right: 8px;
 }
 .Logo-ChanGo {
     display: block;
-    margin: 0 auto 20px;
-    max-width: 150px;
+    margin: 0 auto 60px;
+    max-width: 120px;
     height: auto;
 }
 
 .order-summary {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .service-item {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .service-image {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .service-info {
@@ -104,16 +125,55 @@ button[type="submit"] {
 
 .service-name, .service-provider {
     margin: 0;
+    font-size: 0.9rem;
 }
 
 
 .total-summary hr {
     border: none;
     border-top: 1px solid #ccc;
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 .taxes-info {
-    font-size: 0.9em;
+    font-size: 0.8rem;
     color: #667;
+}
+.footer {
+    margin-top: 10px;
+    padding: 8px 0;
+    width: 100%;
+    color: #667;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding-left: 35px; 
+    padding-right: 40px; 
+    gap: 50px;
+    box-sizing: border-box;
+
+}
+
+.footer span {
+    margin-right: auto; 
+    text-align: left;
+    color: rgb(163, 174, 208);
+    
+}
+.footer{
+    a{
+        color: #3f3f3f;
+        text-decoration: none;
+    }
+}
+.Price{
+        font-size: 22px;
+        font-weight: bold;
+}
+.total{
+    font-size: 36px;
+    font-weight: bold;
 }
