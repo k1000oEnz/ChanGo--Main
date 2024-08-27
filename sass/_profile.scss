@@ -21,11 +21,13 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.fondo{
+    background-color: #EDF2F6;
+}
 //Profile
 .mainProfile {
     margin: 20px auto;
-    max-width: 110rem;
+    max-width: 98rem;
     background-color: $color-white;
     border-radius: 0.5rem;
 
@@ -110,6 +112,10 @@ body {
                 justify-content: center;
                 max-width: 40rem;
                 height: 100%;
+
+                p {
+                    margin: 20px;
+                }
             }
         }
 
@@ -136,6 +142,7 @@ body {
 
     .resenas {
         grid-area: 4 / 1 / 6 / 2;
+        margin: 0 6rem;
 
         .resena {
             margin: 20px auto;
@@ -178,6 +185,14 @@ body {
     max-width: 600px;
     margin: 20px;
     font-family: Arial, sans-serif;
+    .actionButtons {
+        display: flex;
+        flex-direction: column;
+        margin: .5rem;
+        a{
+            margin-top: .3rem;
+        }
+    }
 }
 
 .job-image img {
@@ -195,6 +210,7 @@ body {
 .job-info h3 {
     margin: 0;
     font-size: 18px;
+    font-weight: bold;
     color: #333;
 }
 
@@ -304,8 +320,14 @@ body {
 
 .resena-header {
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-bottom: 10px;
+    // margin-left: 1rem;
+    h4 {
+        margin: 0 0.5rem 0 0.5rem;
+        font-size: 1.2rem;
+    }
 }
 
 .resena-profile-image {
