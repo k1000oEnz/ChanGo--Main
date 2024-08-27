@@ -161,4 +161,19 @@ button[type="submit"] {
     margin-right: auto; 
     text-align: left;
     color: rgb(163, 174, 208);
+    
+}
+.footer{
+    a{
+        color: #3f3f3f;
+        text-decoration: none;
+    }
+}
+.Price{
+        font-size: 22px;
+        font-weight: bold;
+}
+.total{
+    font-size: 36px;
+    font-weight: bold;
 }
