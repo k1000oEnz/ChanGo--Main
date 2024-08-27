@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - ChanGo!</title>
+    <link rel="stylesheet" href="../css/LogReg.css">
+    <link rel="shortcut icon" href="../components/img/Logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="raya"></div>
+    <div class="register-container">
+        <div class="register-form">
+            <h1>Chan<span class="yellow">Go!</span></h1>
+            <h2>Registrate!</h2>
+                <button class="google-login">
+                <img src="../components/img/Login/icons_google.svg" alt="Google Logo">
+                Regístrate con Google
+            </button>
+            <div class="separator">Registrate con tu email</div>
+            <form method="POST">
+                <div class="name-container">
+                    <div class="name">
+                        <label for="name" class="name">Nombre</label>
+                        <input type="text" id="name" name="name" minlength="3" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="name">
+                        <label for="apellido" class="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" minlength="3" placeholder="Ingresa tu apellido">
+                    </div>
+                </div>
+                    <label for="user" class="user">Usuario</label>
+                    <input type="text" id="user" placeholder="Ingresa tu usuario"></input>
+                    <label for="email" class="email">Email</label>
+                    <input type="email" id="email" placeholder="Ingresa tu mail">
+                    <!-- Campos de contraseña -->
+                    <label for="password" class="p-password">Contraseña</label>
+                    <div class="password-container">
+                        <input type="password"  class="c-password"  id="password" placeholder="Ingresa tu contraseña" required>
+                        <img src="../components/img/Login/login_eye_closed.svg" alt="icon" class="icon" id="Eye_closed">
+                    </div>
+                    <label for="password2" class="p-password">Confirmar Contraseña</label>
+                    <div class="password-container">
+                        <input type="password"  class="c-password" id="password2" placeholder="Ingresa tu contraseña" required>
+                        <img src="../components/img/Login/login_eye_closed.svg" alt="icon" class="icon" id="Eye_closed2">
+                    </div>
+            </form>
+            <button class="button-register"><a href="./login.html">Regístrate</a></button>
+        </div>
+    </div>
+    <script src="../js/login_script.js"></script>
+</body>
+</html>
