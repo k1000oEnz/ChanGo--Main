@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const tagsContainer = document.querySelector('.tags');
 
     addTagBtn.addEventListener('click', function() {
-        const newTag = prompt('Enter a new aptitude/knowledge:');
+        const newTag = prompt('Ingrese una nueva aptitud:');
         if (newTag) {
             const tagElement = document.createElement('span');
             tagElement.className = 'tag';
