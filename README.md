@@ -1,10 +1,7 @@
  <div align="center">
   <h1 align="center">
-    ChanGo!
-    <br />
-    <br />
     <a href="https://changomain.netlify.app/">
-      <img src="https://ibb.co/7WhN7mf" alt="Logo ChanGo!">
+      <img src="https://github.com/user-attachments/assets/2d5d1404-3b40-42c7-ad73-5c691adae06d" alt="Logo ChanGo!">
     </a>
   </h1>
  </div>
