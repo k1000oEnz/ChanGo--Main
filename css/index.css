@@ -6,6 +6,7 @@
   */
 /* --debugger --*/
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 * {
   font-family: "DM Sans", sans-serif;
   margin: 0;
@@ -34,250 +35,53 @@ body {
   /*-- Buttons Shadow --*/
   --c_shadow: 2px 1px 5px #3f3f3f; }
 
-.containerProfile {
-  background-color: #edf2f6;
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  width: 100%;
-  height: 100%; }
-  .containerProfile h2 {
-    font-size: 20px;
-    color: #d4a72c;
-    margin-bottom: 15px;
-    font-weight: bold;
-    border-bottom: 2px solid #0008;
-    padding-bottom: 5px;
-    display: inline-block; }
-
-.fondo {
-  background-color: #edf2f6; }
-
-.mainProfile {
-  margin: 20px auto;
-  max-width: 98rem;
-  background-color: #edf2f6;
-  border-radius: 0.5rem; }
-
-.profileBanner {
-  grid-area: 1 / 1 / 2 / 6;
-  width: 95rem;
-  height: 12rem;
-  background-image: url("../img/profileBanner.png");
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px 8px 0px 0px; }
-
-.profilePic {
-  position: relative;
-  margin: 20px;
-  width: 12rem;
-  height: 12rem;
-  border-radius: 50%;
-  bottom: -6rem; }
-
-.userData {
+.renderQuestions {
   display: flex;
-  flex-direction: row;
-  position: relative;
-  margin-left: 14rem; }
-  .userData h1 {
-    font-size: 2rem;
-    margin-bottom: 0.25rem; }
-  .userData p {
-    font-size: 1rem;
-    margin-top: 0; }
-  .userData .datos {
-    flex-direction: column; }
-
-.btn-contratar {
-  width: 12rem;
-  height: 100%;
-  margin: 1rem; }
-  .btn-contratar .button__styleY {
-    background-color: #5b1dae;
-    color: #e3b134;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: 0.1rem solid #5b1dae;
-    padding: 8px 48px;
-    border-radius: 16px;
-    margin: 0 0.5rem 0 0; }
-    .btn-contratar .button__styleY:hover {
-      box-shadow: 0 0 10px #5b1dae;
-      background-color: #5b1dae; }
-
-.aboutMe {
-  grid-area: 2 / 1 / 3 / 3;
-  border: 1px solid #5b1dae;
-  justify-content: center;
-  max-width: 40rem;
-  height: 100%;
-  margin: 20px auto;
-  padding: 4rem; }
-  .aboutMe p {
-    margin: 20px; }
-
-.rightSection {
-  grid-area: 2 / 2 / 4 / 3;
-  margin: 4rem auto; }
-  .rightSection .postulations {
-    margin: 0; }
-
-.leftSection {
-  grid-area: 2 / 1 / 4 / 2;
-  margin: 20px auto; }
-
-.resenas {
-  grid-area: 4 / 1 / 6 / 2;
-  margin: 0 6rem; }
-  .resenas .resena {
-    margin: 20px auto;
-    padding: 1rem;
-    max-width: 50rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    border: 2px solid #e0e0e0; }
-    .resenas .resena .resena-body {
-      border: 1px solid #5b1dae;
-      padding: 10px;
-      border-radius: 5px; }
-    .resenas .resena .resena-header {
+  padding: 1rem; }
+  .renderQuestions .imgQuestions {
+    width: 50%; }
+    .renderQuestions .imgQuestions .bannerQuestion {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px; }
+  .renderQuestions .questions {
+    width: 50%;
+    padding: 2rem; }
+    .renderQuestions .questions h5 {
+      text-align: left; }
+    .renderQuestions .questions p {
+      text-align: "left"; }
+    .renderQuestions .questions .showP1,
+    .renderQuestions .questions .showP2,
+    .renderQuestions .questions .showP3,
+    .renderQuestions .questions .showP4,
+    .renderQuestions .questions .showP5,
+    .renderQuestions .questions .showP6 {
+      display: none; }
+    .renderQuestions .questions #componenteRenden1,
+    .renderQuestions .questions #componenteRenden2,
+    .renderQuestions .questions #componenteRenden3,
+    .renderQuestions .questions #componenteRenden4,
+    .renderQuestions .questions #componenteRenden5,
+    .renderQuestions .questions #componenteRenden6 {
       display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-      margin-left: 1rem; }
-      .resenas .resena .resena-header h4 {
-        margin: 0 0.5rem;
-        font-size: 1.2rem; }
-      .resenas .resena .resena-header .resena-profile-image {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        margin-right: 10px; }
-      .resenas .resena .resena-header .resena-rating {
-        display: flex; }
-        .resenas .resena .resena-header .resena-rating .resena-star {
-          color: #ffc107;
-          font-size: 18px; }
-      .resenas .resena .resena-header .resena-ver-imagenes {
-        margin-left: auto;
-        font-size: 14px;
-        color: #007bff;
-        cursor: pointer; }
-
-.accepted {
-  background-color: #5b1dae;
-  color: #fff; }
-
-.job-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  border: 2px solid #e0e0e0;
-  max-width: 600px;
-  margin: 20px;
-  font-family: Arial, sans-serif; }
-  .job-card .job-image img {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-right: 15px; }
-  .job-card .job-info {
-    flex-grow: 1; }
-    .job-card .job-info h3 {
-      margin: 0;
-      font-size: 18px;
-      font-weight: bold;
-      color: #333; }
-    .job-card .job-info p {
-      margin: 5px 0;
-      font-size: 14px;
-      color: #666; }
-      .job-card .job-info p i {
-        margin-right: 5px;
-        color: #7b1fa2; }
-  .job-card .status {
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: bold;
-    display: flex;
-    align-items: center; }
-    .job-card .status.pending {
-      background-color: #1976d2;
-      color: #fff; }
-      .job-card .status.pending::before {
-        content: "\f017";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        margin-right: 5px; }
-
-.skills {
-  max-width: 50rem;
-  margin: 20px auto;
-  font-family: Arial, sans-serif;
-  padding: 4rem; }
-  .skills .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; }
-    .skills .tags .tag {
-      background-color: #f3c74f;
-      color: #fff;
-      padding: 10px 15px;
-      border-radius: 20px;
-      font-size: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      cursor: pointer; }
-    .skills .tags .add-tag {
-      background-color: transparent;
-      color: #000;
+      justify-content: space-between; }
+    .renderQuestions .questions button {
+      font-size: 28px;
       border: none;
-      font-size: 14px;
-      cursor: pointer;
-      padding: 10px 15px;
-      display: flex;
-      align-items: center; }
-      .skills .tags .add-tag:hover {
-        text-decoration: underline; }
+      background-color: #fff;
+      color: #5b1dae; }
+    .renderQuestions .questions .titleQuestions {
+      margin-bottom: 2rem; }
 
-.offerButton,
-.hireButton {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
-  display: inline-block;
-  min-width: 100px;
-  text-align: center; }
-
-.offerButton {
-  background-color: #f0ad4e;
-  color: #fff; }
-  .offerButton:hover {
-    background-color: #ec971f; }
-
-.hireButton {
-  background-color: #6c63ff;
-  color: #fff; }
-  .hireButton:hover {
-    background-color: #5a54e6; }
+.renderRespuestas {
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #d7def0; }
 
 /*
 ================================
