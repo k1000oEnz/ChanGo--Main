@@ -1492,34 +1492,44 @@ body a {
 }
 
 /*Variables*/
-/*
-  body {
-      background-color: #edf2f6;
-      font-family: "Roboto", sans-serif;
-      margin: 0;
-      padding: 0;
-  }*/
+/* 
+body {
+    background-color: #edf2f6;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+} */
 .fondo {
   background-color: #edf2f6;
 }
 
-/*Profile*/
+/* Profile */
 .mainProfile {
   margin: 20px auto;
   max-width: 98rem;
   background-color: #ffffff;
   border-radius: 0.5rem;
   min-height: 58vw;
+  /* .containerProfile */
+  /* .resenas */
+  /* .ofertas */
 }
 .mainProfile .containerProfile {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  gap: 0; /* Equivalente a grid-column-gap y grid-row-gap: 0px */
   width: 100%;
   height: 100%;
   max-height: 500px;
+  /* .profileBanner */
+  /* .rightSection */
+  /* .ProfileLeftSection */
+}
+.mainProfile .containerProfile .subtitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1rem;
 }
 .mainProfile .containerProfile .profileBanner {
   grid-area: 1/1/2/6;
@@ -1528,6 +1538,9 @@ body a {
   background-size: cover;
   background-position: center;
   border-radius: 8px 8px 0px 0px;
+  /* .userData */
+  /* .button__styleY */
+  /* .ProfileAboutMe */
 }
 .mainProfile .containerProfile .profileBanner .profilePic {
   position: relative;
@@ -1543,16 +1556,17 @@ body a {
   flex-direction: row;
   position: relative;
   margin-left: 14rem;
+  /* .datos */
 }
 .mainProfile .containerProfile .profileBanner .userData .datos {
   flex-direction: column;
 }
-.mainProfile .containerProfile .profileBanner .userData h1 {
+.mainProfile .containerProfile .profileBanner .userData .datos h1 {
   font-size: 2.3rem;
   font-weight: 700;
   margin-bottom: 0.25rem;
 }
-.mainProfile .containerProfile .profileBanner .userData p {
+.mainProfile .containerProfile .profileBanner .userData .datos p {
   font-size: 1rem;
   margin-top: 0;
 }
@@ -1602,6 +1616,7 @@ body a {
 .mainProfile .resenas {
   grid-area: 3/1/4/2;
   margin: 0 4rem;
+  /* .resena */
 }
 .mainProfile .resenas .resena {
   margin: 20px auto;
@@ -1615,11 +1630,8 @@ body a {
 .mainProfile .ofertas {
   grid-area: 3/2/4/3;
 }
-.mainProfile h2 {
-  font-size: 30;
-  margin: 20px auto;
-}
 
+/* .mainProfile */
 .accepted {
   background-color: #984bfd;
   color: #ffffff;
@@ -1637,6 +1649,10 @@ body a {
   max-width: 600px;
   margin: 20px;
   font-family: Arial, sans-serif;
+  /* .actionButtons */
+  /* .job-image */
+  /* .job-info */
+  /* .pending */
 }
 .job-card .actionButtons {
   display: flex;
@@ -1646,50 +1662,39 @@ body a {
 .job-card .actionButtons a {
   margin-top: 0.3rem;
 }
-
-.job-image img {
+.job-card .job-image img {
   max-width: 6rem;
   border-radius: 10px;
   object-fit: cover;
   margin-right: 15px;
 }
-
-.job-info {
+.job-card .job-info {
   flex-grow: 1;
+  /* p */
 }
-
-.jobName {
-  font-size: 1.3rem;
-}
-
-.job-info h3 {
+.job-card .job-info h3 {
   margin: 0;
   font-weight: bold;
   color: #333;
 }
-
-.job-info p {
+.job-card .job-info p {
   margin: 5px 0;
   font-size: 14px;
   color: #666;
 }
-
-.job-info p i {
+.job-card .job-info p i {
   margin-right: 5px;
   color: #7b1fa2;
 }
-
-.jobDetails {
+.job-card .job-info .jobDetails {
   font-weight: 700;
 }
-
-.jobVector {
+.job-card .job-info .jobVector {
   height: 1.5rem;
   width: 1.5rem;
   margin: 0 0.2rem;
 }
-
-.status {
+.job-card .status {
   padding: 8px 15px;
   border-radius: 20px;
   font-size: 14px;
@@ -1697,24 +1702,22 @@ body a {
   display: flex;
   align-items: center;
 }
-
-.pending {
+.job-card .pending {
   background-color: #1976d2;
   color: #fff;
 }
-
-.pending::before {
+.job-card .pending::before {
   font-family: "Font Awesome 5 Free";
   /* Asegúrate de tener Font Awesome incluido */
   font-weight: 900;
   margin-right: 5px;
 }
 
+/* .job-card */
 .profileSkills {
   max-width: 50rem;
   margin: 20px auto;
   font-family: Arial, sans-serif;
-  margin: 20px auto;
   padding: 0.5rem 4rem;
 }
 
@@ -1728,6 +1731,7 @@ body a {
   display: inline-block;
 }
 
+/* .containerProfile */
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -1745,13 +1749,13 @@ body a {
   justify-content: space-between;
   cursor: pointer;
 }
-
 .tag::before {
   margin-right: 8px;
   font-weight: bold;
   color: #ffffff;
 }
 
+/* .tag */
 .add-tag {
   background-color: transparent;
   color: #000;
@@ -1762,11 +1766,11 @@ body a {
   display: flex;
   align-items: center;
 }
-
 .add-tag:hover {
   text-decoration: underline;
 }
 
+/* .add-tag */
 .resena {
   padding: 15px;
   border-radius: 15px;
@@ -1777,58 +1781,54 @@ body a {
   border-radius: 5px;
   width: 600px;
   margin: 20px auto;
+  /* .resena-header */
+  /* .resena-body */
 }
-
-.resena-header {
+.resena .resena-header {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 10px;
 }
-.resena-header h4 {
+.resena .resena-header h4 {
   margin: 0 0.5rem 0 0.5rem;
   font-size: 1.2rem;
 }
-
-.resena-profile-image {
+.resena .resena-profile-image {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin-right: 10px;
 }
-
-.resena-rating {
+.resena .resena-rating {
   display: flex;
 }
-
-.resena-star {
+.resena .resena-star {
   color: #ffc107;
   font-size: 18px;
 }
-
-.resena-ver-imagenes {
+.resena .resena-ver-imagenes {
   margin-left: auto;
   font-size: 14px;
   color: #007bff;
   cursor: pointer;
 }
-
-.resena-body {
+.resena .resena-body {
   padding: 10px;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
+  /* .resena-comment */
 }
-
-.resena-comment {
+.resena .resena-body .resena-comment {
   display: flex;
   align-items: center;
 }
-
-.resena-comment-icon {
+.resena .resena-body .resena-comment .resena-comment-icon {
   font-size: 20px;
   margin-right: 10px;
 }
 
+/* .resena */
 .offerButton,
 .hireButton {
   padding: 10px 20px;
@@ -1846,20 +1846,20 @@ body a {
   background-color: #f0ad4e;
   color: #fff;
 }
-
 .offerButton:hover {
   background-color: #ec971f;
 }
 
+/* .offerButton */
 .hireButton {
   background-color: #6c63ff;
   color: #fff;
 }
-
 .hireButton:hover {
   background-color: #5a54e6;
 }
 
+/* .hireButton */
 /* línea amarilla del fondo */
 .line {
   position: absolute;
