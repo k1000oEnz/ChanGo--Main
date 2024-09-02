@@ -7,26 +7,32 @@
   */
 /* --debugger --*/
 * {
+  font-family: "DM Sans", sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
+body {
+  background-color: #edf2f6;
+  a {
+    text-decoration: none;
+  }
+}
 
 :root {
   /*-- Font --*/
   --f_fontSize: 16px;
   --f_fontWeight: 400;
-  --f_fontFamily: "Roboto", sans-serif;
+  --f_fontFamily: "DM Sans", sans-serif;
   --f_fontFamily--Secundary: "Montserrat", sans-serif;
   --f_lineHeight: 1.5;
   /*-- Colour --*/
   --c_white: #fff;
   --c_black: #000;
-  --c_purple900: #1E0342;
-  --c_purple400: #5B1DAE;
+  --c_MainColor: #fbfbfb;
+  --c_purple400: #5b1dae;
   --c_purple200: #984bfd;
-  --c_yellow400: #E3B134;
+  --c_yellow400: #e3b134;
   --c_yellow200: #fdd87b;
   /*-- Buttons Shadow --*/
   --c_shadow: 2px 1px 5px #3f3f3f;
 }
-
-

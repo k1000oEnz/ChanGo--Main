@@ -1,8 +1,14 @@
 @import "globales";
-@import "aside";
+@import "question";
 @import "footer";
 @import "globales";
 @import "header";
 @import "nav";
-@import "profile";
-
+@import "main";
+@import "login";
+@import "register";
+@import "aboutUs.scss";
+@import 'settings';
+@import 'profile';
+@import 'aboutUs';
+@import 'pago';
