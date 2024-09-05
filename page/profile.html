@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Perfil</title>
-    <link rel="stylesheet" href="../css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/index.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../components/img/Logo.svg" type="image/x-icon" />
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 </head>
 
 <body class="fondo">
@@ -27,32 +35,31 @@
             <div>
                 <ul>
                     <li>
-                    <a href="../index.html">
-                        <button class="d-flex navButt">
-                        <img src="../components/img/NavBar/Group 1.svg" alt="" />Inicio
-                        </button>
-                    </a>
+                        <a href="../index.html">
+                            <button class="d-flex navButt">
+                                <img src="../components/img/NavBar/Group 1.svg" alt="" />Inicio
+                            </button>
+                        </a>
                     </li>
                     <li>
-                    <a href="">
-                        <button class="d-flex navButt">
-                        <img src="../components/img/NavBar/Vector.svg" alt="" />Chat
-                        </button>
-                    </a>
+                        <a href="">
+                            <button class="d-flex navButt">
+                                <img src="../components/img/NavBar/Vector.svg" alt="" />Chat
+                            </button>
+                        </a>
                     </li>
                     <li>
-                    <a href="profile.html">
-                        <button class="d-flex navButt">
-                        <img src="../components/img/NavBar/Icon_ user.svg" alt="" />Perfil
-                        </button>
-                    </a>
+                        <a href="profile.html">
+                            <button class="d-flex navButt">
+                                <img src="../components/img/NavBar/Icon_ user.svg" alt="" />Perfil
+                            </button>
+                        </a>
                     </li>
                     <li>
-                    <a href="settings.html"
-                        ><button class="d-flex navButt">
-                        <img src="../components/img/NavBar/setting-2.svg" alt=""/>Configuracion
-                        </button>
-                    </a>
+                        <a href="settings.html"><button class="d-flex navButt">
+                                <img src="../components/img/NavBar/setting-2.svg" alt="" />Configuracion
+                            </button>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -85,17 +92,19 @@
                     <button class="button__styleY btn-contratar">Contratar</button>
                 </div>
             </div>
-            <div class="leftSection">
+            <div class="ProfileLeftSection">
                 <!-- Seccion de acerca de mi -->
-                <section class="aboutMe">
+                <section class="ProfileAboutMe">
                     <h2>ACERCA DE MI:</h2>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur. Nunc sit feugiat sed at mattis dictumst. Mauris
+                    <p class="description">Lorem ipsum dolor sit amet consectetur. Nunc sit feugiat sed at mattis
+                        dictumst. Mauris
                         platea in lectus gravida. Consectetur nam nunc tellus nam nascetur in dolor. Elementum sit
-                        nibh massa aliquam pellentesque integer vitae hendrerit.Lorem ipsum dolor sit amet consectetur. Nunc sit feugiat sed at mattis dictumst. Mauris
+                        nibh massa aliquam pellentesque integer vitae hendrerit.Lorem ipsum dolor sit amet consectetur.
+                        Nunc sit feugiat sed at mattis dictumst. Mauris
                         platea in lectus gravida. </p>
                 </section>
                 <!-- Seccion de aptitudes y conocimientos -->
-                <section class="skills">
+                <section class="profileSkills skills">
                     <h2>APTITUDES / CONOCIMIENTOS</h2>
                     <div class="tags">
                         <span class="tag ">Soy una aptitud</span>
@@ -113,22 +122,26 @@
                     <div class="job-card">
                         <div class="job-image"><img src="../components/img/Yo.png" alt=""></div>
                         <div class="job-info">
-                            <h3>Decorador de interiores</h3>
+                            <h3 class="jobName">Decorador de interiores</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-                            <p>Modalidad: Presencial o Remota</p>
-                            <p>Ubicación: CABA</p>
+                            <p class="jobDetails"><img src="../components/img/Profile/VectorModalidad.svg"
+                                    alt="Modalidad" class="jobVector"> Modalidad: Presencial o Remota</p>
+                            <p class="jobDetails"><img src="../components/img/Profile/VectorUbicacion.svg"
+                                    alt="Ubicacion" class="jobVector"> Ubicación: CABA</p>
                         </div>
-                        <span class="status pending">Pendiente</span>
+                        <span class="offerButton">Pendiente</span>
                     </div>
                     <div class="job-card">
                         <div class="job-image"><img src="../components/img/Yo.png" alt=""></div>
                         <div class="job-info">
-                            <h3>Barbero</h3>
+                            <h3 class="jobName">Barbero</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-                            <p>Modalidad: Presencial</p>
-                            <p>Ubicación: Avellaneda, Bs. As.</p>
+                            <p class="jobDetails"><img src="../components/img/Profile/VectorModalidad.svg"
+                                    alt="Modalidad" class="jobVector"> Modalidad: Presencial o Remota</p>
+                            <p class="jobDetails"><img src="../components/img/Profile/VectorUbicacion.svg"
+                                    alt="Ubicacion" class="jobVector"> Ubicación: CABA</p>
                         </div>
-                        <span class="status accepted">Aceptado</span>
+                        <span class="status pending">Aceptado</span>
                     </div>
                     <!-- <button class="ver-mas">Ver más</button> -->
                 </section>
@@ -184,10 +197,12 @@
                 <div class="job-card">
                     <div class="job-image"> <img src="../components/img/Yo.png" alt=""></div>
                     <div class="job-info">
-                        <h3>Barbero</h3>
+                        <h3 class="jobName">Barbero</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-                        <p>Modalidad: Presencial</p>
-                        <p>Ubicación: Avellaneda, Bs. As.</p>
+                        <p class="jobDetails"><img src="../components/img/Profile/VectorModalidad.svg" alt="Modalidad"
+                                class="jobVector"> Modalidad: Presencial o Remota</p>
+                        <p class="jobDetails"><img src="../components/img/Profile/VectorUbicacion.svg" alt="Ubicacion"
+                                class="jobVector"> Ubicación: CABA</p>
                     </div>
                     <div class="actionButtons">
                         <button class="offerButton">Ofertar</button>
@@ -199,10 +214,12 @@
                 <div class="job-card">
                     <div class="job-image"> <img src="../components/img/Yo.png" alt=""></div>
                     <div class="job-info">
-                        <h3>Barbero</h3>
+                        <h3 class="jobName">Barbero</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-                        <p>Modalidad: Presencial</p>
-                        <p>Ubicación: Avellaneda, Bs. As.</p>
+                        <p class="jobDetails"><img src="../components/img/Profile/VectorModalidad.svg" alt="Modalidad"
+                                class="jobVector"> Modalidad: Presencial o Remota</p>
+                        <p class="jobDetails"><img src="../components/img/Profile/VectorUbicacion.svg" alt="Ubicacion"
+                                class="jobVector"> Ubicación: CABA</p>
                     </div>
                     <div class="actionButtons">
                         <button class="offerButton">Ofertar</button>
@@ -238,10 +255,10 @@
                     <p class="contact_style"><img src="" alt="" /> 11 2537-7854</p>
                     <p class="contact_style">Av. Siempreviva 742</p>
                 </div>
-                <div class="aboutus">
-                    <p class="aboutus_style">Acerca de nosotros</p>
-                    <p class="aboutus_style">Nuestro Equipo</p>
-                    <p class="aboutus_style">Nuestra Mision</p>
+                <div class="linksFooter">
+                    <a href="Aboutus.html">Acerca de nosotros</a>
+                    <a href="settings.html" id="questions">Preguntas Frecuentes</a>
+                    <a class="aboutus_style">Nuestra Mision</a>
                 </div>
                 <div class="redes">
                     <p class="redes_title">Seguinos en nuestras redes</p>
@@ -263,6 +280,11 @@
                 <p>Cookies</p>
             </div>
         </div>
+
+        <script src="./js/settings.js"></script>
+        <script src="./js/questions.js"></script>
+        <script src="https://unpkg.com/react/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="components/js/script.js"></script>
         <div class="diagonal_bar"></div>
