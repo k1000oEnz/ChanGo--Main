@@ -1,7 +1,5 @@
 @import "globales";
-@import "settings";
 @import "question";
-@import "aside";
 @import "footer";
 @import "globales";
 @import "header";
@@ -9,4 +7,8 @@
 @import "main";
 @import "login";
 @import "register";
-
+@import "aboutUs.scss";
+@import 'settings';
+@import 'profile';
+@import 'aboutUs';
+@import 'pago';

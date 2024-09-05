@@ -1,0 +1,152 @@
+
+
+.containerPayment{
+    font-family: 'DM Sans', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-size: 0.9rem;
+    }
+
+
+.containerPago{
+    display: flex;
+    margin: 10px 80px;
+    justify-content: space-between;
+    flex-grow: 1;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+
+form.left-column {
+    width: 55%;
+    padding-right: 15px;
+}
+
+.right-column {
+    width: 35%;
+    padding: 15px;
+}
+.filaV {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-groupV {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-groupV label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    width: 48%;
+
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.btnPago[type="submit"] {
+    background-color: #5B1DAE;
+    color: white;
+    padding: 8px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.payment-logo {
+    max-width: 40px;
+    margin-right: 8px;
+}
+.Logo-ChanGo {
+    display: block;
+    margin: 0 auto 60px;
+    max-width: 120px;
+    height: auto;
+}
+
+.order-summary {
+    margin-bottom: 15px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.service-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 8px;
+}
+
+.service-info {
+    flex-grow: 1;
+}
+
+.service-name, .service-provider {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+.total-summary hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 8px 0;
+}
+
+.taxes-info {
+    font-size: 0.8rem;
+    color: #667;
+}
+
+.Price{
+        font-size: 22px;
+        font-weight: bold;
+}
+.total{
+    font-size: 36px;
+    font-weight: bold;
+}

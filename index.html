@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bienvenido a ChanGo!</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./components/img/Logo.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <header>
@@ -33,22 +40,31 @@
         <div>
           <ul>
             <li>
-              <button class="d-flex navButt">
-                <img src="components/img/NavBar/Group 1.svg" alt="" />Inicio
-              </button>
+              <a href="./index.html">
+                <button class="d-flex navButt">
+                  <img src="components/img/NavBar/Group 1.svg" alt="" />Inicio
+                </button>
+              </a>
             </li>
             <li>
-              <button class="d-flex navButt">
-                <img src="components/img/NavBar/Vector.svg" alt="" />Chat
-              </button>
+              <a href="">
+                <button class="d-flex navButt">
+                  <img src="components/img/NavBar/Vector.svg" alt="" />Chat
+                </button>
+              </a>
             </li>
             <li>
-              <button class="d-flex navButt">
-                <img src="components/img/NavBar/Icon_ user.svg" alt="" />Perfil
-              </button>
+              <a href="./page/profile.html">
+                <button class="d-flex navButt">
+                  <img
+                    src="components/img/NavBar/Icon_ user.svg"
+                    alt=""
+                  />Perfil
+                </button>
+              </a>
             </li>
             <li>
-              <a href="/page/settings.html"
+              <a href="./page/settings.html"
                 ><button class="d-flex navButt">
                   <img
                     src="components/img/NavBar/setting-2.svg"
@@ -65,20 +81,24 @@
         </form> -->
         <ul>
           <li class="nav__li">
-            <button class="button__styleP">Iniciar Sesion</button>
+            <a href="./page/login.html" class="no__decoration">
+              <button class="button__styleP">Iniciar Sesion</button>
+            </a>
           </li>
           <li class="nav__li">
             <button class="button__styleY">
-              <img
-                src="components/img/Registrarse.svg"
-                alt="Boton para Registrarse"
-              />Registrate
+              <a href="./page/register.html" class="no__decoration">
+                <img
+                  src="components/img/Registrarse.svg"
+                  alt="Boton para Registrarse"
+                />Registrate
+              </a>
             </button>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="d-flexMain">
       <section class="Hero d-flex">
         <article>
           <h2 class="HeroTitle">¿Querés empezar a emprender?</h2>
@@ -101,55 +121,270 @@
           <img src="components/img/Main/HeroPana.svg" alt="" />
         </picture>
       </section>
+      <div class="UserCarrousel">
+        <button><</button>
+        <div class="UserCard">
+          <figure>
+            <img src="./components/img/Yo 1.png" alt="" class="profileImg" />
+            <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
+          </figure>
+          <p class="profileName">Perez Sozo</p>
+          <p class="roleName">Mini-Flete</p>
+          <p class="priceRange">$ 1000 - $ 2000</p>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+            repellat odio saepe dolore minus ipsum officia suscipit maxime
+            consectetur excepturi nihil in neque modi, ipsam tenetur accusamus
+            possimus voluptas consequatur.
+          </p>
+        </div>
+        <div class="UserCard">
+          <figure>
+            <img src="./components/img/Yo 1.png" alt="" class="profileImg" />
+            <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
+          </figure>
+          <p class="profileName">Perez Sozo</p>
+          <p class="roleName">Mini-Flete</p>
+          <p class="priceRange">$ 1000 - $ 2000</p>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+            repellat odio saepe dolore minus ipsum officia suscipit maxime
+            consectetur excepturi nihil in neque modi, ipsam tenetur accusamus
+            possimus voluptas consequatur.
+          </p>
+        </div>
+        <div class="UserCard">
+          <figure>
+            <img src="./components/img/Yo 1.png" alt="" class="profileImg" />
+            <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
+          </figure>
+          <p class="profileName">Perez Sozo</p>
+          <p class="roleName">Mini-Flete</p>
+          <p class="priceRange">$ 1000 - $ 2000</p>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+            repellat odio saepe dolore minus ipsum officia suscipit maxime
+            consectetur excepturi nihil in neque modi, ipsam tenetur accusamus
+            possimus voluptas consequatur.
+          </p>
+        </div>
+        <div class="UserCard">
+          <figure>
+            <img src="./components/img/Yo 1.png" alt="" class="profileImg" />
+            <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
+          </figure>
+          <p class="profileName">Perez Sozo</p>
+          <p class="roleName">Mini-Flete</p>
+          <p class="priceRange">$ 1000 - $ 2000</p>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+            repellat odio saepe dolore minus ipsum officia suscipit maxime
+            consectetur excepturi nihil in neque modi, ipsam tenetur accusamus
+            possimus voluptas consequatur.
+          </p>
+        </div>
+        <button>></button>
+      </div>
 
-      
       <div class="Banner">
         <p class="BannerText">¡También puedes ver las mejores ofertas!</p>
       </div>
       <section class="Ofertas">
-      <div class="cardContainer">
+        <div class="cardContainer">
           <div class="profileSection">
-              <img src="/components/img/descarga (1).jpeg" alt="Foto de Matias Cruz" class="profileImg">
+            <img
+              src="/components/img/descarga (1).jpeg"
+              alt="Foto de Matias Cruz"
+              class="profileImg"
+            />
           </div>
           <div class="contentSection">
-              <div class="headerSection">
-                  <div class="headerText">
-                      <h2>Se necesita Mini-Flete URGENTE!</h2>
-                  </div>
-                  <div class="bookmarkIcon">
-                      <i class="fa-regular fa-bookmark"></i>
-                  </div>
+            <div class="headerSection">
+              <div class="headerText">
+                <h2>Se necesita Mini-Flete URGENTE!</h2>
               </div>
-              <div class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deleniti ea neque ab odio voluptatum a autem, commodi vel illum omnis dolorem quo distinctio, necessitatibus veritatis iure voluptatibus nostrum est!
+              <div class="bookmarkIcon">
+                <i class="fa-regular fa-bookmark"></i>
               </div>
-              <div class="detailsSection">
-                  <ul class="infoList">
-                      <li><i class="fa-solid fa-calendar-days i1"></i> <strong>Fecha:</strong> A convenir</li>
-                      <li><i class="fa-solid fa-clock "></i> <strong>Horario:</strong> A convenir</li>
-                      <li><i class="fa-solid fa-graduation-cap i3"></i> <strong>Modalidad:</strong> Presencial o Remota</li>
-                  </ul>
-              
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              deleniti ea neque ab odio voluptatum a autem, commodi vel illum
+              omnis dolorem quo distinctio, necessitatibus veritatis iure
+              voluptatibus nostrum est!
+            </div>
+            <div class="detailsSection">
+              <ul class="infoList">
+                <li>
+                  <i class="fa-solid fa-calendar-days i1"></i>
+                  <strong>Fecha:</strong> A convenir
+                </li>
+                <li>
+                  <i class="fa-solid fa-clock"></i> <strong>Horario:</strong> A
+                  convenir
+                </li>
+                <li>
+                  <i class="fa-solid fa-graduation-cap i3"></i>
+                  <strong>Modalidad:</strong> Presencial o Remota
+                </li>
+              </ul>
+
               <div class="detailsSection2">
-                  <ul class="infoList">
-                      <li><i class="fa-solid fa-hourglass-half i2"></i> <strong>Duración:</strong> 1 hora</li>
-                      <li><i class="fa-solid fa-language"></i> <strong>Idiomas:</strong> Inglés, Español</li>
-                  </ul>
+                <ul class="infoList">
+                  <li>
+                    <i class="fa-solid fa-hourglass-half i2"></i>
+                    <strong>Duración:</strong> 1 hora
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-language"></i>
+                    <strong>Idiomas:</strong> Inglés, Español
+                  </li>
+                </ul>
               </div>
               <div class="footerSection">
                 <div class="priceInfo">
-                    <span>Desde</span>
-                    <strong>$13,000</strong>
+                  <span>Desde</span>
+                  <strong>$13,000</strong>
                 </div>
                 <div class="actionButtons">
-                    <button class="offerButton">Ofertar</button>
+                  <button class="offerButton">Ofertar</button>
+                  <a href="./page/Pago.html">
                     <button class="hireButton">Postularse</button>
+                  </a>
                 </div>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="cardContainer">
+          <div class="profileSection">
+            <img
+              src="/components/img/descarga (1).jpeg"
+              alt="Foto de Matias Cruz"
+              class="profileImg"
+            />
           </div>
-      </div>
-      <div class="cardContainer">
+          <div class="contentSection">
+            <div class="headerSection">
+              <div class="headerText">
+                <h2>Se necesita Mini-Flete URGENTE!</h2>
+              </div>
+              <div class="bookmarkIcon">
+                <i class="fa-regular fa-bookmark"></i>
+              </div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              deleniti ea neque ab odio voluptatum a autem, commodi vel illum
+              omnis dolorem quo distinctio, necessitatibus veritatis iure
+              voluptatibus nostrum est!
+            </div>
+            <div class="detailsSection">
+              <ul class="infoList">
+                <li>
+                  <i class="fa-solid fa-calendar-days i1"></i>
+                  <strong>Fecha:</strong> A convenir
+                </li>
+                <li>
+                  <i class="fa-solid fa-clock"></i> <strong>Horario:</strong> A
+                  convenir
+                </li>
+                <li>
+                  <i class="fa-solid fa-graduation-cap i3"></i>
+                  <strong>Modalidad:</strong> Presencial o Remota
+                </li>
+              </ul>
+
+              <div class="detailsSection2">
+                <ul class="infoList">
+                  <li>
+                    <i class="fa-solid fa-hourglass-half i2"></i>
+                    <strong>Duración:</strong> 1 hora
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-language"></i>
+                    <strong>Idiomas:</strong> Inglés, Español
+                  </li>
+                </ul>
+              </div>
+              <div class="footerSection">
+                <div class="priceInfo">
+                  <span>Desde</span>
+                  <strong>$13,000</strong>
+                </div>
+                <div class="actionButtons">
+                  <button class="offerButton">Ofertar</button>
+                  <button class="hireButton">Postularse</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardContainer">
+          <div class="profileSection">
+            <img
+              src="/components/img/descarga (1).jpeg"
+              alt="Foto de Matias Cruz"
+              class="profileImg"
+            />
+          </div>
+          <div class="contentSection">
+            <div class="headerSection">
+              <div class="headerText">
+                <h2>Se necesita Mini-Flete URGENTE!</h2>
+              </div>
+              <div class="bookmarkIcon">
+                <i class="fa-regular fa-bookmark"></i>
+              </div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              deleniti ea neque ab odio voluptatum a autem, commodi vel illum
+              omnis dolorem quo distinctio, necessitatibus veritatis iure
+              voluptatibus nostrum est!
+            </div>
+            <div class="detailsSection">
+              <ul class="infoList">
+                <li>
+                  <i class="fa-solid fa-calendar-days i1"></i>
+                  <strong>Fecha:</strong> A convenir
+                </li>
+                <li>
+                  <i class="fa-solid fa-clock"></i> <strong>Horario:</strong> A
+                  convenir
+                </li>
+                <li>
+                  <i class="fa-solid fa-graduation-cap i3"></i>
+                  <strong>Modalidad:</strong> Presencial o Remota
+                </li>
+              </ul>
+
+              <div class="detailsSection2">
+                <ul class="infoList">
+                  <li>
+                    <i class="fa-solid fa-hourglass-half i2"></i>
+                    <strong>Duración:</strong> 1 hora
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-language"></i>
+                    <strong>Idiomas:</strong> Inglés, Español
+                  </li>
+                </ul>
+              </div>
+              <div class="footerSection">
+                <div class="priceInfo">
+                  <span>Desde</span>
+                  <strong>$13,000</strong>
+                </div>
+                <div class="actionButtons">
+                  <button class="offerButton">Ofertar</button>
+                  <button class="hireButton">Postularse</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="cardContainer">
         <div class="profileSection">
             <img src="/components/img/descarga (1).jpeg" alt="Foto de Matias Cruz" class="profileImg">
         </div>
@@ -190,187 +425,76 @@
           </div>
         </div>
         </div>
-      </div>
-      <div class="cardContainer">
-        <div class="profileSection">
-            <img src="/components/img/descarga (1).jpeg" alt="Foto de Matias Cruz" class="profileImg">
-        </div>
-        <div class="contentSection">
+      </div> -->
+        <div class="cardContainer">
+          <div class="profileSection">
+            <img
+              src="/components/img/descarga (1).jpeg"
+              alt="Foto de Matias Cruz"
+              class="profileImg"
+            />
+          </div>
+          <div class="contentSection">
             <div class="headerSection">
-                <div class="headerText">
-                    <h2>Se necesita Mini-Flete URGENTE!</h2>
-                </div>
-                <div class="bookmarkIcon">
-                    <i class="fa-regular fa-bookmark"></i>
-                </div>
+              <div class="headerText">
+                <h2>Se necesita Mini-Flete URGENTE!</h2>
+              </div>
+              <div class="bookmarkIcon">
+                <i class="fa-regular fa-bookmark"></i>
+              </div>
             </div>
             <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deleniti ea neque ab odio voluptatum a autem, commodi vel illum omnis dolorem quo distinctio, necessitatibus veritatis iure voluptatibus nostrum est!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              deleniti ea neque ab odio voluptatum a autem, commodi vel illum
+              omnis dolorem quo distinctio, necessitatibus veritatis iure
+              voluptatibus nostrum est!
             </div>
             <div class="detailsSection">
+              <ul class="infoList">
+                <li>
+                  <i class="fa-solid fa-calendar-days i1"></i>
+                  <strong>Fecha:</strong> A convenir
+                </li>
+                <li>
+                  <i class="fa-solid fa-clock"></i> <strong>Horario:</strong> A
+                  convenir
+                </li>
+                <li>
+                  <i class="fa-solid fa-graduation-cap i3"></i>
+                  <strong>Modalidad:</strong> Presencial o Remota
+                </li>
+              </ul>
+
+              <div class="detailsSection2">
                 <ul class="infoList">
-                    <li><i class="fa-solid fa-calendar-days i1"></i> <strong>Fecha:</strong> A convenir</li>
-                    <li><i class="fa-solid fa-clock "></i> <strong>Horario:</strong> A convenir</li>
-                    <li><i class="fa-solid fa-graduation-cap i3"></i> <strong>Modalidad:</strong> Presencial o Remota</li>
+                  <li>
+                    <i class="fa-solid fa-hourglass-half i2"></i>
+                    <strong>Duración:</strong> 1 hora
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-language"></i>
+                    <strong>Idiomas:</strong> Inglés, Español
+                  </li>
                 </ul>
-            
-            <div class="detailsSection2">
-                <ul class="infoList">
-                    <li><i class="fa-solid fa-hourglass-half i2"></i> <strong>Duración:</strong> 1 hora</li>
-                    <li><i class="fa-solid fa-language"></i> <strong>Idiomas:</strong> Inglés, Español</li>
-                </ul>
-            </div>
-            <div class="footerSection">
-              <div class="priceInfo">
+              </div>
+              <div class="footerSection">
+                <div class="priceInfo">
                   <span>Desde</span>
                   <strong>$13,000</strong>
-              </div>
-              <div class="actionButtons">
+                </div>
+                <div class="actionButtons">
                   <button class="offerButton">Ofertar</button>
                   <button class="hireButton">Postularse</button>
+                </div>
               </div>
+            </div>
           </div>
         </div>
-        </div>
-      </div>
-      <div class="cardContainer">
-        <div class="profileSection">
-            <img src="/components/img/descarga (1).jpeg" alt="Foto de Matias Cruz" class="profileImg">
-        </div>
-        <div class="contentSection">
-            <div class="headerSection">
-                <div class="headerText">
-                    <h2>Se necesita Mini-Flete URGENTE!</h2>
-                </div>
-                <div class="bookmarkIcon">
-                    <i class="fa-regular fa-bookmark"></i>
-                </div>
-            </div>
-            <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deleniti ea neque ab odio voluptatum a autem, commodi vel illum omnis dolorem quo distinctio, necessitatibus veritatis iure voluptatibus nostrum est!
-            </div>
-            <div class="detailsSection">
-                <ul class="infoList">
-                    <li><i class="fa-solid fa-calendar-days i1"></i> <strong>Fecha:</strong> A convenir</li>
-                    <li><i class="fa-solid fa-clock "></i> <strong>Horario:</strong> A convenir</li>
-                    <li><i class="fa-solid fa-graduation-cap i3"></i> <strong>Modalidad:</strong> Presencial o Remota</li>
-                </ul>
-            
-            <div class="detailsSection2">
-                <ul class="infoList">
-                    <li><i class="fa-solid fa-hourglass-half i2"></i> <strong>Duración:</strong> 1 hora</li>
-                    <li><i class="fa-solid fa-language"></i> <strong>Idiomas:</strong> Inglés, Español</li>
-                </ul>
-            </div>
-            <div class="footerSection">
-              <div class="priceInfo">
-                  <span>Desde</span>
-                  <strong>$13,000</strong>
-              </div>
-              <div class="actionButtons">
-                  <button class="offerButton">Ofertar</button>
-                  <button class="hireButton">Postularse</button>
-              </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="cardContainer">
-        <div class="profileSection">
-            <img src="/components/img/descarga (1).jpeg" alt="Foto de Matias Cruz" class="profileImg">
-        </div>
-        <div class="contentSection">
-            <div class="headerSection">
-                <div class="headerText">
-                    <h2>Se necesita Mini-Flete URGENTE!</h2>
-                </div>
-                <div class="bookmarkIcon">
-                    <i class="fa-regular fa-bookmark"></i>
-                </div>
-            </div>
-            <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deleniti ea neque ab odio voluptatum a autem, commodi vel illum omnis dolorem quo distinctio, necessitatibus veritatis iure voluptatibus nostrum est!
-            </div>
-            <div class="detailsSection">
-                <ul class="infoList">
-                    <li><i class="fa-solid fa-calendar-days i1"></i> <strong>Fecha:</strong> A convenir</li>
-                    <li><i class="fa-solid fa-clock "></i> <strong>Horario:</strong> A convenir</li>
-                    <li><i class="fa-solid fa-graduation-cap i3"></i> <strong>Modalidad:</strong> Presencial o Remota</li>
-                </ul>
-            
-            <div class="detailsSection2">
-                <ul class="infoList">
-                    <li><i class="fa-solid fa-hourglass-half i2"></i> <strong>Duración:</strong> 1 hora</li>
-                    <li><i class="fa-solid fa-language"></i> <strong>Idiomas:</strong> Inglés, Español</li>
-                </ul>
-            </div>
-            <div class="footerSection">
-              <div class="priceInfo">
-                  <span>Desde</span>
-                  <strong>$13,000</strong>
-              </div>
-              <div class="actionButtons">
-                  <button class="offerButton">Ofertar</button>
-                  <button class="hireButton">Postularse</button>
-              </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="cardContainer">
-        <div class="profileSection">
-            <img src="/components/img/descarga (1).jpeg" alt="Foto de Matias Cruz" class="profileImg">
-        </div>
-        <div class="contentSection">
-            <div class="headerSection">
-                <div class="headerText">
-                    <h2>Se necesita Mini-Flete URGENTE!</h2>
-                </div>
-                <div class="bookmarkIcon">
-                    <i class="fa-regular fa-bookmark"></i>
-                </div>
-            </div>
-            <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deleniti ea neque ab odio voluptatum a autem, commodi vel illum omnis dolorem quo distinctio, necessitatibus veritatis iure voluptatibus nostrum est!
-            </div>
-            <div class="detailsSection">
-                <ul class="infoList">
-                    <li><i class="fa-solid fa-calendar-days i1"></i> <strong>Fecha:</strong> A convenir</li>
-                    <li><i class="fa-solid fa-clock "></i> <strong>Horario:</strong> A convenir</li>
-                    <li><i class="fa-solid fa-graduation-cap i3"></i> <strong>Modalidad:</strong> Presencial o Remota</li>
-                </ul>
-            
-            <div class="detailsSection2">
-                <ul class="infoList">
-                    <li><i class="fa-solid fa-hourglass-half i2"></i> <strong>Duración:</strong> 1 hora</li>
-                    <li><i class="fa-solid fa-language"></i> <strong>Idiomas:</strong> Inglés, Español</li>
-                </ul>
-            </div>
-            <div class="footerSection">
-              <div class="priceInfo">
-                  <span>Desde</span>
-                  <strong>$13,000</strong>
-              </div>
-              <div class="actionButtons">
-                  <button class="offerButton">Ofertar</button>
-                  <button class="hireButton">Postularse</button>
-              </div>
-          </div>
-        </div>
-        </div>
-      </div>
       </section>
 
-
       <div class="diagonalBar"></div>
-      
     </main>
-
-
-
     <aside></aside>
-
-
 
     <footer class="footer">
       <div class="footer__main-content d-flex justify-content-between">
@@ -393,10 +517,10 @@
             <p class="contact_style"><img src="" alt="" /> 11 2537-7854</p>
             <p class="contact_style">Av. Siempreviva 742</p>
           </div>
-          <div class="aboutus">
-            <a href="page/Aboutus.html" class="aboutus_style">Acerca de nosotros</a>
-            <p class="aboutus_style">Nuestro Equipo</p>
-            <p class="aboutus_style">Nuestra Mision</p>
+          <div class="linksFooter">
+            <a href="./page/Aboutus.html" >Acerca de nosotros</a>
+            <a  href="./page/settings.html" id="questions" >Preguntas Frecuentes</a>
+            <a class="aboutus_style">Nuestra Mision</a>
           </div>
           <div class="redes">
             <p class="redes_title">Seguinos en nuestras redes</p>
@@ -428,6 +552,11 @@
           <p>Cookies</p>
         </div>
       </div>
+
+      <script src="./js/settings.js"></script>
+      <script src="./js/questions.js"></script>
+      <script src="https://unpkg.com/react/umd/react.development.js"></script>
+      <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="components/js/script.js"></script>
       <div class="diagonal_bar"></div>

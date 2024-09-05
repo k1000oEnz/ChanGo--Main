@@ -49,7 +49,14 @@
         padding: 0 0.5rem;
       }
       a:hover {
-        box-shadow: 1px 1px 0.5rem black;
+        filter: drop-shadow(0 0 0.75rem black);
+      }
+    }
+    .linksFooter{
+      display: flex;
+      flex-direction: column;
+      a{
+        margin-top: 1rem;
       }
     }
   }
