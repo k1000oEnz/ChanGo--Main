@@ -26,19 +26,18 @@ body {
 /* Profile */
 .mainProfile {
   margin: 20px auto;
-  max-width: 98rem;
+  width: 80%;
   background-color: $color-white;
   border-radius: 0.5rem;
-  min-height: 58vw;
 
   .containerProfile {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 0; /* Equivalente a grid-column-gap y grid-row-gap: 0px */
+    grid-template-rows: 20rem 1fr 1fr;
+    gap: 0;
+    /* Equivalente a grid-column-gap y grid-row-gap: 0px */
     width: 100%;
     height: 100%;
-    max-height: 500px;
 
     .subtitle {
       font-size: 1.2rem;
@@ -54,24 +53,24 @@ body {
       background-position: center;
       border-radius: 8px 8px 0px 0px;
 
-      .profilePic {
-        position: relative;
-        margin: 20px;
-        width: 12rem;
-        height: 12rem;
-        border-radius: 50%;
-        /* Hace que la imagen corte el banner */
-        bottom: -6rem;
-      }
-
       .userData {
+        position: relative;
         display: flex;
         flex-direction: row;
-        position: relative;
-        margin-left: 14rem;
+        bottom: -6rem;
+        margin: 20px;
+        align-items: center;
 
-        .datos {
-          flex-direction: column;
+        .profilePic {
+          width: 12rem;
+          height: 12rem;
+          border-radius: 50%;
+        }
+
+        .rating {
+          margin: .5rem;
+          align-content: center;
+          padding: .5rem;
 
           h1 {
             font-size: 2.3rem;
@@ -83,30 +82,67 @@ body {
             font-size: 1rem;
             margin-top: 0;
           }
-        } /* .datos */
 
-        .btn-contratar {
-          width: 12rem;
-          height: 100%;
-          margin: 1rem;
+          .rating-wrapper {
+            align-self: center;
+            /*box-shadow: 7px 7px 25px rgba(198, 206, 237, .7),
+                -7px -7px 35px rgba(255, 255, 255, .7),
+                inset 0px 0px 4px rgba(255, 255, 255, .9),
+                inset 7px 7px 15px rgba(198, 206, 237, .8);*/
+            border-radius: 5rem;
+            display: inline-flex;
+            direction: rtl !important;
+            padding: .7rem .7rem;
+            margin-left: auto;
+
+            label {
+              color: #E1E6F6;
+              cursor: pointer;
+              display: inline-flex;
+              font-size: 2.2rem;
+              padding: 0 0.2rem;
+              transition: color 0.5s;
+            }
+
+            svg {
+              -webkit-text-fill-color: transparent;
+              -webkit-filter: drop-shadow (4px 1px 6px rgba(198, 206, 237, 1));
+              filter: drop-shadow(5px 1px 3px rgba(198, 206, 237, 1));
+            }
+
+            input {
+              height: 100%;
+              width: 100%;
+            }
+
+            input {
+              display: none;
+            }
+
+            label:hover,
+            label:hover~label,
+            input:checked~label {
+              color: $color-yellow400;
+            }
+          }
         }
-      } /* .userData */
 
-      .button__styleY {
-        background-color: $color-yellow400;
-        color: $color-white;
-        font-size: 1.2rem;
-        font-weight: bold;
-        border: 0.1rem solid $color-purple400;
-        padding: 8px 48px;
-        border-radius: 16px;
-        margin: 0 0.5rem 0 0;
+        .button__styleY {
+          background-color: $color-yellow400;
+          color: $color-white;
+          font-size: 1.2rem;
+          font-weight: bold;
+          padding: 8px 48px;
+          border-radius: 3rem;
+          margin-top: 1rem;
+          max-height: 3.5rem;
 
-        &:hover {
-          box-shadow: $c_shadow;
-          background-color: $color-yellow200;
+          &:hover {
+            box-shadow: $c_shadow;
+            background-color: $color-yellow200;
+          }
         }
-      } /* .button__styleY */
+      }
 
       .ProfileAboutMe {
         grid-area: 2 / 1 / 3 / 3;
@@ -118,8 +154,10 @@ body {
         p {
           margin: 20px;
         }
-      } /* .ProfileAboutMe */
-    } /* .profileBanner */
+      }
+    }
+
+    /* .profileBanner */
 
     .rightSection {
       grid-area: 2 / 2 / 3 / 3;
@@ -127,18 +165,22 @@ body {
       .postulations {
         margin: 0;
       }
-    } /* .rightSection */
+    }
+
+    /* .rightSection */
 
     .ProfileLeftSection {
       grid-area: 2 / 1 / 3 / 2;
 
       .ProfileAboutMe {
-        margin: 20px auto;
-        padding: 6rem 4rem 0 4rem;
-        max-width: 50rem;
+        padding:  0 4rem;
       }
-    } /* .ProfileLeftSection */
-  } /* .containerProfile */
+    }
+
+    /* .ProfileLeftSection */
+  }
+
+  /* .containerProfile */
 
   .resenas {
     grid-area: 3 / 1 / 4 / 2;
@@ -153,14 +195,22 @@ body {
       .resena-body {
         border: 1px solid $color-purple400;
       }
-    } /* .resena */
-  } /* .resenas */
+    }
+
+    /* .resena */
+  }
+
+  /* .resenas */
 
   .ofertas {
     grid-area: 3 / 2 / 4 / 3;
-  } /* .ofertas */
+  }
 
-} /* .mainProfile */
+  /* .ofertas */
+
+}
+
+/* .mainProfile */
 
 .accepted {
   background-color: $color-purple200;
@@ -188,7 +238,9 @@ body {
     a {
       margin-top: 0.3rem;
     }
-  } /* .actionButtons */
+  }
+
+  /* .actionButtons */
 
   .job-image {
     img {
@@ -197,7 +249,9 @@ body {
       object-fit: cover;
       margin-right: 15px;
     }
-  } /* .job-image */
+  }
+
+  /* .job-image */
 
   .job-info {
     flex-grow: 1;
@@ -217,7 +271,9 @@ body {
         margin-right: 5px;
         color: #7b1fa2;
       }
-    } /* p */
+    }
+
+    /* p */
 
     .jobDetails {
       font-weight: 700;
@@ -228,7 +284,9 @@ body {
       width: 1.5rem;
       margin: 0 0.2rem;
     }
-  } /* .job-info */
+  }
+
+  /* .job-info */
 
   .status {
     padding: 8px 15px;
@@ -249,12 +307,16 @@ body {
       font-weight: 900;
       margin-right: 5px;
     }
-  } /* .pending */
-} /* .job-card */
+  }
+
+  /* .pending */
+}
+
+/* .job-card */
 
 .job-card:hover {
   box-shadow: 0 4px 10px rgba($color-purple200, 0.6);
-  
+
   transform: translateY(-5px);
 }
 
@@ -275,7 +337,9 @@ body {
     padding-bottom: 5px;
     display: inline-block;
   }
-} /* .containerProfile */
+}
+
+/* .containerProfile */
 
 .tags {
   display: flex;
@@ -299,7 +363,9 @@ body {
     font-weight: bold;
     color: $color-white;
   }
-} /* .tag */
+}
+
+/* .tag */
 
 .add-tag {
   background-color: transparent;
@@ -314,7 +380,9 @@ body {
   &:hover {
     text-decoration: underline;
   }
-} /* .add-tag */
+}
+
+/* .add-tag */
 
 .resena {
   padding: 15px;
@@ -337,7 +405,9 @@ body {
       margin: 0 0.5rem 0 0.5rem;
       font-size: 1.2rem;
     }
-  } /* .resena-header */
+  }
+
+  /* .resena-header */
 
   .resena-profile-image {
     width: 40px;
@@ -375,37 +445,6 @@ body {
         font-size: 20px;
         margin-right: 10px;
       }
-    } /* .resena-comment */
-  } /* .resena-body */
-} /* .resena */
-/*
-.offerButton,
-.hireButton {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
-  display: inline-block;
-  min-width: 100px;
-  text-align: center;
+    }
+  }
 }
-
-.offerButton {
-  background-color: #f0ad4e;
-  color: #fff;
-
-  &:hover {
-    background-color: #ec971f;
-  }
-} /* .offerButton */
-/*
-.hireButton {
-  background-color: #6c63ff;
-  color: #fff;
-
-  &:hover {
-    background-color: #5a54e6;
-  }
-}  .hireButton */
