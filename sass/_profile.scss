@@ -1,6 +1,3 @@
-/*Import*/
-@import "globales";
-
 /*Variables*/
 $color-white: #ffffff;
 $color-black: #000;
@@ -10,14 +7,6 @@ $color-purple200: #984bfd;
 $color-yellow400: #e3b134;
 $color-yellow200: #fdd87b;
 $c_shadow: 2px 1px 5px #3f3f3f;
-
-/* 
-body {
-    background-color: #edf2f6;
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
-} */
 
 .fondo {
   background-color: #edf2f6;
@@ -37,10 +26,9 @@ body {
     gap: 0;
     /* Equivalente a grid-column-gap y grid-row-gap: 0px */
     width: 100%;
-    height: 100%;
 
     .subtitle {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       font-weight: 700;
       margin: 1rem;
     }
@@ -85,10 +73,6 @@ body {
 
           .rating-wrapper {
             align-self: center;
-            /*box-shadow: 7px 7px 25px rgba(198, 206, 237, .7),
-                -7px -7px 35px rgba(255, 255, 255, .7),
-                inset 0px 0px 4px rgba(255, 255, 255, .9),
-                inset 7px 7px 15px rgba(198, 206, 237, .8);*/
             border-radius: 5rem;
             display: inline-flex;
             direction: rtl !important;
@@ -108,11 +92,6 @@ body {
               -webkit-text-fill-color: transparent;
               -webkit-filter: drop-shadow (4px 1px 6px rgba(198, 206, 237, 1));
               filter: drop-shadow(5px 1px 3px rgba(198, 206, 237, 1));
-            }
-
-            input {
-              height: 100%;
-              width: 100%;
             }
 
             input {
@@ -143,44 +122,24 @@ body {
           }
         }
       }
-
-      .ProfileAboutMe {
-        grid-area: 2 / 1 / 3 / 3;
-        border: 1px solid $color-purple400;
-        justify-content: center;
-        max-width: 40rem;
-        height: 100%;
-
-        p {
-          margin: 20px;
-        }
-      }
     }
-
-    /* .profileBanner */
 
     .rightSection {
       grid-area: 2 / 2 / 3 / 3;
-
-      .postulations {
-        margin: 0;
-      }
     }
-
-    /* .rightSection */
-
     .ProfileLeftSection {
       grid-area: 2 / 1 / 3 / 2;
 
       .ProfileAboutMe {
-        padding:  0 4rem;
+        padding: 0 4rem;
+
+        .description {
+          margin: .5rem;
+          font-size: 1.2rem;
+        }
       }
     }
-
-    /* .ProfileLeftSection */
   }
-
-  /* .containerProfile */
 
   .resenas {
     grid-area: 3 / 1 / 4 / 2;
@@ -196,21 +155,12 @@ body {
         border: 1px solid $color-purple400;
       }
     }
-
-    /* .resena */
   }
-
-  /* .resenas */
 
   .ofertas {
     grid-area: 3 / 2 / 4 / 3;
   }
-
-  /* .ofertas */
-
 }
-
-/* .mainProfile */
 
 .accepted {
   background-color: $color-purple200;
@@ -220,15 +170,12 @@ body {
 .job-card {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 15px;
+  padding: 1.5rem;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border: 2px solid #e0e0e0;
-  max-width: 600px;
-  margin: 20px;
-  font-family: Arial, sans-serif;
+  margin: 1rem 2rem;
 
   .actionButtons {
     display: flex;
@@ -240,18 +187,15 @@ body {
     }
   }
 
-  /* .actionButtons */
-
   .job-image {
     img {
       max-width: 6rem;
       border-radius: 10px;
       object-fit: cover;
       margin-right: 15px;
+      border: $color-yellow400 2px solid;
     }
   }
-
-  /* .job-image */
 
   .job-info {
     flex-grow: 1;
@@ -273,8 +217,6 @@ body {
       }
     }
 
-    /* p */
-
     .jobDetails {
       font-weight: 700;
     }
@@ -285,8 +227,6 @@ body {
       margin: 0 0.2rem;
     }
   }
-
-  /* .job-info */
 
   .status {
     padding: 8px 15px;
@@ -308,11 +248,7 @@ body {
       margin-right: 5px;
     }
   }
-
-  /* .pending */
 }
-
-/* .job-card */
 
 .job-card:hover {
   box-shadow: 0 4px 10px rgba($color-purple200, 0.6);
@@ -339,12 +275,11 @@ body {
   }
 }
 
-/* .containerProfile */
-
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: .5rem;
+  padding: 0 1rem;
 }
 
 .tag {
@@ -365,8 +300,6 @@ body {
   }
 }
 
-/* .tag */
-
 .add-tag {
   background-color: transparent;
   color: #000;
@@ -381,8 +314,6 @@ body {
     text-decoration: underline;
   }
 }
-
-/* .add-tag */
 
 .resena {
   padding: 15px;
@@ -406,8 +337,6 @@ body {
       font-size: 1.2rem;
     }
   }
-
-  /* .resena-header */
 
   .resena-profile-image {
     width: 40px;
