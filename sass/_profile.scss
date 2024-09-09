@@ -111,10 +111,12 @@ $c_shadow: 2px 1px 5px #3f3f3f;
           color: $color-white;
           font-size: 1.2rem;
           font-weight: bold;
-          padding: 8px 48px;
           border-radius: 3rem;
           margin-top: 1rem;
           max-height: 3.5rem;
+          border: none;
+          padding: 0.5rem 2rem;
+          width: 100%;
 
           &:hover {
             box-shadow: $c_shadow;
@@ -127,6 +129,7 @@ $c_shadow: 2px 1px 5px #3f3f3f;
     .rightSection {
       grid-area: 2 / 2 / 3 / 3;
     }
+
     .ProfileLeftSection {
       grid-area: 2 / 1 / 3 / 2;
 
@@ -141,23 +144,73 @@ $c_shadow: 2px 1px 5px #3f3f3f;
     }
   }
 
-  .resenas {
+  .reviews {
     grid-area: 3 / 1 / 4 / 2;
     margin: 0 4rem;
 
-    .resena {
-      margin: 20px auto;
+    .review {
+      margin: 2rem auto;
       padding: 1rem;
-      max-width: 50rem;
-      border-radius: 10px;
+      border-radius: 5px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      border: 2px solid #e0e0e0;
 
-      .resena-body {
+      .review-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+
+        h4 {
+          margin: 0 0.5rem;
+          font-size: 1.2rem;
+        }
+      }
+
+      .review-profile-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .review-rating {
+        display: flex;
+      }
+
+      .review-star {
+        color: $color-yellow400;
+        font-size: 2rem;
+      }
+
+      .review-ver-imagenes {
+        margin-left: auto;
+        font-size: 14px;
+        color: #007bff;
+        cursor: pointer;
+      }
+
+      .review-body {
+        padding: 10px;
         border: 1px solid $color-purple400;
+        border-radius: 5px;
+
+        .review-comment {
+          display: flex;
+          align-items: center;
+
+          .review-comment-icon {
+            font-size: 20px;
+            margin-right: 10px;
+          }
+        }
       }
     }
+
   }
 
-  .ofertas {
+  .offers {
     grid-area: 3 / 2 / 4 / 3;
   }
 }
@@ -182,10 +235,13 @@ $c_shadow: 2px 1px 5px #3f3f3f;
     flex-direction: column;
     margin: 0.5rem;
 
-    a {
-      margin-top: 0.3rem;
+    .offerButton {
+      width: 100%;
     }
+
   }
+
+
 
   .job-image {
     img {
@@ -312,68 +368,5 @@ $c_shadow: 2px 1px 5px #3f3f3f;
 
   &:hover {
     text-decoration: underline;
-  }
-}
-
-.resena {
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  border: 2px solid #e0e0e0;
-  padding: 15px;
-  border-radius: 5px;
-  width: 600px;
-  margin: 20px auto;
-
-  .resena-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 10px;
-
-    h4 {
-      margin: 0 0.5rem 0 0.5rem;
-      font-size: 1.2rem;
-    }
-  }
-
-  .resena-profile-image {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-
-  .resena-rating {
-    display: flex;
-  }
-
-  .resena-star {
-    color: #ffc107;
-    font-size: 18px;
-  }
-
-  .resena-ver-imagenes {
-    margin-left: auto;
-    font-size: 14px;
-    color: #007bff;
-    cursor: pointer;
-  }
-
-  .resena-body {
-    padding: 10px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-
-    .resena-comment {
-      display: flex;
-      align-items: center;
-
-      .resena-comment-icon {
-        font-size: 20px;
-        margin-right: 10px;
-      }
-    }
   }
 }
