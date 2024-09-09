@@ -149,9 +149,9 @@ $c_shadow: 2px 1px 5px #3f3f3f;
     margin: 0 4rem;
 
     .review {
-      margin: 2rem auto;
+      margin: 0.5rem;
       padding: 1rem;
-      border-radius: 5px;
+      border-radius: 1rem;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       background-color: #fff;
       border: 2px solid #e0e0e0;
@@ -162,26 +162,29 @@ $c_shadow: 2px 1px 5px #3f3f3f;
         align-items: center;
         margin-bottom: 10px;
 
-        h4 {
-          margin: 0 0.5rem;
-          font-size: 1.2rem;
+        .reviewer {
+          h4 {
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+          }
+
+          .review-rating {
+            display: flex;
+          }
+
+          .review-star {
+            color: $color-yellow400;
+            font-size: 2rem;
+          }
         }
+
       }
 
       .review-profile-image {
-        width: 40px;
-        height: 40px;
+        width: 4rem;
+        height: 4rem;
         border-radius: 50%;
         margin-right: 10px;
-      }
-
-      .review-rating {
-        display: flex;
-      }
-
-      .review-star {
-        color: $color-yellow400;
-        font-size: 2rem;
       }
 
       .review-ver-imagenes {
@@ -193,7 +196,7 @@ $c_shadow: 2px 1px 5px #3f3f3f;
 
       .review-body {
         padding: 10px;
-        border: 1px solid $color-purple400;
+        border: 1px solid rgba($color-purple200, 0.4);
         border-radius: 5px;
 
         .review-comment {
@@ -224,7 +227,7 @@ $c_shadow: 2px 1px 5px #3f3f3f;
   display: flex;
   align-items: center;
   padding: 1.5rem;
-  border-radius: 15px;
+  border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border: 2px solid #e0e0e0;
