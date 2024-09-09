@@ -185,6 +185,7 @@ $c_shadow: 2px 1px 5px #3f3f3f;
         height: 4rem;
         border-radius: 50%;
         margin-right: 10px;
+        border: $color-yellow400 2px solid;
       }
 
       .review-ver-imagenes {
@@ -248,17 +249,17 @@ $c_shadow: 2px 1px 5px #3f3f3f;
 
   .job-image {
     img {
-      max-width: 6rem;
       border-radius: 10px;
       object-fit: cover;
-      margin-right: 15px;
       border: $color-yellow400 2px solid;
+      width: 7rem;
+      height: 7rem;
     }
   }
 
   .job-info {
     flex-grow: 1;
-
+    margin: 0 1rem;
     h3 {
       margin: 0;
       font-weight: bold;
