@@ -252,6 +252,12 @@ body {
   } /* .pending */
 } /* .job-card */
 
+.job-card:hover {
+  box-shadow: 0 4px 10px rgba($color-purple200, 0.6);
+  
+  transform: translateY(-5px);
+}
+
 .profileSkills {
   max-width: 50rem;
   margin: 20px auto;
@@ -372,7 +378,7 @@ body {
     } /* .resena-comment */
   } /* .resena-body */
 } /* .resena */
-
+/*
 .offerButton,
 .hireButton {
   padding: 10px 20px;
@@ -394,7 +400,7 @@ body {
     background-color: #ec971f;
   }
 } /* .offerButton */
-
+/*
 .hireButton {
   background-color: #6c63ff;
   color: #fff;
@@ -402,4 +408,4 @@ body {
   &:hover {
     background-color: #5a54e6;
   }
-} /* .hireButton */
+}  .hireButton */
