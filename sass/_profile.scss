@@ -123,7 +123,6 @@ $c_shadow: 2px 1px 5px #3f3f3f;
 
           &:hover {
             box-shadow: $c_shadow;
-            background-color: $color-yellow200;
           }
         }
       }
@@ -150,10 +149,9 @@ $c_shadow: 2px 1px 5px #3f3f3f;
   .reviews {
     grid-area: 3 / 1 / 4 / 2;
     margin: 0 4rem;
-    padding: 0 2rem;
 
     .review {
-      margin: 0.5rem;
+      margin: 1rem;
       padding: 1rem;
       border-radius: 1rem;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
