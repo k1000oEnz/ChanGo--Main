@@ -12,6 +12,9 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
@@ -82,20 +85,63 @@
     <main class="mainProfile">
         <div class="containerProfile">
             <div class="profileBanner">
-                <img class="profilePic" src="../components/img/Outer.jpg" alt="Imagen de Perfil de Arturo Pug">
                 <div class="userData">
-                    <div class="datos">
+
+                    <img class="profilePic" src="../components/img/Profile/Outer.jpg" alt="Imagen de Perfil de Arturo Pug">
+                    <div class="rating">
+                        <div class="container-wrapper">
+                            <div class=" d-flex align-items-center justify-content-center">
+                                <div class="row justify-content-center">
+
+                                    <!-- star rating -->
+                                    <div class="rating-wrapper">
+
+                                        <!-- star 5 -->
+                                        <input type="radio" id="5-star-rating" name="star-rating" value="5">
+                                        <label for="5-star-rating" class="star-rating">
+                                            <i class="fas fa-star d-inline-block"></i>
+                                        </label>
+
+                                        <!-- star 4 -->
+                                        <input type="radio" id="4-star-rating" name="star-rating" value="4">
+                                        <label for="4-star-rating" class="star-rating star">
+                                            <i class="fas fa-star d-inline-block"></i>
+                                        </label>
+
+                                        <!-- star 3 -->
+                                        <input type="radio" id="3-star-rating" name="star-rating" value="3">
+                                        <label for="3-star-rating" class="star-rating star">
+                                            <i class="fas fa-star d-inline-block"></i>
+                                        </label>
+
+                                        <!-- star 2 -->
+                                        <input type="radio" id="2-star-rating" name="star-rating" value="2">
+                                        <label for="2-star-rating" class="star-rating star">
+                                            <i class="fas fa-star d-inline-block"></i>
+                                        </label>
+
+                                        <!-- star 1 -->
+                                        <input type="radio" id="1-star-rating" name="star-rating" value="1">
+                                        <label for="1-star-rating" class="star-rating star">
+                                            <i class="fas fa-star d-inline-block"></i>
+                                        </label>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                         <h1>Árturo Pug</h1>
                         <p>Buenos Aires, Argentina</p>
                     </div>
 
-                    <button class="button__styleY btn-contratar">Contratar</button>
+                    <a href="./Pago.html"><button class="button__styleY">Contratar</button></a>
                 </div>
             </div>
             <div class="ProfileLeftSection">
                 <!-- Seccion de acerca de mi -->
                 <section class="ProfileAboutMe">
-                    <h2>ACERCA DE MI:</h2>
+                    <h2 class="subtitle">ACERCA DE MI:</h2>
                     <p class="description">Lorem ipsum dolor sit amet consectetur. Nunc sit feugiat sed at mattis
                         dictumst. Mauris
                         platea in lectus gravida. Consectetur nam nunc tellus nam nascetur in dolor. Elementum sit
@@ -105,7 +151,7 @@
                 </section>
                 <!-- Seccion de aptitudes y conocimientos -->
                 <section class="profileSkills skills">
-                    <h2>APTITUDES / CONOCIMIENTOS</h2>
+                    <h2 class="subtitle">APTITUDES / CONOCIMIENTOS</h2>
                     <div class="tags">
                         <span class="tag ">Soy una aptitud</span>
                         <span class="tag">Soy una aptitud</span>
@@ -118,9 +164,9 @@
             <div class="rightSection">
                 <!-- Seccion de postulaciones -->
                 <section class="postulations">
-                    <h2>POSTULACIONES</h2>
+                    <h2 class="subtitle">POSTULACIONES</h2>
                     <div class="job-card">
-                        <div class="job-image"><img src="../components/img/Yo.png" alt=""></div>
+                        <div class="job-image"><img src="../components/img/Profile/Yo.png" alt=""></div>
                         <div class="job-info">
                             <h3 class="jobName">Decorador de interiores</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
@@ -129,10 +175,10 @@
                             <p class="jobDetails"><img src="../components/img/Profile/VectorUbicacion.svg"
                                     alt="Ubicacion" class="jobVector"> Ubicación: CABA</p>
                         </div>
-                        <span class="offerButton">Pendiente</span>
+                        <a href="#"><span class="offerButton">Pendiente</span></a>
                     </div>
                     <div class="job-card">
-                        <div class="job-image"><img src="../components/img/Yo.png" alt=""></div>
+                        <div class="job-image"><img src="../components/img/Profile/Yo.png" alt=""></div>
                         <div class="job-info">
                             <h3 class="jobName">Barbero</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
@@ -141,50 +187,55 @@
                             <p class="jobDetails"><img src="../components/img/Profile/VectorUbicacion.svg"
                                     alt="Ubicacion" class="jobVector"> Ubicación: CABA</p>
                         </div>
-                        <span class="status pending">Aceptado</span>
+                        <a href="#"><span class="status pending">Aceptado</span></a>
                     </div>
                     <!-- <button class="ver-mas">Ver más</button> -->
                 </section>
             </div>
             <!-- Seccion de reseñas -->
-            <section class="resenas">
-                <h2>RESEÑAS</h2>
-                <div class="resena">
-                    <div class="resena-header">
-                        <img src="../components/img/Yo.png" alt="Profile Picture" class="resena-profile-image">
-                        <h4>Pérez Sozo</h4>
-                        <div class="resena-rating">
-                            <span class="resena-star">★</span>
-                            <span class="resena-star">★</span>
-                            <span class="resena-star">★</span>
-                            <span class="resena-star">★</span>
-                            <span class="resena-star">★</span>
+            <section class="reviews">
+                <h2 class="subtitle">RESEÑAS</h2>
+                <div class="review">
+                    <div class="review-header">
+                        <img src="../components/img/Profile/Yo.png" alt="Profile Picture" class="review-profile-image">
+                        <div class="reviewer">
+                            <h4>Pérez Sozo</h4>
+                            <div class="review-rating">
+                                <span class="review-star">★</span>
+                                <span class="review-star">★</span>
+                                <span class="review-star">★</span>
+                                <span class="review-star">★</span>
+                                <span class="review-star">★</span>
+                            </div>
                         </div>
-                        <a href="#" class="resena-ver-imagenes">Ver imágenes</a>
+
+                        <a href="#" class="review-ver-imagenes">Ver imágenes</a>
                     </div>
-                    <div class="resena-body">
-                        <div class="resena-comment">
-                            <span class="resena-comment-icon"> </span>
+                    <div class="review-body">
+                        <div class="review-comment">
+                            <span class="review-comment-icon"> </span>
                             <p>Excelente trabajo, muy recomendado</p>
                         </div>
                     </div>
                 </div>
-                <div class="resena">
-                    <div class="resena-header">
-                        <img src="../components/img/Yo.png" alt="Profile Picture" class="resena-profile-image">
-                        <h4>Pérez Sozo</h4>
-                        <div class="resena-rating">
-                            <span class="resena-star">★</span>
-                            <span class="resena-star">★</span>
-                            <span class="resena-star">★</span>
-                            <span class="resena-star">★</span>
-                            <span class="resena-star">★</span>
+                <div class="review">
+                    <div class="review-header">
+                        <img src="../components/img/Profile/Yo.png" alt="Profile Picture" class="review-profile-image">
+                        <div class="reviewer">
+                            <h4>Pérez Sozo</h4>
+                            <div class="review-rating">
+                                <span class="review-star">★</span>
+                                <span class="review-star">★</span>
+                                <span class="review-star">★</span>
+                                <span class="review-star">★</span>
+                                <span class="review-star">★</span>
+                            </div>
                         </div>
-                        <a href="#" class="resena-ver-imagenes">Ver imágenes</a>
+                        <a href="#" class="review-ver-imagenes">Ver imágenes</a>
                     </div>
-                    <div class="resena-body">
-                        <div class="resena-comment">
-                            <span class="resena-comment-icon"> </span>
+                    <div class="review-body">
+                        <div class="review-comment">
+                            <span class="review-comment-icon"> </span>
                             <p>Excelente trabajo, muy recomendado</p>
                         </div>
                     </div>
@@ -192,10 +243,10 @@
 
             </section>
             <!-- Seccion de ofertas -->
-            <section class="ofertas">
-                <h2>OFERTAS</h2>
+            <section class="offers">
+                <h2 class="subtitle">OFERTAS</h2>
                 <div class="job-card">
-                    <div class="job-image"> <img src="../components/img/Yo.png" alt=""></div>
+                    <div class="job-image"> <img src="../components/img/Profile/Yo.png" alt=""></div>
                     <div class="job-info">
                         <h3 class="jobName">Barbero</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
@@ -205,14 +256,14 @@
                                 class="jobVector"> Ubicación: CABA</p>
                     </div>
                     <div class="actionButtons">
-                        <button class="offerButton">Ofertar</button>
+                        <a href="./Pago.html"><button class="offerButton">Ofertar</button></a>
                         <a href="./Pago.html">
                             <button class="hireButton">Postularse</button>
                         </a>
                     </div>
                 </div>
                 <div class="job-card">
-                    <div class="job-image"> <img src="../components/img/Yo.png" alt=""></div>
+                    <div class="job-image"> <img src="../components/img/Profile/Yo.png" alt=""></div>
                     <div class="job-info">
                         <h3 class="jobName">Barbero</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
@@ -222,15 +273,15 @@
                                 class="jobVector"> Ubicación: CABA</p>
                     </div>
                     <div class="actionButtons">
-                        <button class="offerButton">Ofertar</button>
+                        <a href="./Pago.html"><button class="offerButton">Ofertar</button></a>
                         <a href="./Pago.html">
                             <button class="hireButton">Postularse</button>
                         </a>
                     </div>
                 </div>
                 <!-- <span class="status accepted">Aceptado</span> -->
+            </section>
         </div>
-        </section>
         </div>
     </main>
     <!-- Comienzo del Footer -->
