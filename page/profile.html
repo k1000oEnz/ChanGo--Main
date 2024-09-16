@@ -87,7 +87,8 @@
             <div class="profileBanner">
                 <div class="userData">
 
-                    <img class="profilePic" src="../components/img/Profile/Outer.jpg" alt="Imagen de Perfil de Arturo Pug">
+                    <img class="profilePic" src="../components/img/Profile/Outer.jpg"
+                        alt="Imagen de Perfil de Arturo Pug">
                     <div class="rating">
                         <div class="container-wrapper">
                             <div class=" d-flex align-items-center justify-content-center">
@@ -136,7 +137,33 @@
                     </div>
 
                     <a href="./Pago.html"><button class="button__styleY">Contratar</button></a>
-                    <a href="#"><button class="button__styleY">Publicar</button></a>
+                    <a href="#"><button class="button__styleY profile-open-modal-btn">Publicar</button></a>
+                    <div class="profile-modal-overlay">
+                        <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+                            <button class="profile-close-btn">×</button>
+                            <div class="profile-modal-header">
+                                <h2 class="profile-modal-title" id="modal-title">Crear Aviso</h2>
+                                <div class="profile-post-options">
+                                    <label class="profile-switch">
+                                        <input type="checkbox" id="visibility-toggle">
+                                        <span class="profile-slider"></span>
+                                    </label>
+                                    <span id="visibility-status">Prestador</span>
+                                </div>
+                                
+                            </div>
+                            <textarea class="profile-post-content" placeholder="¿Que estas buscando?" required
+                                minlength="10"></textarea>
+                            
+                            <select class="profile-skills-dropdown" required>
+                                <option value="" disabled selected>Select a skill</option>
+                                <option value="skill1">Aptitud</option>
+                                <option value="skill2">Aptitud</option>
+                                <option value="skill3">Aptitud</option>
+                            </select>
+                            <button class="button__styleY profile-post-btn ">Compartir</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="ProfileLeftSection">
