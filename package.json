@@ -11,8 +11,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "express": "^4.19.2",
-    "mssql": "^11.0.1"
+    "bootstrap": "^5.3.3"
   }
 }
