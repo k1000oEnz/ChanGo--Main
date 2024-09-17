@@ -23997,6 +23997,17 @@ nav {
   box-shadow: 0 2px 1rem #888888;
   padding: 1rem 2rem 0.5rem;
 }
+nav .navButt {
+  color: #6D8493;
+  border: 3px solid transparent;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  margin: 0 1rem;
+}
+nav .navButt:hover {
+  border: 3px solid var(--c_purple400);
+  color: var(--c_purple400);
+}
 nav ul {
   display: flex;
 }
@@ -24049,19 +24060,6 @@ nav ul li button img {
 
 .brand_color2 {
   color: var(--c_yellow400);
-}
-
-.navButt {
-  color: #6D8493;
-  border: 3px solid transparent;
-  border-radius: 0.5rem;
-  background-color: transparent;
-  margin: 0 1rem;
-}
-
-.navButt:hover {
-  border: 3px solid var(--c_purple400);
-  color: var(--c_purple400);
 }
 
 .inicio {
@@ -24760,17 +24758,18 @@ a {
   padding: 0;
 }
 
-.container {
+.containerxd {
   position: relative;
   overflow: hidden;
   font-family: "DM-Sans", "Roboto", Arial, sans-serif;
-  background-color: #E0E4EC;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
+  margin: 0%;
 }
-.container a {
+.containerxd a {
   text-decoration: none;
   color: var(--c_white);
   font-weight: bold;
