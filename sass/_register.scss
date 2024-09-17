@@ -5,15 +5,16 @@
     padding: 0;
 }
 
-.container {
+.containerxd {
     position: relative;
     overflow: hidden;
     font-family: 'DM-Sans', 'Roboto', Arial, sans-serif;
-    background-color: #E0E4EC;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%;
+    margin: 0%;
 
     a{
         text-decoration: none;
