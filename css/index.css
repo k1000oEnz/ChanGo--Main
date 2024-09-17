@@ -24770,7 +24770,7 @@ a {
   padding: 0;
 }
 
-.container {
+body {
   position: relative;
   overflow: hidden;
   font-family: "DM-Sans", "Roboto", Arial, sans-serif;
@@ -24780,7 +24780,7 @@ a {
   align-items: center;
   height: 100vh;
 }
-.container a {
+body a {
   text-decoration: none;
   color: var(--c_white);
   font-weight: bold;
