@@ -4,7 +4,6 @@
 main{
         overflow: hidden;
         position: relative;
-        height: 300vh;
 
     .Ofertas{
         display: flex;
@@ -257,12 +256,6 @@ box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 transform: translateY(-5px);
 }
 
-.UserCarrousel{
-display: flex;
-align-items: center;
-justify-content: center;
-margin-bottom: 2rem;
-margin-top: 1rem;
 
 button{
     border: none;
@@ -270,58 +263,58 @@ button{
     color: var(--c_yellow400);
     text-shadow: #333 1px 1px 5px;
 }
-.UserCard{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    border: 1px solid var(--c_purple200);
-    width: 20%;
-    height: 60%;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin: 0 2rem 0 2rem;
-    background-color: #FBFBFB;
-    figure{
-        position: relative;
-        display: inline-block;
 
-        .profileImg{
-            border-radius: 50%;
-            border: 4px solid var(--c_yellow400);
-        }
-    }
-    .profileName{
-        font-weight: bold;
-        font-size: 2rem;
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-    .roleName{
-        font-size: 1.5rem;
-        color: var(--c_yellow400);
-    }
-    .priceRange{
-        color: var(--c_purple400);
-        font-weight: bold;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    .Rating{
+#slider{
+    .UserCard{
         display: flex;
-        width: max-content;
-        background-color: var(--c_yellow400);
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        border: 1px solid var(--c_purple200);
         border-radius: 1rem;
-        padding: .5rem;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        .fa-star{
-            color: white;
+        padding: 1rem;
+        background-color: #FBFBFB;
+    }
+        figure{
+            position: relative;
+            display: inline-block;
+        }
+            .profileImg{
+                border-radius: 50%;
+                border: 4px solid var(--c_yellow400);
+            }
+        
+        .profileName{
+            font-weight: bold;
+            font-size: 2rem;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .roleName{
+            font-size: 1.5rem;
+            color: var(--c_yellow400);
+        }
+        .priceRange{
+            color: var(--c_purple400);
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .Rating{
+            display: flex;
+            width: max-content;
+            background-color: var(--c_yellow400);
+            border-radius: 1rem;
+            padding: .5rem;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            .fa-star{
+                color: white;
+            }
         }
     }
-}
-}
+
 
 #container {
 	display: grid;

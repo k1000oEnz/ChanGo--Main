@@ -24072,7 +24072,6 @@ nav ul li button img {
 main {
   overflow: hidden;
   position: relative;
-  height: 300vh;
 }
 main .Ofertas {
   display: flex;
@@ -24328,57 +24327,48 @@ main .Ofertas .LongCard {
   transform: translateY(-5px);
 }
 
-.UserCarrousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-}
-.UserCarrousel button {
+button {
   border: none;
   font-size: 4rem;
   color: var(--c_yellow400);
   text-shadow: #333 1px 1px 5px;
 }
-.UserCarrousel .UserCard {
+
+#slider .UserCard {
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
   border: 1px solid var(--c_purple200);
-  width: 20%;
-  height: 60%;
   border-radius: 1rem;
   padding: 1rem;
-  margin: 0 2rem 0 2rem;
   background-color: #FBFBFB;
 }
-.UserCarrousel .UserCard figure {
+#slider figure {
   position: relative;
   display: inline-block;
 }
-.UserCarrousel .UserCard figure .profileImg {
+#slider .profileImg {
   border-radius: 50%;
   border: 4px solid var(--c_yellow400);
 }
-.UserCarrousel .UserCard .profileName {
+#slider .profileName {
   font-weight: bold;
   font-size: 2rem;
   margin-top: 10px;
   margin-bottom: 5px;
 }
-.UserCarrousel .UserCard .roleName {
+#slider .roleName {
   font-size: 1.5rem;
   color: var(--c_yellow400);
 }
-.UserCarrousel .UserCard .priceRange {
+#slider .priceRange {
   color: var(--c_purple400);
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.UserCarrousel .UserCard .Rating {
+#slider .Rating {
   display: flex;
   width: max-content;
   background-color: var(--c_yellow400);
@@ -24388,7 +24378,7 @@ main .Ofertas .LongCard {
   right: 0;
   bottom: 0;
 }
-.UserCarrousel .UserCard .Rating .fa-star {
+#slider .Rating .fa-star {
   color: white;
 }
 
