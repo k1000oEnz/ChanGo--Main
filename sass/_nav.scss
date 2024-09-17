@@ -15,6 +15,17 @@ nav {
   padding: 1rem 2rem .5rem;
   
   
+  .navButt{
+    color: #6D8493;
+    border: 3px solid transparent;
+    border-radius: .5rem;
+    background-color: transparent;
+    margin: 0 1rem;
+  }
+  .navButt:hover{
+    border: 3px solid var(--c_purple400);
+    color: var(--c_purple400);
+  }
   ul{
       display: flex;
       
@@ -62,17 +73,6 @@ nav {
 }
 .brand_color2{
   color: var(--c_yellow400);
-}
-.navButt{
-  color: #6D8493;
-  border: 3px solid transparent;
-  border-radius: .5rem;
-  background-color: transparent;
-  margin: 0 1rem;
-}
-.navButt:hover{
-  border: 3px solid var(--c_purple400);
-  color: var(--c_purple400);
 }
 .inicio{
   padding-top: .3rem;
