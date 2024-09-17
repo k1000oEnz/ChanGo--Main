@@ -22,7 +22,7 @@
                 Regístrate con Google
             </button>
             <div class="separator">Registrate con tu email</div>
-            <form method="POST">
+            <form  id="registerForm" method="POST" >
                 <div class="name-container">
                     <div class="name">
                         <label for="name" class="name">Nombre</label>
@@ -48,11 +48,14 @@
                         <input type="password"  class="c-password" id="password2" placeholder="Ingresa tu contraseña" required>
                         <img src="../components/img/Login/login_eye_closed.svg" alt="icon" class="icon" id="Eye_closed2">
                     </div>
+                    <button class="button-register" id="btn-registrar" type="submit">Regístrate</button>
             </form>
-            <button class="button-register"><a href="./login.html">Regístrate</a></button>
+            
         </div>
     </div>
 </div>
+    <script src="../api/index.js"></script>
+    <script src="../js/web.js"></script>
     <script src="../js/login_script.js"></script>
 </body>
 </html>
