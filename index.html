@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bienvenido a ChanGo!</title>
-
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./components/img/Logo.svg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -15,11 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/index.css" />
+     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <header>
@@ -63,7 +60,7 @@
               </a>
             </li>
             <li>
-              <a href="/page/settings.html"
+              <a href="./page/settings.html"
                 ><button class="d-flex navButt">
                   <img
                     src="components/img/NavBar/setting-2.svg"
@@ -97,7 +94,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="d-flexMain">
       <section class="Hero d-flex">
         <article>
           <h2 class="HeroTitle">¿Querés empezar a emprender?</h2>
@@ -120,69 +117,113 @@
           <img src="components/img/Main/HeroPana.svg" alt="" />
         </picture>
       </section>
-      <div class="UserCarrousel">
-        <button><</button>
-        <div class="UserCard">
-          <figure>
-            <img src="./components/img/Yo 1.png" alt="" class="profileImg" />
-            <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
-          </figure>
-          <p class="profileName">Perez Sozo</p>
-          <p class="roleName">Mini-Flete</p>
-          <p class="priceRange">$ 1000 - $ 2000</p>
-          <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-            repellat odio saepe dolore minus ipsum officia suscipit maxime
-            consectetur excepturi nihil in neque modi, ipsam tenetur accusamus
-            possimus voluptas consequatur.
-          </p>
+      <div id="container">
+        <div id="slider-container">
+          <span onclick="slideRight()" class="btn"> < </span>
+          <div id="slider">
+            <div class="slide"><div class="UserCard">
+              <figure>
+                <img src="./components/img/Yo 1.png" alt="" class="profileImg">
+                <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
+              </figure>
+              <p class="profileName">Perez Sozo</p>
+              <p class="roleName">Mini-Flete</p>
+              <p class="priceRange">$ 1000 - $ 2000</p>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repellat odio saepe dolore minus ipsum officia suscipit maxime consectetur excepturi nihil in neque modi, ipsam tenetur accusamus possimus voluptas consequatur.</p>
+            </div></div>
+            <div class="slide"><div class="UserCard">
+              <figure>
+                <img src="./components/img/Yo 1.png" alt="" class="profileImg">
+                <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
+              </figure>
+              <p class="profileName">Perez Sozo</p>
+              <p class="roleName">Mini-Flete</p>
+              <p class="priceRange">$ 1000 - $ 2000</p>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repellat odio saepe dolore minus ipsum officia suscipit maxime consectetur excepturi nihil in neque modi, ipsam tenetur accusamus possimus voluptas consequatur.</p>
+            </div></div>
+            <div class="slide"><div class="UserCard">
+              <figure>
+                <img src="./components/img/Yo 1.png" alt="" class="profileImg">
+                <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
+              </figure>
+              <p class="profileName">Perez Sozo</p>
+              <p class="roleName">Mini-Flete</p>
+              <p class="priceRange">$ 1000 - $ 2000</p>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repellat odio saepe dolore minus ipsum officia suscipit maxime consectetur excepturi nihil in neque modi, ipsam tenetur accusamus possimus voluptas consequatur.</p>
+            </div></div>
+            <div class="slide"><div class="UserCard">
+              <figure>
+                <img src="./components/img/Yo 1.png" alt="" class="profileImg">
+                <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
+              </figure>
+              <p class="profileName">Perez Sozo</p>
+              <p class="roleName">Mini-Flete</p>
+              <p class="priceRange">$ 1000 - $ 2000</p>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repellat odio saepe dolore minus ipsum officia suscipit maxime consectetur excepturi nihil in neque modi, ipsam tenetur accusamus possimus voluptas consequatur.</p>
+            </div></div>
+            <div class="slide"><div class="UserCard">
+              <figure>
+                <img src="./components/img/Yo 1.png" alt="" class="profileImg">
+                <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
+              </figure>
+              <p class="profileName">Perez Sozo</p>
+              <p class="roleName">Mini-Flete</p>
+              <p class="priceRange">$ 1000 - $ 2000</p>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repellat odio saepe dolore minus ipsum officia suscipit maxime consectetur excepturi nihil in neque modi, ipsam tenetur accusamus possimus voluptas consequatur.</p>
+            </div></div>
+            <div class="slide"><div class="UserCard">
+              <figure>
+                <img src="./components/img/Yo 1.png" alt="" class="profileImg">
+                <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
+              </figure>
+              <p class="profileName">Perez Sozo</p>
+              <p class="roleName">Mini-Flete</p>
+              <p class="priceRange">$ 1000 - $ 2000</p>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repellat odio saepe dolore minus ipsum officia suscipit maxime consectetur excepturi nihil in neque modi, ipsam tenetur accusamus possimus voluptas consequatur.</p>
+            </div></div>
+            <div class="slide"><div class="UserCard">
+              <figure>
+                <img src="./components/img/Yo 1.png" alt="" class="profileImg">
+                <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
+              </figure>
+              <p class="profileName">Perez Sozo</p>
+              <p class="roleName">Mini-Flete</p>
+              <p class="priceRange">$ 1000 - $ 2000</p>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repellat odio saepe dolore minus ipsum officia suscipit maxime consectetur excepturi nihil in neque modi, ipsam tenetur accusamus possimus voluptas consequatur.</p>
+            </div></div>
+            <div class="slide"><div class="UserCard">
+              <figure>
+                <img src="./components/img/Yo 1.png" alt="" class="profileImg">
+                <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
+              </figure>
+              <p class="profileName">Perez Sozo</p>
+              <p class="roleName">Mini-Flete</p>
+              <p class="priceRange">$ 1000 - $ 2000</p>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repellat odio saepe dolore minus ipsum officia suscipit maxime consectetur excepturi nihil in neque modi, ipsam tenetur accusamus possimus voluptas consequatur.</p>
+            </div></div>
+            <div class="slide"><div class="UserCard">
+              <figure>
+                <img src="./components/img/Yo 1.png" alt="" class="profileImg">
+                <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
+              </figure>
+              <p class="profileName">Perez Sozo</p>
+              <p class="roleName">Mini-Flete</p>
+              <p class="priceRange">$ 1000 - $ 2000</p>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repellat odio saepe dolore minus ipsum officia suscipit maxime consectetur excepturi nihil in neque modi, ipsam tenetur accusamus possimus voluptas consequatur.</p>
+            </div></div>
+            <div class="slide"><div class="UserCard">
+              <figure>
+                <img src="./components/img/Yo 1.png" alt="" class="profileImg">
+                <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
+              </figure>
+              <p class="profileName">Perez Sozo</p>
+              <p class="roleName">Mini-Flete</p>
+              <p class="priceRange">$ 1000 - $ 2000</p>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repellat odio saepe dolore minus ipsum officia suscipit maxime consectetur excepturi nihil in neque modi, ipsam tenetur accusamus possimus voluptas consequatur.</p>
+            </div></div>
+          </div>
+          <span onclick="slideLeft()" class="btn buttStyle"> > </span>
         </div>
-        <div class="UserCard">
-          <figure>
-            <img src="./components/img/Yo 1.png" alt="" class="profileImg" />
-            <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
-          </figure>
-          <p class="profileName">Perez Sozo</p>
-          <p class="roleName">Mini-Flete</p>
-          <p class="priceRange">$ 1000 - $ 2000</p>
-          <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-            repellat odio saepe dolore minus ipsum officia suscipit maxime
-            consectetur excepturi nihil in neque modi, ipsam tenetur accusamus
-            possimus voluptas consequatur.
-          </p>
-        </div>
-        <div class="UserCard">
-          <figure>
-            <img src="./components/img/Yo 1.png" alt="" class="profileImg" />
-            <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
-          </figure>
-          <p class="profileName">Perez Sozo</p>
-          <p class="roleName">Mini-Flete</p>
-          <p class="priceRange">$ 1000 - $ 2000</p>
-          <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-            repellat odio saepe dolore minus ipsum officia suscipit maxime
-            consectetur excepturi nihil in neque modi, ipsam tenetur accusamus
-            possimus voluptas consequatur.
-          </p>
-        </div>
-        <div class="UserCard">
-          <figure>
-            <img src="./components/img/Yo 1.png" alt="" class="profileImg" />
-            <div class="Rating"><i class="fa fa-star star"> 3.6</i></div>
-          </figure>
-          <p class="profileName">Perez Sozo</p>
-          <p class="roleName">Mini-Flete</p>
-          <p class="priceRange">$ 1000 - $ 2000</p>
-          <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-            repellat odio saepe dolore minus ipsum officia suscipit maxime
-            consectetur excepturi nihil in neque modi, ipsam tenetur accusamus
-            possimus voluptas consequatur.
-          </p>
-        </div>
-        <button>></button>
       </div>
 
       <div class="Banner">
@@ -516,10 +557,10 @@
             <p class="contact_style"><img src="" alt="" /> 11 2537-7854</p>
             <p class="contact_style">Av. Siempreviva 742</p>
           </div>
-          <div class="aboutus">
-            <p class="aboutus_style">Acerca de nosotros</p>
-            <p class="aboutus_style">Nuestro Equipo</p>
-            <p class="aboutus_style">Nuestra Mision</p>
+          <div class="linksFooter">
+            <a href="./page/Aboutus.html" >Acerca de nosotros</a>
+            <a  href="./page/settings.html" id="questions" >Preguntas Frecuentes</a>
+            <a class="aboutus_style">Nuestra Mision</a>
           </div>
           <div class="redes">
             <p class="redes_title">Seguinos en nuestras redes</p>
@@ -551,9 +592,15 @@
           <p>Cookies</p>
         </div>
       </div>
+
+      <script src="./js/settings.js"></script>
+      <script src="./js/questions.js"></script>
+      <script src="https://unpkg.com/react/umd/react.development.js"></script>
+      <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="components/js/script.js"></script>
       <div class="diagonal_bar"></div>
+      <script src="./js/index.js"></script>
     </footer>
   </body>
 </html>

@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <title>Información de Pago</title>
     <link rel="stylesheet" href="../css/index.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../components/img/Logo.svg" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
@@ -13,8 +15,81 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="container">
+  <body class="containerPayment">
+    <nav class="d-flex justify-content-between align-items-center">
+      <button class="burger_options disabled"></button>
+      <div>
+        <picture>
+          <a href="" class="no__decoration d-flex align-items-center"
+            ><img src="../components/img/Logo.svg" alt="Logo ChanGo" />
+            <div class="inicio d-flex">
+              <h2 class="brand__color1">Chan</h2>
+              <h2 class="brand_color2">Go!</h2>
+            </div>
+          </a>
+        </picture>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="../index.html">
+              <button class="d-flex navButt">
+                <img src="../components/img/NavBar/Group 1.svg" alt="" />Inicio
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <button class="d-flex navButt">
+                <img src="../components/img/NavBar/Vector.svg" alt="" />Chat
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <button class="d-flex navButt">
+                <img
+                  src="../components/img/NavBar/Icon_ user.svg"
+                  alt=""
+                />Perfil
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html"
+              ><button class="d-flex navButt">
+                <img
+                  src="../components/img/NavBar/setting-2.svg"
+                  alt=""
+                />Configuracion
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- <form action="">
+        <input type="text" placeholder="Buscar"/>
+        <a href="" class="no__decoration"><img src="components/img/search.svg" alt=""></a>
+      </form> -->
+      <ul>
+        <li class="nav__li">
+          <a href="./page/login.html" class="no__decoration">
+            <button class="button__styleP">Iniciar Sesion</button>
+          </a>
+        </li>
+        <li class="nav__li">
+          <button class="button__styleY">
+            <a href="./page/register.html" class="no__decoration">
+              <img
+                src="../components/img/Registrarse.svg"
+                alt="Boton para Registrarse"
+              />Registrate
+            </a>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="containerPago">
       <!-- Columna izquierda-->
       <form class="left-column" id="paymentForm">
         <h1>Información de Pago</h1>
@@ -111,6 +186,7 @@
             <label for="vencimiento">Vencimiento:</label>
             <input
               type="text"
+              class="inputUSer"
               id="vencimiento"
               name="vencimiento"
               placeholder="MM/AA"
@@ -119,11 +195,13 @@
           </div>
           <div class="form-group">
             <label for="cvv">CVV:</label>
-            <input type="text" id="cvv" name="cvv" placeholder="CVV" required />
+            <input type="text"
+            class="inputUSer" id="cvv" name="cvv" placeholder="CVV" required />
           </div>
         </div>
 
-        <button type="submit" id="confirmarPago">Confirmar Pago</button>
+        <button type="submit"
+       id="confirmarPago" class="btnPago">Confirmar Pago</button>
       </form>
       <!-- Columna derecha -->
 
@@ -167,13 +245,6 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <span>&copy; 2024 ChanGo S.R.L.</span>
-      <a href="">Términos y Condiciones</a>
-      <a href="">Política de privacidad</a>
-      <a href="">Cookies</a>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="../js/Pago-script.js"></script>
-    </footer>
+    
   </body>
 </html>

@@ -4,15 +4,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sassWatch": "sass --watch sass/index.scss:css/index.css sass/LogReg.scss:css/LogReg.css sass/settings.scss:css/settings.css sass/_profile.scss:css/profile.css"
+    "sassWatch": "sass --watch sass/index.scss:css/index.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "express": "^4.19.2",
-    "mssql": "^11.0.1"
+    "bootstrap": "^5.3.3"
   }
 }
