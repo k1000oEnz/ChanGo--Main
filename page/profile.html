@@ -120,15 +120,12 @@
                                         <label for="2-star-rating" class="star-rating star">
                                             <i class="fas fa-star d-inline-block"></i>
                                         </label>
-
                                         <!-- star 1 -->
                                         <input type="radio" id="1-star-rating" name="star-rating" value="1">
                                         <label for="1-star-rating" class="star-rating star">
                                             <i class="fas fa-star d-inline-block"></i>
                                         </label>
-
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -140,7 +137,7 @@
                     <a href="#"><button class="button__styleY profile-open-modal-btn">Publicar</button></a>
                     <div class="profile-modal-overlay">
                         <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-                            <button class="profile-close-btn">×</button>
+                            <button class="profile-close-btn btn-close"></button>
                             <div class="profile-modal-header">
                                 <h2 class="profile-modal-title" id="modal-title">Crear Aviso</h2>
                                 <div class="profile-post-options">
@@ -150,17 +147,33 @@
                                     </label>
                                     <span id="visibility-status">Prestador</span>
                                 </div>
-                                
+
                             </div>
                             <textarea class="profile-post-content" placeholder="¿Que estas buscando?" required
                                 minlength="10"></textarea>
-                            
-                            <select class="profile-skills-dropdown" required>
-                                <option value="" disabled selected>Select a skill</option>
-                                <option value="skill1">Aptitud</option>
-                                <option value="skill2">Aptitud</option>
-                                <option value="skill3">Aptitud</option>
-                            </select>
+                            <div class="post-options">
+                                <div class="form-group d-flex align-items-center justify-content-between">
+                                    <label for="exampleDropdownForm">Selecciona una Aptitud</label>
+                                    <select class="form-control profile-skills-dropdown" id="exampleDropdownForm">
+                                        <option value="" disabled selected>Selecciona una Aptitud</option>
+                                        <option value="skill1">Aptitud</option>
+                                        <option value="skill2">Aptitud</option>
+                                        <option value="skill3">Aptitud</option>
+                                    </select>
+                                    <select class="form-control profile-skills-dropdown" id="exampleDropdownForm">
+                                        <option value="" disabled selected>Selecciona una Modalidad</option>
+                                        <option value="skill1">Presencial</option>
+                                        <option value="skill2">Remota</option>
+                                        <option value="skill3">Mixta</option>
+                                    </select>
+                                    <select class="form-control profile-skills-dropdown" id="exampleDropdownForm">
+                                        <option value="" disabled selected>Ubicacion</option>
+                                        <option value="skill1">CABA</option>
+                                        <option value="skill2">GBA</option>
+                                    </select>
+                                </div>
+                            </div>
+
                             <button class="button__styleY profile-post-btn ">Compartir</button>
                         </div>
                     </div>
