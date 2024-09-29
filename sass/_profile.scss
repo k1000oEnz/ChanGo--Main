@@ -374,13 +374,6 @@ $c_shadow: 2px 1px 5px #3f3f3f;
     text-decoration: underline;
   }
 }
-
-// style.scss
-$primary-color: #1877f2;
-$primary-color-hover: #166fe5;
-$success-color: #42b72a;
-$success-color-hover: #36a420;
-
 .profile-modal-overlay {
     position: fixed;
     top: 0;
@@ -405,7 +398,7 @@ $success-color-hover: #36a420;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 70%;
+    width: 60%;
     padding: 2rem;
     position: relative; 
     display: flex;
@@ -457,7 +450,7 @@ $success-color-hover: #36a420;
 }
 
 .profile-post-content {
-    height: 150px;
+    height: 20vh;
     resize: vertical;
 }
 
