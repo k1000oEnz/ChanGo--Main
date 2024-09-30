@@ -29,7 +29,7 @@ Clonar el repositorio
 Ir al directorio
 
 ```bash
-  cd ChanGo--Main
+  cd tu-ruta/ChanGo--Main
 ```
 
 Instalar Sass 
