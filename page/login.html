@@ -93,7 +93,7 @@
           Ingresa con Google
         </button>
         <div id="r-separator" class="separator">Ingresar con tu email</div>
-        <form method="POST">
+        <form id="login-form">
           <label for="email" class="email">Email</label>
           <input type="email" id="email" placeholder="Ingresa tu mail" />
           <label for="password" class="password">Contraseña</label>
@@ -123,19 +123,23 @@
             class="btn"
             data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
-              >¿Olvidaste tu contraseña?</a>
-            </div>
-            <a href="../index.html" class="b-ingresar"
-              ><button id="btn-ingresar" class="button-ingresar" type="submit">
-                Ingresar
-              </button></a
-              >
-              <a href="register.html" class="b-register"
-              ><button id="btn-registrar" class="button-register">
-                Regístrate
-              </button></a
-              >
+              >¿Olvidaste tu contraseña?</a
+            >
+          </div>
+          <button id="btn-login" class="button-ingresar" type="submit">
+            Ingresar
+          </button>
         </form>
+        <a href="../index.html" class="b-ingresar"
+          ><button id="btn-ingresar" class="button-ingresar" type="submit">
+            Ingresar
+          </button></a
+        >
+        <a href="register.html" class="b-register"
+          ><button id="btn-registrar" class="button-register">
+            Regístrate
+          </button></a
+        >
       </div>
       <div class="login-image">
         <img src="../components/img/Login/imagenlogin.svg" alt="Login Image" />

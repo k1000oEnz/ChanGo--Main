@@ -6,8 +6,8 @@ function togglePassword(inputId, eyeId) {
     const passwordField = document.getElementById(inputId);
     const eyeIcon = document.getElementById(eyeId);
 
-    if (!passwordField || !eyeIcon) {
-        console.error(`Elementos no encontrados: ${inputId} o ${eyeId}`);
+    if (!eyeIcon) {
+        console.error(`Elementos no encontrados: ${eyeId}`);
         return;
     }
 
@@ -26,8 +26,63 @@ function togglePassword(inputId, eyeId) {
     eyeIcon.addEventListener("click", toggle);
 }
 
-togglePassword('password', 'Eye_closed');
-togglePassword('password2', 'Eye_closed2');
+document.addEventListener('DOMContentLoaded', function () {
+    togglePassword('password', 'Eye_closed');
+    togglePassword('password2', 'Eye_closed2');
+});
+
+//Aca empieza la conexion con el backend
+
+// login_script.js
+// Selecciona el formulario por su ID
+const loginForm = document.getElementById('login-form');
+
+// Agrega un evento 'submit' al formulario
+loginForm.addEventListener('submit', async (event) => {
+    event.preventDefault(); // Evita que el formulario se envíe de forma tradicional
+
+    // Obtén los valores de los campos del formulario
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    console.log('Formulario de login:', email, password);
+
+    try {
+        // Llama a tu API usando fetch
+        const response = await fetch('http://localhost:3000/auth/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email: email,
+                password: password 
+            }),
+            credentials: 'include', 
+        });
+
+        console.log('Respuesta del servidor:', response);
+        console.log('Estado del servidor:', response.status);
+
+        if (!response.ok) {
+            throw new Error('Error en la petición de login');
+        }
+
+        // Lee el token como texto
+        const token = await response.text(); 
+        console.log('Token:', token); 
+
+        // Guarda el token (por ejemplo, en el localStorage)
+        localStorage.setItem('token', token);
+
+        // Redirige al usuario a la página principal o dashboard
+        window.location.href = '/index.html';
+
+    } catch (error) {
+        console.error('Error durante el login:', error);
+        alert('Hubo un problema con el login. Inténtalo nuevamente.');
+    }
+});
 
 function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -26,7 +26,7 @@
             <button class="burger_options disabled"></button>
             <div>
                 <picture>
-                    <a href="" class="no__decoration d-flex align-items-center"><img src="../components/img/Logo.svg"
+                    <a href="../index.html" class="no__decoration d-flex align-items-center"><img src="../components/img/Logo.svg"
                             alt="Logo ChanGo" />
                         <div class="inicio d-flex">
                             <h2 class="brand__color1">Chan</h2>
@@ -87,7 +87,8 @@
             <div class="profileBanner">
                 <div class="userData">
 
-                    <img class="profilePic" src="../components/img/Profile/Outer.jpg" alt="Imagen de Perfil de Arturo Pug">
+                    <img class="profilePic" src="../components/img/Profile/Outer.jpg"
+                        alt="Imagen de Perfil de Arturo Pug">
                     <div class="rating">
                         <div class="container-wrapper">
                             <div class=" d-flex align-items-center justify-content-center">
@@ -119,15 +120,12 @@
                                         <label for="2-star-rating" class="star-rating star">
                                             <i class="fas fa-star d-inline-block"></i>
                                         </label>
-
                                         <!-- star 1 -->
                                         <input type="radio" id="1-star-rating" name="star-rating" value="1">
                                         <label for="1-star-rating" class="star-rating star">
                                             <i class="fas fa-star d-inline-block"></i>
                                         </label>
-
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -136,6 +134,48 @@
                     </div>
 
                     <a href="./Pago.html"><button class="button__styleY">Contratar</button></a>
+                    <a href="#"><button class="button__styleY profile-open-modal-btn">Publicar</button></a>
+                    <div class="profile-modal-overlay">
+                        <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+                            <button class="profile-close-btn btn-close"></button>
+                            <div class="profile-modal-header">
+                                <h2 class="profile-modal-title" id="modal-title">Crear Aviso</h2>
+                                <div class="profile-post-options">
+                                    <label class="profile-switch">
+                                        <input type="checkbox" id="visibility-toggle">
+                                        <span class="profile-slider"></span>
+                                    </label>
+                                    <span id="visibility-status">Prestador</span>
+                                </div>
+                            </div>
+                            <textarea class="profile-post-content" placeholder="¿Que estas buscando?" required
+                                minlength="10"></textarea>
+                            <div class="post-options form-group d-flex align-items-center justify-content-between">
+                                <span class="d-flex flex-column">
+                                    <p class="m-auto"><img class="m-2"
+                                            src="../components/img/Profile/VectorModalidad.svg"
+                                            alt="Icono de Modalidad">Modalidad</p>
+                                    <select class="form-control profile-skills-dropdown" id="exampleDropdownForm">
+                                        <option value="" disabled selected> Modalidad</option>
+                                        <option value="skill1">Presencial</option>
+                                        <option value="skill2">Remota</option>
+                                        <option value="skill3">Mixta</option>
+                                    </select>
+                                </span>
+                                <span class="d-flex flex-column">
+                                    <p class="m-auto"><img class="m-2"
+                                            src="../components/img/Profile/VectorUbicacion.svg"
+                                            alt=" Ubicacion">Ubicacion</p>
+                                    <select class="form-control profile-skills-dropdown" id="exampleDropdownForm">
+                                        <option value="" disabled selected>Ubicacion</option>
+                                        <option value="skill1">CABA</option>
+                                        <option value="skill2">GBA</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <button class="button__styleY profile-post-btn ">Compartir</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="ProfileLeftSection">
