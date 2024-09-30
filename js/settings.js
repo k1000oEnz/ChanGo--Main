@@ -6,12 +6,12 @@ const MyComponent = () => {
     React.createElement(
       "p",
       { className: "titleLogin" },
-      "Cambie sus Datos de sesion."
+      "Cambie sus datos de sesion."
     ),
     React.createElement(
       "p",
       { className: "ContainerLogin" },
-      "Contraseña Actual."
+      "Contraseña actual."
     ),
     React.createElement(
       "div",
@@ -25,19 +25,19 @@ const MyComponent = () => {
           React.createElement("input", {
             className: "inputEmail",
             type: "text",
-            placeholder: "ingrese contraseña",
+            placeholder: "Ingrese contraseña",
           }),
           React.createElement("p", null, "Contraseña Nueva."),
           React.createElement("input", {
             className: "inputEmail",
             type: "text",
-            placeholder: "ingrese su nueva contraseña",
+            placeholder: "Ingrese su nueva contraseña",
           }),
           React.createElement("p", null, "Email Actual."),
           React.createElement("input", {
             className: "inputEmail",
             type: "text",
-            placeholder: "ingrese su mail",
+            placeholder: "Ingrese su mail",
           })
         )
       ),
@@ -48,13 +48,13 @@ const MyComponent = () => {
         React.createElement("input", {
           className: "inputEmail",
           type: "text",
-          placeholder: "ingrese su Email",
+          placeholder: "Ingrese su Email",
         }),
         React.createElement("p", null, "Nuevo Email."),
         React.createElement("input", {
           className: "inputEmail",
           type: "text",
-          placeholder: "ingrese su Nuevo Email",
+          placeholder: "Ingrese su Nuevo Email",
         })
       )
     ),
@@ -72,11 +72,11 @@ const MyComponent = () => {
         React.createElement(
           "div",
           { className: "divLogin7" },
-          React.createElement("p", null, "Numero de celular Actual."),
+          React.createElement("p", null, "Numero de celular actual."),
           React.createElement("input", {
             className: "inputEmail",
             type: "text",
-            placeholder: "ingrese su nueva contraseña",
+            placeholder: "Ingrese su nueva contraseña",
           })
         )
       ),
@@ -86,11 +86,11 @@ const MyComponent = () => {
         React.createElement(
           "div",
           { className: "divLogin9" },
-          React.createElement("p", null, "Nuevo numero de Celular."),
+          React.createElement("p", null, "Nuevo numero de celular."),
           React.createElement("input", {
             className: "inputEmail",
             type: "text",
-            placeholder: "+54 |  ingrese su nueva contraseña",
+            placeholder: "+54 |  Ingrese su nueva contraseña",
           })
         )
       )

@@ -163,9 +163,12 @@ form {
   justify-content: center;
   align-items: center;
   position: relative;
+  
 
   .c-password {
     width: 100%;
+    min-height: 2.6rem;
+    border-radius: 4px;
   }
 
   #Eye_closed {
