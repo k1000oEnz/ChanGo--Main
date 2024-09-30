@@ -26,8 +26,8 @@
             <button class="burger_options disabled"></button>
             <div>
                 <picture>
-                    <a href="../index.html" class="no__decoration d-flex align-items-center"><img src="../components/img/Logo.svg"
-                            alt="Logo ChanGo" />
+                    <a href="../index.html" class="no__decoration d-flex align-items-center"><img
+                            src="../components/img/Logo.svg" alt="Logo ChanGo" />
                         <div class="inicio d-flex">
                             <h2 class="brand__color1">Chan</h2>
                             <h2 class="brand_color2">Go!</h2>
@@ -193,14 +193,21 @@
                 <section class="profileSkills skills">
                     <h2 class="subtitle">APTITUDES / CONOCIMIENTOS</h2>
                     <div class="tags">
-                        <span class="tag ">Soy una aptitud</span>
-                        <span class="tag">Soy una aptitud</span>
-                        <span class="tag">Soy una aptitud</span>
+                        <span class="tag "><span class="close-tag">X</span>Soy una aptitud</span>
+                        <span class="tag"><span class="close-tag">X</span>Soy una aptitud</span>
+                        <span class="tag"><span class="close-tag">X</span>Soy una aptitud</span>
                         <button class="add-tag">+ Agregar</button>
                     </div>
                 </section>
             </div>
-
+            <!-- Modal para agregar aptitudes -->
+            <div class="modal-skills-overlay">
+                <div class="modal-skills-content">
+                    <h3>Agregar Nueva Aptitud</h3>
+                    <input type="text" class="modal-skills-input" placeholder="Ingrese la aptitud">
+                    <button class="modal-skills-button button__styleY">Agregar</button>
+                </div>
+            </div>
             <div class="rightSection">
                 <!-- Seccion de postulaciones -->
                 <section class="postulations">

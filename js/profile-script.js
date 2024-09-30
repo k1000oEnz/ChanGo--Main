@@ -1,41 +1,49 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Add tag functionality
+document.addEventListener('DOMContentLoaded', function () {
+    // Elements
     const addTagBtn = document.querySelector('.add-tag');
     const tagsContainer = document.querySelector('.tags');
+    const modalOverlay = document.querySelector('.modal-skills-overlay');
+    const modalInput = document.querySelector('.modal-skills-input');
+    const modalAddBtn = document.querySelector('.modal-skills-button');
 
-    addTagBtn.addEventListener('click', function() {
-        const newTag = prompt('Ingrese una nueva aptitud:');
+    // Abrir el modal al hacer clic en "+ Agregar"
+    addTagBtn.addEventListener('click', () => {
+        modalOverlay.style.display = 'flex';
+    });
+
+    // Agregar la nueva aptitud al hacer clic en "Agregar" en el modal
+    modalAddBtn.addEventListener('click', () => {
+        const newTag = modalInput.value.trim();
         if (newTag) {
             const tagElement = document.createElement('span');
             tagElement.className = 'tag';
-            tagElement.textContent = newTag;
+            tagElement.innerHTML = `<span class="close-tag">X</span>${newTag}`; // Agregar la "x" aquí
             tagsContainer.insertBefore(tagElement, addTagBtn);
+            modalInput.value = ''; // Limpiar el input
+            modalOverlay.style.display = 'none'; // Cerrar el modal
+
+            // Agregar evento para eliminar la etiqueta al hacer clic en la "x"
+            tagElement.querySelector('.close-tag').addEventListener('click', () => {
+                tagsContainer.removeChild(tagElement);
+            });
         }
     });
 
-    // "Ver más" button functionality
-    const verMasBtn = document.querySelector('.ver-mas');
-    let jobsVisible = 2;
-
-    verMasBtn.addEventListener('click', function() {
-        const jobCards = document.querySelectorAll('.job-card');
-        for (let i = jobsVisible; i < jobsVisible + 2 && i < jobCards.length; i++) {
-            jobCards[i].style.display = 'flex';
-        }
-        jobsVisible += 2;
-
-        if (jobsVisible >= jobCards.length) {
-            verMasBtn.style.display = 'none';
+    // Cerrar el modal al hacer clic fuera del contenido
+    modalOverlay.addEventListener('click', (event) => {
+        if (event.target === modalOverlay) {
+            modalOverlay.style.display = 'none';
         }
     });
 
-    // Initialize job cards visibility
-    // const jobCards = document.querySelectorAll('.job-card');
-    // jobCards.forEach((card, index) => {
-    //     if (index >= jobsVisible) {
-    //         card.style.display = 'none';
-    //     }
-    // });
+    // Agregar evento para eliminar etiquetas existentes al cargar la página
+    const existingCloseButtons = document.querySelectorAll('.close-tag');
+    existingCloseButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const tagElement = button.parentElement;
+            tagsContainer.removeChild(tagElement);
+        });
+    });
 });
 
 // script.js
@@ -87,10 +95,10 @@ postBtn.addEventListener('click', async () => {
                 postContent.value = '';
                 visibilityToggle.checked = false;
                 visibilityStatus.textContent = 'Private';
-                skillsDropdown.selectedIndex = 0; 
+                skillsDropdown.selectedIndex = 0;
                 modalOverlay.classList.remove('active');
             } else {
-                const errorData = await response.json(); 
+                const errorData = await response.json();
                 alert(`Error: ${errorData.message || 'Could not create post'}`);
             }
 
@@ -99,6 +107,6 @@ postBtn.addEventListener('click', async () => {
             alert('An error occurred. Please try again later.');
         }
     } else {
-        alert('Please fill out all required fields.'); 
+        alert('Please fill out all required fields.');
     }
 });
