@@ -35,7 +35,7 @@ Ir al directorio
 Instalar Sass 
 
 ```bash
-  npm install -g sass
+  npm install bootstrap sass
 ```
 
 Inicializar Sass
