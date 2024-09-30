@@ -20,7 +20,7 @@ $c_shadow: 2px 1px 5px #3f3f3f;
   width: 80%;
   background-color: $color-white;
   border-radius: 0.5rem;
-  font-family: var(--f_fontFamily),var(--f_fontFamily--Secundary);
+  font-family: var(--f_fontFamily), var(--f_fontFamily--Secundary);
 
   .containerProfile {
     display: grid;
@@ -262,6 +262,7 @@ $c_shadow: 2px 1px 5px #3f3f3f;
   .job-info {
     flex-grow: 1;
     margin: 0 1rem;
+
     h3 {
       margin: 0;
       font-weight: bold;
@@ -374,137 +375,159 @@ $c_shadow: 2px 1px 5px #3f3f3f;
     text-decoration: underline;
   }
 }
-.profile-modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
 
-    &.active { 
-        opacity: 1;
-        visibility: visible;
-    }
+.profile-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .profile-modal {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 60%;
-    padding: 2rem;
-    position: relative; 
-    display: flex;
-    flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-.profile-modal-header, 
+.profile-modal-header,
 .profile-post-options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .profile-post-options {
   flex-direction: column;
 }
 
+.post-options {
+  width: 100%;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.form-dropdown {
+  width: 15rem;
+  margin: 0;
+  padding: 0;
+
+  p {
+    margin: 0;
+  }
+}
+
+.post-option-subtitle {
+  font-weight: bold;
+}
+
 .profile-modal-title {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .profile-close-btn {
-    background: none;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
-    margin:  0;
-    padding: 0;
-    align-self: flex-end;
-    position: relative;
-    bottom: 1rem;
-    left: 1rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  align-self: flex-end;
+  position: relative;
+  bottom: 1rem;
+  left: 1rem;
 }
 
 .profile-post-content,
 .profile-skills-dropdown {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 20px;
-
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(152, 75, 253, 0.4);
 }
+
 .profile-skills-dropdown {
   max-width: 12rem;
   margin-bottom: 0;
 }
 
 .profile-post-content {
-    height: 20vh;
-    resize: vertical;
+  height: 20vh;
+  resize: vertical;
 }
 
 .profile-skills-dropdown {
-    appearance: none;
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
-    background-repeat: no-repeat;
-    background-position: right .7em top 50%;
-    background-size: .65em auto;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right .7em top 50%;
+  background-size: .65em auto;
 }
 
 .profile-switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 
-    input {
-        opacity: 0;
-        width: 0;
-        height: 0;
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .profile-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color-purple200;
+    transition: .4s;
+    border-radius: 34px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
     }
+  }
 
-    .profile-slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: $color-purple200;
-        transition: .4s;
-        border-radius: 34px;
+  input:checked+.profile-slider {
+    background-color: $color-yellow200;
+  }
 
-        &:before {
-            position: absolute;
-            content: "";
-            height: 26px;
-            width: 26px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            transition: .4s;
-            border-radius: 50%;
-        }
-    }
-
-    input:checked + .profile-slider {
-        background-color: $color-yellow200;
-    }
-
-    input:checked + .profile-slider:before {
-        transform: translateX(26px);
-    }
+  input:checked+.profile-slider:before {
+    transform: translateX(26px);
+  }
 
 }
 
