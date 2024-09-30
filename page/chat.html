@@ -1,302 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChanGo!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChanGo Chat</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="shortcut icon" href="./components/img/Logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
-    <header>
-
-    </header>
-
-    <main class="container mt-4">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <div class="card-header bg-light">
-                        <h5 class="card-title">CHAT</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-search"></i></span>
+        <header class="header">
+            <nav class="d-flex justify-content-between align-items-center">
+                <button class="burger_options disabled"></button>
+                <div>
+                    <picture>
+                        <a href="" class="no__decoration d-flex align-items-center"><img
+                                src="../components/img/Logo.svg" alt="Logo ChanGo" />
+                            <div class="inicio d-flex">
+                                <h2 class="brand__color1">Chan</h2>
+                                <h2 class="brand_color2">Go!</h2>
                             </div>
-                            <input type="text" class="form-control" placeholder="Search...">
-                        </div>
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <img src="profile-pic-1.png" alt="Profile Picture" class="rounded-circle img-fluid" width="40">
-                                    </div>
-                                    <div class="col">
-                                        <h6 class="mb-0">Marvin McKinney</h6>
-                                        <p class="mb-0 text-muted">Nursing Assistant</p>
-                                        <p class="mb-0">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                    <div class="col-auto">
-                                        <span class="badge badge-secondary">5m</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <img src="profile-pic-2.png" alt="Profile Picture" class="rounded-circle img-fluid" width="40">
-                                    </div>
-                                    <div class="col">
-                                        <h6 class="mb-0">Jacob Jones</h6>
-                                        <p class="mb-0 text-muted">Marketing Coordinator</p>
-                                        <p class="mb-0">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                    <div class="col-auto">
-                                        <span class="badge badge-secondary">5m</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <img src="../components/img/Chat/Ellipse 112.png" alt="Profile Picture" class="rounded-circle img-fluid" width="40">
-                                    </div>
-                                    <div class="col">
-                                        <h6 class="mb-0">Leslie Alexander</h6>
-                                        <p class="mb-0 text-muted">Web Designer</p>
-                                        <p class="mb-0">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                    <div class="col-auto">
-                                        <span class="badge badge-secondary">5m</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <img src="profile-pic-4.png" alt="Profile Picture" class="rounded-circle img-fluid" width="40">
-                                    </div>
-                                    <div class="col">
-                                        <h6 class="mb-0">Eleanor Pena</h6>
-                                        <p class="mb-0 text-muted">Dog Trainer</p>
-                                        <p class="mb-0">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                    <div class="col-auto">
-                                        <span class="badge badge-secondary">5m</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <img src="profile-pic-5.png" alt="Profile Picture" class="rounded-circle img-fluid" width="40">
-                                    </div>
-                                    <div class="col">
-                                        <h6 class="mb-0">Kathryn Murphy</h6>
-                                        <p class="mb-0 text-muted">Medical Assistant</p>
-                                        <p class="mb-0">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                    <div class="col-auto">
-                                        <span class="badge badge-secondary">5m</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <img src="profile-pic-6.png" alt="Profile Picture" class="rounded-circle img-fluid" width="40">
-                                    </div>
-                                    <div class="col">
-                                        <h6 class="mb-0">Wade Warren</h6>
-                                        <p class="mb-0 text-muted">Web Designer</p>
-                                        <p class="mb-0">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                    <div class="col-auto">
-                                        <span class="badge badge-secondary">5m</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                        </a>
+                    </picture>
                 </div>
-            </div>
-            <!-- Centro de chat -->
-            <div class="col-md-8">
-                <div class="card shadow-sm">
-                    <div class="card-header bg-light d-flex justify-content-between align-items-center">
-                        <h5 class="card-title">Leslie Alexander</h5>
-                        <div class="d-flex align-items-center">
-                            <a href="#" class="btn btn-link p-0">
-                                <i class="fas fa-ellipsis-v"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-auto">
-                                <img src="../components/img/Chat/Ellipse 112.png" alt="Profile Picture" class="rounded-circle img-fluid" width="40">
-                            </div>
-                            <div class="col">
-                                <p class="mb-0">August 21</p>
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor mollis leo proin turpis eu hac. Tortor dolor eu at bibendum suspendisse. Feugiat mi eu, rhoncus diam consectetur libero morbi pharetra. Id tristique mi eget eget tristique orci.</p>
-                            </div>
-                            <div class="col-auto">
-                                <p class="mb-0">10:15 pm</p>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-auto">
-                                <img src="../components/img/Chat/Ellipse 112.png" alt="Profile Picture" class="rounded-circle img-fluid" width="40">
-                            </div>
-                            <div class="col">
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor mollis leo proin turpis eu hac. Tortor dolor eu at bibendum suspendisse.</p>
-                            </div>
-                            <div class="col-auto">
-                                <p class="mb-0">12:15 pm</p>
-                            </div>
-                        </div>
-                        
-                        <div class="row mt-3">
-                            <div class="col">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Write a message..." rows="3"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <button class="btn btn-primary">Enviar
-                                    <i class="fas fa-paper-plane"></i>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="../index.html">
+                                <button class="d-flex navButt">
+                                    <img src="../components/img/NavBar/Group 1.svg" alt="" />Inicio
                                 </button>
-                            </div>
-                        </div>
-                    </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../page/chat.html">
+                                <button class="d-flex navButt">
+                                    <img src="../components/img/NavBar/Vector.svg" alt="" />Chat
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html">
+                                <button class="d-flex navButt">
+                                    <img src="../components/img/NavBar/Icon_ user.svg" alt="" />Perfil
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="settings.html"><button class="d-flex navButt">
+                                    <img src="../components/img/NavBar/setting-2.svg" alt="" />Configuracion
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <!-- columna costado derecho -->
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <div class="card-header bg-light">
-                        <h5 class="card-title">Lorem ipsum</h5>
-                        <a href="#" class="btn btn-link p-0">See all</a>
-                    </div>
-                    <div class="card-body">
-                        <div class="row align-items-center">
-                            <div class="col-auto">
-                                <img src="../components/img/Chat/Ellipse 112.png" alt="Profile Picture" class="rounded-circle img-fluid" width="40">
-                            </div>
-                            <div class="col">
-                                <h6 class="mb-0">Leslie Alexander</h6>
-                                <p class="mb-0 text-muted">Web Designer</p>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                    <span>(4.7 Rating)</span>
-                                </div>
-                            </div>
+                <ul>
+                    <li class="nav__li">
+                        <a href="./login.html" class="no__decoration">
+                            <button class="button__styleP">Iniciar Sesion</button>
+                        </a>
+                    </li>
+                    <li class="nav__li">
+                        <button class="button__styleY">
+                            <a href="./register.html" class="no__decoration">
+                                <img src="../components/img/Registrarse.svg" alt="Boton para Registrarse" />Registrate
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- chat -->
+        <body>
+            <div class="container-fluid">
+                <div class="row">            
+                    <!-- Chat list -->
+                    <div class="col-md-3 chat-list">
+                        <h2>CHAT</h2>
+                        <div class="chat-search">
+                            <input type="text" placeholder="Search...">
                         </div>
-                        <ul class="list-group mt-3">
-                            <li class="list-group-item">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <img src="property-1.jpg" alt="Property Image" class="img-fluid" width="80">
-                                    </div>
-                                    <div class="col">
-                                        <h6 class="mb-0">Acme Co.</h6>
-                                        <p class="mb-0 text-muted">Viet Nam</p>
-                                    </div>
-                                    <div class="col-auto">
-                                        <p class="mb-0">04:15 am</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <img src="property-2.jpg" alt="Property Image" class="img-fluid" width="80">
-                                    </div>
-                                    <div class="col">
-                                        <h6 class="mb-0">Biffco Enterprises Ltd.</h6>
-                                        <p class="mb-0 text-muted">Greece</p>
-                                    </div>
-                                    <div class="col-auto">
-                                        <p class="mb-0">06:41 pm</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <img src="property-3.jpg" alt="Property Image" class="img-fluid" width="80">
-                                    </div>
-                                    <div class="col">
-                                        <h6 class="mb-0">Binford Ltd.</h6>
-                                        <p class="mb-0 text-muted">South Africa</p>
-                                    </div>
-                                    <div class="col-auto">
-                                        <p class="mb-0">07:40 am</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <img src="property-4.jpg" alt="Property Image" class="img-fluid" width="80">
-                                    </div>
-                                    <div class="col">
-                                        <h6 class="mb-0">Big Kahuna Burger Ltd.</h6>
-                                        <p class="mb-0 text-muted">Palestine, State of</p>
-                                    </div>
-                                    <div class="col-auto">
-                                        <p class="mb-0">01:34 pm</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <img src="property-5.jpg" alt="Property Image" class="img-fluid" width="80">
-                                    </div>
-                                    <div class="col">
-                                        <h6 class="mb-0">Abstergo Ltd.</h6>
-                                        <p class="mb-0 text-muted">Monaco</p>
-                                    </div>
-                                    <div class="col-auto">
-                                        <p class="mb-0">02:34 am</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <img src="property-6.jpg" alt="Property Image" class="img-fluid" width="80">
-                                    </div>
-                                    <div class="col">
-                                        <h6 class="mb-0">Barone LLC.</h6>
-                                        <p class="mb-0 text-muted">Kiribati</p>
-                                    </div>
-                                    <div class="col-auto">
-                                        <p class="mb-0">05:49 pm</p>
-                                    </div>
-                                </div>
-                            </li>
+                        <div class="chat-items">
+                            <!-- Chat items will be dynamically added here -->
+                        </div>
+                    </div>
+                    
+                    <!-- Chat area -->
+                    <div class="col-md-6 chat-area">
+                        <div class="chat-header">
+                            <img src="../components/img/Profile/Outer.jpg" alt="Arturo Pug" class="img-fluid">
+                            <span>Arturo Pug</span>
+                        </div>
+                        <div class="messages">
+                            <!-- Messages will be dynamically added here -->
+                        </div>
+                        <div class="message-input">
+                            <input type="text" placeholder="Write a message...">
+                            <button class="send-btn"><i class="bi bi-send"></i></button>
+                        </div>
+                    </div>
+        
+                    <!-- User profile -->
+                    <div class="col-md-3 user-profile">
+                        <img src="../components/img/Profile/Outer.jpg" alt="Arturo Pug avatar" class="large-avatar">
+                        <h3>Arturo Pug</h3>
+                        <span class="user-status">• 1 hora</span>
+                        <p class="user-bio">Lorem ipsum</p>
+                        <h4>Ofertas publicadas</h4>
+                        <ul class="company-list">
+                            <!-- Las empresas se generarán dinámicamente con JavaScript -->
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
 
-    <footer>
-        
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
-    
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer__main-content d-flex justify-content-between">
+                    <div class="logo d-flex align-items-center">
+                        <picture>
+                            <a href="" class="no__decoration d-flex align-items-center"><img
+                                src="../components/img/Logo.svg" alt="Logo ChanGo" />
+                                <div class="inicio d-flex">
+                                    <h2 class="brand__color1">Chan</h2>
+                                    <h2 class="brand_color2">Go!</h2>
+                                </div>
+                            </a>
+                            <p>¡Encontra tu oportunidad laboral!</p>
+                        </picture>
+                    </div>
+                    <div class="grid__content">
+                        <div class="contact">
+                            <p class="contact_style">Contacto</p>
+                            <p class="contact_style">Chango@Chango.com</p>
+                            <p class="contact_style"><img src="" alt="" /> 11 2537-7854</p>
+                            <p class="contact_style">Av. Siempreviva 742</p>
+                        </div>
+                        <div class="linksFooter">
+                            <a href="Aboutus.html">Acerca de nosotros</a>
+                            <a href="settings.html" id="questions">Preguntas Frecuentes</a>
+                            <a class="aboutus_style">Nuestra Mision</a>
+                        </div>
+                        <div class="redes">
+                            <p class="redes_title">Seguinos en nuestras redes</p>
+                            <div class="d-flex">
+                                <a href=""><img src="../components/img/Footer/X.svg" alt="" /></a>
+                            <a href=""><img src="../components/img/Footer/linkedin.svg" alt="" /></a>
+                            <a href=""><img src="../components/img/Footer/instagram.svg" alt="" /></a>
+                            <a href=""><img src="../components/img/Footer/Facebook.svg" alt="" /></a>
+                            <a href=""><img src="../components/img/Footer/github.svg" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__legales d-flex justify-content-between align-items-center">
+                <p>&copy; 2024 ChanGo! S.R.L</p>
+                <div class="d-flex">
+                    <p>Terminos y condiciones</p>
+                    <p>Politica de privacidad</p>
+                    <p>Cookies</p>
+                </div>
+            </div>
+        </footer>
+    </div>    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="../js/chat_script.js"></script>
 </body>
 </html>
