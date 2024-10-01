@@ -74,7 +74,8 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
-.btnPago[type="submit"] {
+
+/*.boton-pago {
     background-color: #5B1DAE;
     color: white;
     padding: 8px;
@@ -84,7 +85,20 @@ input[type="text"] {
     border-radius: 8px;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.9rem;
+    display: block;
+    text-align: center;
 }
+.boton-pago:hover {
+    background-color: #451387;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}*/
+
 
 .payment-methods {
     display: flex;
