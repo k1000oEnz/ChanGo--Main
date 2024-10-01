@@ -14,76 +14,155 @@
   </head>
   <body>
     <!-- About us -->
-    <div class="line"></div>
-    <div class="AboutUs">
+    <main class="AboutUsMain">
       <div class="AboutUsTitle">
         <strong>Conocé a nuestro Equipo</strong>
       </div>
-      <!--Integrantes-->
-      <div class="members-section">
-        <!--Integrantes fila superior-->
-        <div class="top-row">
-          <div class="member">
-            <img
-              src="../components/img/AboutUs/Emmanuel.jpeg"
-              alt="Emmanuel Gonzalez"
-              class="member-photo"
-            />
-            <div class="member-information">
-              <h2>Emmanuel Gonzalez</h2>
-              <p>SCRUM MASTER / TECH LEADER</p>
-            </div>
+      <container class="AboutUs">  
+        <!--Integrantes-->
+        <section class="page card-2-example-page">
+          <div class="card-2">
+              <img src="../components/img/AboutUs/Emmanuel.jpeg" alt="Profile picture">
+              <div>
+                  <h2>Emmanuel Gonzalez</h2>
+                  <h3>Scrum master | Tech lead </h3>
+                  <p>Empowering users through captivating interfaces, turning ideas into pixel-perfect realities.</p>
+                  <div class="buttons">
+                      <button id="profileBtn">Github</button>
+                      <button id="followBtn" class="primary">Linkedin</button>
+                  </div>
+              </div>
           </div>
-          <div class="member">
-            <img
-              src="../components\img/AboutUs/Camilo.jpeg"
-              alt="Camilo Enriquez"
-              class="member-photo"
-            />
-            <div class="member-information">
-              <h2>Camilo Enriquez</h2>
-              <p>PROJECT MANAGER</p>
-            </div>
+        </section>
+        <section class="page card-2-example-page">
+          <div class="card-2">
+              <img src="../components/img/AboutUs/Camilo.jpeg" alt="Profile picture">
+              <div>
+                  <h2>Camilo Enriquez</h2>
+                  <h3>UX Engineer</h3>
+                  <p>Empowering users through captivating interfaces, turning ideas into pixel-perfect realities.</p>
+                  <div class="buttons">
+                      <button id="profileBtn">Github</button>
+                      <button id="followBtn" class="primary">Linkedin</button>
+                  </div>
+              </div>
           </div>
-          <div class="member">
-            <img
-              src="../components/img/AboutUs/Fabrizio.jpg"
-              alt="Fabrizio Ricardini"
-              class="member-photo"
-            />
-            <div class="member-information">
-              <h2>Fabrizio Ricardini</h2>
-              <p>DISEÑO UX/UI Y SOFTWARE DEVELOPER</p>
-            </div>
+        </section>
+        <section class="page card-2-example-page">
+          <div class="card-2">
+              <img src="../components/img/AboutUs/Fabrizio.jpg" alt="Profile picture">
+              <div>
+                  <h2>Fabrizio Ricardini</h2>
+                  <h3>UX Engineer</h3>
+                  <p>Empowering users through captivating interfaces, turning ideas into pixel-perfect realities.</p>
+                  <div class="buttons">
+                      <button id="profileBtn">Github</button>
+                      <button id="followBtn" class="primary">Linkedin</button>
+                  </div>
+              </div>
           </div>
+        </section>
+        <section class="page card-2-example-page">
+          <div class="card-2">
+              <img src="../components/img/AboutUs/Brenda.jpeg" alt="Profile picture">
+              <div>
+                  <h2>Brenda Coronel</h2>
+                  <h3>UX Engineer</h3>
+                  <p>Empowering users through captivating interfaces, turning ideas into pixel-perfect realities.</p>
+                  <div class="buttons">
+                      <button id="profileBtn">Github</button>
+                      <button id="followBtn" class="primary">Linkedin</button>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <section class="page card-2-example-page">
+          <div class="card-2">
+              <img src="../components/img/AboutUs/Noelia.jpeg" alt="Profile picture">
+              <div>
+                  <h2>Noelia Cabezas</h2>
+                  <h3>UX Engineer</h3>
+                  <p>Empowering users through captivating interfaces, turning ideas into pixel-perfect realities.</p>
+                  <div class="buttons">
+                      <button id="profileBtn">Github</button>
+                      <button id="followBtn" class="primary">Linkedin</button>
+                  </div>
+              </div>
+          </div>
+        </section>
+      </container>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__main-content d-flex justify-content-between">
+        <div class="logo d-flex align-items-center">
+          <picture>
+            <a href="" class="no__decoration d-flex align-items-center"
+              ><img src="../components/img/Logo.svg" alt="Logo ChanGo" />
+              <div class="inicio d-flex">
+                <h2 class="brand__color1">Chan</h2>
+                <h2 class="brand_color2">Go!</h2>
+              </div>
+            </a>
+            <p>¡Encontra tu oportunidad laboral!</p>
+          </picture>
         </div>
-        <!--Integrantes fila interior-->
-        <div class="bottom-row">
-          <div class="member">
-            <img
-              src="../components\img/AboutUs/Brenda.jpeg"
-              alt="Brenda Coronel"
-              class="member-photo"
-            />
-            <div class="member-information">
-              <h2>Brenda Coronel</h2>
-              <p>QA TESTER / DISEÑO UX/UI</p>
-            </div>
+        <div class="grid__content">
+          <div class="contact">
+            <p class="contact_style">Contacto</p>
+            <p class="contact_style">Chango@Chango.com</p>
+            <p class="contact_style"><img src="" alt="" /> 11 2537-7854</p>
+            <p class="contact_style">Av. Siempreviva 742</p>
           </div>
-          <div class="member">
-            <img
-              src="../components\img/AboutUs/Noelia.jpeg"
-              alt="Noelia Cabezas"
-              class="member-photo"
-            />
-            <div class="member-information">
-              <h2>Noelia Cabezas</h2>
-              <p>FRONT END DEVELOPER</p>
+          <div class="linksFooter">
+            <a href="./page/Aboutus.html" >Acerca de nosotros</a>
+            <a  href="./page/settings.html" id="questions" >Preguntas Frecuentes</a>
+            <a class="aboutus_style">Nuestra Mision</a>
+          </div>
+          <div class="redes">
+            <p class="redes_title">Seguinos en nuestras redes</p>
+            <div class="d-flex">
+              <a href=""><img src="components/img/Footer/X.svg" alt="" /></a>
+              <a href=""
+                ><img src="components/img/Footer/linkedin.svg" alt=""
+              /></a>
+              <a href=""
+                ><img src="components/img/Footer/instagram.svg" alt=""
+              /></a>
+              <a href=""
+                ><img src="components/img/Footer/Facebook.svg" alt=""
+              /></a>
+              <a href=""
+                ><img src="components/img/Footer/github.svg" alt=""
+              /></a>
             </div>
           </div>
         </div>
       </div>
-      <button class="botontrabaja">Trabajá con nosotros</button>
-    </div>
+      <div
+        class="footer__legales d-flex justify-content-between align-items-center"
+      >
+        <p>&copy; 2024 ChanGo! S.R.L</p>
+        <div class="d-flex">
+          <p>Terminos y condiciones</p>
+          <p>Politica de privacidad</p>
+          <p>Cookies</p>
+        </div>
+      </div>
+
+      <script src="./js/settings.js"></script>
+      <script src="./js/questions.js"></script>
+      <script src="https://unpkg.com/react/umd/react.development.js"></script>
+      <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="components/js/script.js"></script>
+      <div class="diagonal_bar"></div>
+    </footer>
+
+
+
+    
+
+    <script src="../js/aboutus_script.js"></script>
   </body>
 </html>
