@@ -136,28 +136,28 @@ document.addEventListener('DOMContentLoaded', function () {
     // Seleccionar las secciones de información
     const transferenciaInfo = document.getElementById('transferenciaInfo');
     const efectivoInfo = document.getElementById('efectivoInfo');
-
+    
     //para Transferencia Bancaria
     transferencia.addEventListener('click', function () {
-        transferenciaInfo.style.display = 'block';
-        efectivoInfo.style.display = 'none';
-        setActiveButton(transferencia);
+    transferenciaInfo.style.display = 'block';  
+    efectivoInfo.style.display = 'none';        
+    setActiveButton(transferencia);          
     });
 
     //para Efectivo
     efectivo.addEventListener('click', function () {
-        efectivoInfo.style.display = 'block';
-        transferenciaInfo.style.display = 'none';
-        setActiveButton(efectivo);
+    efectivoInfo.style.display = 'block';       
+    transferenciaInfo.style.display = 'none';   
+    setActiveButton(efectivo);               
     });
 
     // seleiconar  boton
     function setActiveButton(activeButton) {
-
-        const buttons = document.querySelectorAll('.payment-buttons button');
-        buttons.forEach(button => {
-            button.classList.remove('active');
-        });
-        activeButton.classList.add('active');
+    
+    const buttons = document.querySelectorAll('.payment-buttons button');
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+    activeButton.classList.add('active');
     }
 });

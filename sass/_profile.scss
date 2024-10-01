@@ -442,7 +442,7 @@ $c_shadow: 2px 1px 5px #3f3f3f;
 }
 
 .profile-modal-title {
-  font-size: 2rem !important ;
+  font-size: 2rem !important;
   font-weight: bold;
 }
 
@@ -468,21 +468,29 @@ $c_shadow: 2px 1px 5px #3f3f3f;
   margin-top: 1rem;
   border: 1px solid rgba(152, 75, 253, 0.4);
 }
+
 .profile-post-title {
   height: 2.5rem;
   border-radius: 4px;
   border: 1px solid rgba(152, 75, 253, 0.4);
   resize: horizontal;
   padding: .2rem;
-  resize: none; /* Desactiva el cambio de tamaño manual */
-  overflow: hidden; /* Oculta el contenido que desborde */
-  width: auto; /* Ajusta la altura automáticamente al contenido */
+  resize: none;
+  /* Desactiva el cambio de tamaño manual */
+  overflow: hidden;
+  /* Oculta el contenido que desborde */
+  width: auto;
+  /* Ajusta la altura automáticamente al contenido */
   width: 35%;
   min-width: 35%;
-  max-width: 100%;   /* Permite que el ancho se reduzca hasta el 100% de su contenedor si es necesario */
-  resize: horizontal auto;   /* Permite al usuario ajustar la altura, pero no el ancho */
-  word-break: break-word; /* Permite que las palabras se dividan si no caben en una línea */
+  max-width: 100%;
+  /* Permite que el ancho se reduzca hasta el 100% de su contenedor si es necesario */
+  resize: horizontal auto;
+  /* Permite al usuario ajustar la altura, pero no el ancho */
+  word-break: break-word;
+  /* Permite que las palabras se dividan si no caben en una línea */
 }
+
 .profile-skills-dropdown {
   max-width: 12rem;
   margin-bottom: 0;
@@ -618,7 +626,7 @@ $c_shadow: 2px 1px 5px #3f3f3f;
   height: 1.2rem;
 }
 
-.add-image-btn{
+.add-image-btn {
   height: 2rem;
 }
 
@@ -655,4 +663,53 @@ $c_shadow: 2px 1px 5px #3f3f3f;
   object-fit: cover;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+/* Modal de Pago */
+#modalPago .modal-content {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+#modalPago .modal-header {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+#modalPago .modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#modalPago .modal-body {
+  padding: 1.5rem;
+}
+
+#resumenPedido {
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+#resumenPedido .service-info {
+  margin-left: 1rem;
+}
+
+#resumenPedido .service-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.payment-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.opcionespago {
+  padding: 1rem;
+  border-radius: 10px;
+  color: #000;
 }
