@@ -392,3 +392,41 @@ button{
 		width: calc(10% - 20px);
 	}
 }
+.logged-profilePic{
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem;
+    border: 3px solid var(--c_yellow400);
+}
+.logged-name{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.user_logged{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.logged-profilePic{
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem;
+    border: 3px solid var(--c_yellow400);
+}
+.logged-name{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.user_logged{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
