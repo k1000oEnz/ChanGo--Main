@@ -7,7 +7,7 @@
     <title>Mi Perfil</title>
     <!-- css -->
     <link rel="stylesheet" href="../css/index.css" />
-    <!-- favicon -->
+    <!-- favicon --> 
     <link rel="shortcut icon" href="../components/img/Logo.svg" type="image/x-icon" />
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -18,6 +18,8 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!--Mercado Pago-->
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
 </head>
 
 <body class="fondo">
@@ -130,7 +132,7 @@
                         <h1>Árturo Pug</h1>
                         <p>Buenos Aires, Argentina</p>
                     </div>
-
+                    
                     <a href="./Pago.html"><button class="button__styleY">Contratar</button></a>
                     <a href="#"><button class="button__styleY profile-open-modal-btn">Publicar</button></a>
                     <div class="profile-modal-overlay">
@@ -293,10 +295,13 @@
                         <p class="jobDetails"><img src="../components/img/Profile/VectorUbicacion.svg" alt="Ubicacion"
                                 class="jobVector"> Ubicación: CABA</p>
                     </div>
-                    <div class="actionButtons">
-                        <a href="./Pago.html"><button class="offerButton">Ofertar</button></a>
-                        <a href="./Pago.html">
-                            <button class="hireButton">Postularse</button>
+                    <div>
+                        <a><button class="offerButton">Ofertar</button></a>
+                        <a >
+                            <!--<button class="hireButton">Postularse</button>-->
+                            <button type="button" class="hireButton" data-bs-toggle="modal" data-bs-target="#modalPago">
+                                Contratar
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -310,10 +315,13 @@
                         <p class="jobDetails"><img src="../components/img/Profile/VectorUbicacion.svg" alt="Ubicacion"
                                 class="jobVector"> Ubicación: CABA</p>
                     </div>
-                    <div class="actionButtons">
-                        <a href="./Pago.html"><button class="offerButton">Ofertar</button></a>
-                        <a href="./Pago.html">
-                            <button class="hireButton">Postularse</button>
+                    <div>
+                        <a><button class="offerButton">Ofertar</button></a>
+                        <a>
+                            <!--<button class="hireButton">Postularse</button>-->
+                            <button type="button" class="hireButton" data-bs-toggle="modal" data-bs-target="#modalPago">
+                                Contratar
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -322,6 +330,105 @@
         </div>
         </div>
     </main>
+            <!-- MODAL PAGO-->
+            <div class="modal fade" id="modalPago" tabindex="-1" aria-labelledby="modalPagoLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="../components/img/Profile/Logo ChanGo.png" alt="LogoPago" style="width: 80px; height: 80px; padding:6px;">
+                    <h5 class="modal-title" id="modalPagoLabel">Pago ChanGO</h5>
+                    </div>
+                    <div class="modal-body">
+            
+                    <!-- Resumen de Pedido -->
+                    <div id="resumenPedido" class="order-summary d-flex justify-content-between align-items-center border p-3 mb-3">
+                        <div class="service-item d-flex align-items-center">
+                        <img
+                            src="../components/img/Profile/Yo.png"
+                            alt="Servicio"
+                            class="service-image me-3"
+                            style="width: 80px; height: 80px;"
+                        />
+                        <div class="service-info">
+                            <p class="service-name">Barbero</p>
+                            <p class="service-provider">Arturo Pug</p>
+                            <p class="service-modalidad">Presencial</p>
+                        </div>
+                        </div>
+                        <p class="service-price fs-5">$13999</p>
+                    </div>
+            
+                    <p>Selecciona un método de pago:</p>
+                    <div class="payment-buttons">
+                        <button id="MercadoPago" class="opcionespago" style="color: #000;    
+                        padding: 0.5rem;
+                        border-radius: 10px;" >
+                            Mercado Pago
+                        </button>
+                        <div id="wallet_container"></div>
+                        <button id="transferencia" class="opcionespago" style="color: #000;
+                        padding: 0.5rem;
+                        border-radius: 10px;">
+                            Transferencia Bancaria
+                        </button>
+                        <button id="efectivo" class="opcionespago" style="color: #000;
+                        padding: 0.5rem;
+                        border-radius: 10px;">
+                            Efectivo
+                        </button>
+                    </div>
+                    <!--<div class="payment-buttons">
+                        <input type="radio" 
+                        id="btnMercadoPago" 
+                        name="paymentMethod" 
+                        class="btnPagoMetodo" 
+                        value="mercadoPago">
+                        <label for="btnMercadoPago">Mercado Pago</label>
+                    
+                        <input type="radio" 
+                        id="btnTransferencia" 
+                        name="paymentMethod" 
+                        class="btnPagoMetodo" 
+                        value="transferencia">
+                        <label for="btnTransferencia">Transferencia Bancaria</label>
+                    
+                        <input type="radio" 
+                        id="btnEfectivo" 
+                        name="paymentMethod" 
+                        class="btnPagoMetodo" 
+                        value="efectivo">
+                        <label for="btnEfectivo">Efectivo</label>
+                    </div>
+                    para mercado pago
+                    <div id="MercadoPagoInfo" class="mt-3" style="display: none;">
+                        <button style="color: #000; border-radius: 0.5px;" >
+                            Mercado Pago
+                        </button>
+                    </div>-->
+                    
+                    <!-- para transferencia -->
+                    <div id="transferenciaInfo" class="mt-3" style="display: none;">
+                        <p><strong>CVU:</strong> 12345678901234567890</p>
+                        <p><strong>Banco:</strong> Banco Ejemplo</p>
+                        <p><strong>Nombre del Prestador:</strong> Juan Pérez</p>
+                    </div>
+                    
+                    <!-- para efectivo -->
+                    <div id="efectivoInfo" class="mt-3" style="display: none;">
+                        <p>Coordinar con el prestador.</p>
+                    </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" title="Cancelar">Cancelar</button>
+                    <button type="button" id="confirmarPago" class="btnPago" title="confirmarPago" style="background-color: #5b1dae; padding: 0.5rem 2rem; border-radius: 5px; color: #fff;">
+                        Confirmar Pago
+                    </button>
+                    
+                    </div>
+                    </div>
+                </div>
+            </div>
+        
     <!-- Comienzo del Footer -->
     <footer class="footer">
         <div class="footer__main-content d-flex justify-content-between">
@@ -379,7 +486,8 @@
         <div class="diagonal_bar"></div>
     </footer>
     <script src="../js/profile-script.js"></script>
-
+    <script src="../js/MercadoPago.js"></script>
+    <script src="../js/server.js"></script>
 </body>
 
 </html>

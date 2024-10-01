@@ -85,3 +85,36 @@ function slideLeft() {
 		buttons[0].classList.remove('inactive');
 	}
 };
+document.addEventListener('DOMContentLoaded', function () {
+    const mercadoPagoBtn = document.getElementById('MercadoPago');
+    const transferenciaBtn = document.getElementById('transferencia');
+    const efectivoBtn = document.getElementById('efectivo');
+
+    // Seleccionar las secciones de información
+    const transferenciaInfo = document.getElementById('transferenciaInfo');
+    const efectivoInfo = document.getElementById('efectivoInfo');
+    
+    //para Transferencia Bancaria
+    transferencia.addEventListener('click', function () {
+    transferenciaInfo.style.display = 'block';  
+    efectivoInfo.style.display = 'none';        
+    setActiveButton(transferencia);          
+    });
+
+    //para Efectivo
+    efectivo.addEventListener('click', function () {
+    efectivoInfo.style.display = 'block';       
+    transferenciaInfo.style.display = 'none';   
+    setActiveButton(efectivo);               
+    });
+
+    // seleiconar  boton
+    function setActiveButton(activeButton) {
+    
+    const buttons = document.querySelectorAll('.payment-buttons button');
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+    activeButton.classList.add('active');
+    }
+});

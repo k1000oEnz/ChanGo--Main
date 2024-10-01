@@ -38,67 +38,73 @@ document.addEventListener('DOMContentLoaded', function() {
     // });
 });
 
-// script.js
-const openModalBtn = document.querySelector('.profile-open-modal-btn');
-const modalOverlay = document.querySelector('.profile-modal-overlay');
-const postBtn = document.querySelector('.profile-post-btn');
-const postContent = document.querySelector('.profile-post-content');
-const visibilityToggle = document.getElementById('visibility-toggle');
-const visibilityStatus = document.getElementById('visibility-status');
-const skillsDropdown = document.querySelector('.profile-skills-dropdown');
+document.addEventListener('DOMContentLoaded', function () {
+    const transferenciaBtn = document.getElementById('transferencia');
+    const efectivoBtn = document.getElementById('efectivo');
 
-openModalBtn.addEventListener('click', () => {
-    modalOverlay.classList.add('active');
-});
+    // Seleccionar las secciones de información
+    const transferenciaInfo = document.getElementById('transferenciaInfo');
+    const efectivoInfo = document.getElementById('efectivoInfo');
+    
+    //para Transferencia Bancaria
+    transferencia.addEventListener('click', function () {
+    transferenciaInfo.style.display = 'block';  
+    efectivoInfo.style.display = 'none';        
+    setActiveButton(transferencia);          
+    });
 
-// Event delegation for closing the modal
-document.addEventListener('click', (e) => {
-    if (e.target === modalOverlay || e.target.classList.contains('profile-close-btn')) {
-        modalOverlay.classList.remove('active');
+    //para Efectivo
+    efectivo.addEventListener('click', function () {
+    efectivoInfo.style.display = 'block';       
+    transferenciaInfo.style.display = 'none';   
+    setActiveButton(efectivo);               
+    });
+
+    // seleiconar  boton
+    function setActiveButton(activeButton) {
+    
+    const buttons = document.querySelectorAll('.payment-buttons button');
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+    activeButton.classList.add('active');
     }
 });
 
-visibilityToggle.addEventListener('change', () => {
-    visibilityStatus.textContent = visibilityToggle.checked ? 'Buscador' : 'Prestador';
-});
+    //modal pago
+    //document.addEventListener('DOMContentLoaded', function() {
+    //const btnMercadoPago = document.getElementById('btnMercadoPago');
+    //const btnTransferencia = document.getElementById('btnTransferencia');
+    //const btnEfectivo = document.getElementById('btnEfectivo');
+    //const MercadoPagoInfo = document.getElementById('MercadoPagoInfo')
+    //const transferenciaInfo = document.getElementById('transferenciaInfo');
+    //const efectivoInfo = document.getElementById('efectivoInfo');
 
-postBtn.addEventListener('click', async () => {
-    const content = postContent.value.trim();
-    const isPublic = visibilityToggle.checked;
-    const selectedSkill = skillsDropdown.value;
+    // Para mostrar/ocultar información
+    //function mostrarInfoPago() {
+        //MercadoPagoInfo.style.display = 'none';
+        //transferenciaInfo.style.display = 'none';
+        //efectivoInfo.style.display = 'none';
 
-    if (content && selectedSkill) {
-        try {
-            const response = await fetch('/api/posts', { // Replace with your actual endpoint
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    content,
-                    isPublic,
-                    skill: selectedSkill
-                })
-            });
+        // Para mostrar la info selecionada
+        //if (btnMercadoPago.checked) {
+           // MercadoPagoInfo.style.display = 'block';
+        //} 
+        //else if (btnTransferencia.checked) {
+            //transferenciaInfo.style.display = 'block';
+        //} 
+        //else if (btnEfectivo.checked) {
+           // efectivoInfo.style.display = 'block';
+        //}
+    //}
 
-            if (response.ok) {
-                alert('Your post has been created!');
-                // Reset the form
-                postContent.value = '';
-                visibilityToggle.checked = false;
-                visibilityStatus.textContent = 'Private';
-                skillsDropdown.selectedIndex = 0; 
-                modalOverlay.classList.remove('active');
-            } else {
-                const errorData = await response.json(); 
-                alert(`Error: ${errorData.message || 'Could not create post'}`);
-            }
+    
+    //btnMercadoPago.addEventListener('change', mostrarInfoPago);
+    ///btnTransferencia.addEventListener('change', mostrarInfoPago);
+    //btnEfectivo.addEventListener('change', mostrarInfoPago);
 
-        } catch (error) {
-            console.error('Error posting:', error);
-            alert('An error occurred. Please try again later.');
-        }
-    } else {
-        alert('Please fill out all required fields.'); 
-    }
-});
+
+    //mostrarInfoPago();
+
+
+//});

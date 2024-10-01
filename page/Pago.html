@@ -93,6 +93,7 @@
       <!-- Columna izquierda-->
       <form class="left-column" id="paymentForm">
         <h1>Información de Pago</h1>
+    <div id="step1">
 
         <h2>Detalles personales</h2>
         <div class="fila">
@@ -139,7 +140,35 @@
             />
           </div>
         </div>
-
+        <div class="fila">
+          <div class="form-group">
+            <label for="phone">Télefono:</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Ingrese su Télefono"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="mail">Mail:</label>
+            <input
+              type="text"
+              id="mail"
+              name="mail"
+              placeholder="Ingrese su mail"
+              required
+            />
+          </div>
+        </div>
+        
+        <div style="display: flex; justify-content: center; gap: 16px;">
+          <button type="button" id="nextStep" style="background-color: #5B1DAE; color: white; padding: 8px 16px; cursor: pointer; border-radius: 8px; font-size: 0.9rem;">Continuar</button>
+        </div>
+      
+    </div>
+    <div id="step2" style="display: none">
         <h2>Métodos de Pago</h2>
         <div class="payment-methods">
           <img
@@ -200,8 +229,14 @@
           </div>
         </div>
 
-        <button type="submit"
-      id="confirmarPago" class="btnPago">Confirmar Pago</button>
+        <div style="display: flex; justify-content: center; gap: 16px;">
+          <button type="button" id="prevStep" style="background-color: #5B1DAE; color: white; padding: 8px 16px; cursor: pointer; border-radius: 8px; font-size: 0.9rem;">Volver</button>
+        </div>
+
+          
+          
+        </div>
+    
       </form>
       <!-- Columna derecha -->
 
@@ -243,8 +278,14 @@
             <p class="total">$13.999</p>
           </div>
         </div>
+        
+        <div style="display: flex; justify-content: center;">
+          <button type="submit" id="confirmarPago" style="background-color: #5B1DAE; color: white; padding: 8px 16px; cursor: pointer; border-radius: 8px; font-size: 0.9rem; max-width: 300px; width: 100%;">Confirmar Pago</button>
+        </div>
+        
+      
       </div>
     </div>
-    
+    <script src="../js/Pago-script.js"></script>
   </body>
 </html>
