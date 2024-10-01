@@ -133,13 +133,13 @@
                         <p>Buenos Aires, Argentina</p>
                     </div>
 
-                    <a href="./Pago.html"><button class="button__styleY">Contratar</button></a>
+                    <a href="https://chanmini.onrender.com/"><button class="button__styleY">Contactar</button></a>
                     <a href="#"><button class="button__styleY profile-open-modal-btn">Publicar</button></a>
                     <div class="profile-modal-overlay">
                         <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
                             <button class="profile-close-btn btn-close"></button>
                             <div class="profile-modal-header">
-                                <h2 class="profile-modal-title" id="modal-title">Crear Aviso</h2>
+                                <h2 class="profile-modal-title">Crear Aviso</h2>
                                 <div class="profile-post-options">
                                     <label class="profile-switch">
                                         <input type="checkbox" id="visibility-toggle">
@@ -148,6 +148,8 @@
                                     <span id="visibility-status">Prestador</span>
                                 </div>
                             </div>
+                            <textarea class="profile-post-title" placeholder="Ingrese un título para el aviso" required
+                                minlength="10"></textarea>
                             <textarea class="profile-post-content" placeholder="¿Que estas buscando?" required
                                 minlength="10"></textarea>
                             <div class="post-options d-flex align-items-center justify-content-space-around">
@@ -193,9 +195,9 @@
                 <section class="profileSkills skills">
                     <h2 class="subtitle">APTITUDES / CONOCIMIENTOS</h2>
                     <div class="tags">
-                        <span class="tag "><span class="close-tag">X</span>Soy una aptitud</span>
-                        <span class="tag"><span class="close-tag">X</span>Soy una aptitud</span>
-                        <span class="tag"><span class="close-tag">X</span>Soy una aptitud</span>
+                        <span class="tag "><span class="close-tag"><img class="skill-close-btn" src="../components/img/Profile/close-md.svg" alt="close-btn"></span>Soy una aptitud</span>
+                        <span class="tag"><span class="close-tag"><img class="skill-close-btn" src="../components/img/Profile/close-md.svg" alt="close-btn"></span>Soy una aptitud</span>
+                        <span class="tag"><span class="close-tag"><img class="skill-close-btn" src="../components/img/Profile/close-md.svg" alt="close-btn"></span>Soy una aptitud</span>
                         <button class="add-tag">+ Agregar</button>
                     </div>
                 </section>
@@ -204,7 +206,7 @@
             <div class="modal-skills-overlay">
                 <div class="modal-skills-content">
                     <h3>Agregar Nueva Aptitud</h3>
-                    <input type="text" class="modal-skills-input" placeholder="Ingrese la aptitud">
+                    <input class="modal-skills-input" placeholder="Ingrese la aptitud" type="text">
                     <button class="modal-skills-button button__styleY">Agregar</button>
                 </div>
             </div>

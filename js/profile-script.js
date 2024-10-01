@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (newTag) {
             const tagElement = document.createElement('span');
             tagElement.className = 'tag';
-            tagElement.innerHTML = `<span class="close-tag">X</span>${newTag}`; // Agregar la "x" aquí
+            tagElement.innerHTML = `<span class="close-tag"><img class="skill-close-btn" src="../components/img/Profile/close-md.svg" alt="close-btn"></span>${newTag}`; // Agregar la "x" aquí
             tagsContainer.insertBefore(tagElement, addTagBtn);
             modalInput.value = ''; // Limpiar el input
             modalOverlay.style.display = 'none'; // Cerrar el modal
