@@ -28,14 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
             verMasBtn.style.display = 'none';
         }
     });
-
-    // Initialize job cards visibility
-    // const jobCards = document.querySelectorAll('.job-card');
-    // jobCards.forEach((card, index) => {
-    //     if (index >= jobsVisible) {
-    //         card.style.display = 'none';
-    //     }
-    // });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -70,41 +62,3 @@ document.addEventListener('DOMContentLoaded', function () {
     activeButton.classList.add('active');
     }
 });
-
-    //modal pago
-    //document.addEventListener('DOMContentLoaded', function() {
-    //const btnMercadoPago = document.getElementById('btnMercadoPago');
-    //const btnTransferencia = document.getElementById('btnTransferencia');
-    //const btnEfectivo = document.getElementById('btnEfectivo');
-    //const MercadoPagoInfo = document.getElementById('MercadoPagoInfo')
-    //const transferenciaInfo = document.getElementById('transferenciaInfo');
-    //const efectivoInfo = document.getElementById('efectivoInfo');
-
-    // Para mostrar/ocultar información
-    //function mostrarInfoPago() {
-        //MercadoPagoInfo.style.display = 'none';
-        //transferenciaInfo.style.display = 'none';
-        //efectivoInfo.style.display = 'none';
-
-        // Para mostrar la info selecionada
-        //if (btnMercadoPago.checked) {
-           // MercadoPagoInfo.style.display = 'block';
-        //} 
-        //else if (btnTransferencia.checked) {
-            //transferenciaInfo.style.display = 'block';
-        //} 
-        //else if (btnEfectivo.checked) {
-           // efectivoInfo.style.display = 'block';
-        //}
-    //}
-
-    
-    //btnMercadoPago.addEventListener('change', mostrarInfoPago);
-    ///btnTransferencia.addEventListener('change', mostrarInfoPago);
-    //btnEfectivo.addEventListener('change', mostrarInfoPago);
-
-
-    //mostrarInfoPago();
-
-
-//});
