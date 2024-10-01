@@ -110,3 +110,22 @@ postBtn.addEventListener('click', async () => {
         alert('Please fill out all required fields.');
     }
 });
+
+const imageUpload = document.getElementById('image-upload');
+const imagePreviewContainer = document.querySelector('.image-preview-container');
+
+imageUpload.addEventListener('change', (event) => {
+    const files = event.target.files;
+    imagePreviewContainer.innerHTML = ''; // Limpiar miniaturas previas
+
+    for (const file of files) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            const img = document.createElement('img');
+            img.src = e.target.result;
+            img.classList.add('image-preview'); // Agregar clase para estilos
+            imagePreviewContainer.appendChild(img);
+        }
+        reader.readAsDataURL(file);
+    }
+});

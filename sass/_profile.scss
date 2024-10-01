@@ -346,7 +346,7 @@ $c_shadow: 2px 1px 5px #3f3f3f;
 .tag {
   background-color: #f3c74f;
   color: $color-white;
-  padding: 10px 15px;
+  padding: 8px 15px;
   border-radius: 20px;
   font-size: .9rem;
   font-weight: 700;
@@ -580,7 +580,7 @@ $c_shadow: 2px 1px 5px #3f3f3f;
 .modal-skills-input {
   padding: 8px;
   border-radius: 4px;
-  width: 80% !important;
+  width: 90% !important;
   margin-bottom: 10px;
   border: 1px solid rgba(152, 75, 253, 0.4);
 }
@@ -615,4 +615,43 @@ $c_shadow: 2px 1px 5px #3f3f3f;
 
 .skill-close-btn {
   height: 1.2rem;
+}
+
+.add-image-btn{
+  height: 2rem;
+}
+
+.image-upload-section {
+  margin: 20px 0;
+  display: flex;
+  gap: 1rem;
+}
+
+
+.image-upload-label {
+  max-height: 3.5rem;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $color-purple200;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  align-content: center;
+  font-weight: 500;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.image-preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.image-preview {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
